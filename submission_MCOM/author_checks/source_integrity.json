@@ -38,7 +38,7 @@
   },
   "display_math": {
     "baseline_blocks": 60,
-    "new_blocks": 62,
+    "new_blocks": 64,
     "all_inherited_blocks_byte_identical_in_order": true
   },
   "table": {
@@ -82,5 +82,5 @@
     "missing": []
   },
   "abstract_words_whitespace": 274,
-  "source_sha256": "02a4866f7c608bdb7db8815783fb0b955def2b069e7da333048919dd66860b24"
+  "source_sha256": "f6b2d3d152f34a0f7625c3183f59b19443ddd1147a2598fc0fa8e6c9c6dc43ee"
 }

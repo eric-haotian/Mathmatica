@@ -1,1 +1,1 @@
-{'status': 'PASS', 'pair_certificates': 22, 'operator_certificates': 4, 'target_pair_evaluations': 66, 'total_seconds': 1.1279549559999396, 'processes': 26, 'scope': 'Exact finite instances; no simulated confidence coverage, estimator, endpoint optimization, or formal proof assistant.'}
+{'status': 'PASS', 'pair_certificates': 22, 'operator_certificates': 4, 'target_pair_evaluations': 66, 'total_seconds': 1.0919503150000054, 'processes': 26, 'scope': 'Exact finite instances; no simulated confidence coverage, estimator, endpoint optimization, or formal proof assistant.'}

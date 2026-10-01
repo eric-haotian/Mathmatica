@@ -56,7 +56,7 @@
     },
     "display_math": {
       "baseline_blocks": 60,
-      "new_blocks": 62,
+      "new_blocks": 64,
       "all_inherited_blocks_byte_identical_in_order": true
     },
     "table": {
@@ -100,7 +100,7 @@
       "missing": []
     },
     "abstract_words_whitespace": 274,
-    "source_sha256": "02a4866f7c608bdb7db8815783fb0b955def2b069e7da333048919dd66860b24"
+    "source_sha256": "f6b2d3d152f34a0f7625c3183f59b19443ddd1147a2598fc0fa8e6c9c6dc43ee"
   },
   "pdf_preflight": {
     "main": {
@@ -118,7 +118,6 @@
       "compile_errors_and_layout_warnings": [],
       "isolated_rebuild_page_text_identical": true,
       "other_log_warnings": [
-        "Underfull \\vbox (badness 10000) has occurred while \\output is active []",
         "pdfTeX warning (font expansion): font should be expanded before its first use"
       ]
     },
@@ -159,10 +158,7 @@
     "new_archive_sha256": "00a75015f369173f4b89834838cd261cad8b43848e076e71703f9a61cc250942",
     "zip_members": 235,
     "manifest_entries": 234,
-    "metadata_files_changed_since_2026-09-29": [
-      "SECTION_MAP.txt",
-      "TRANSFER_NOTE.txt"
-    ],
+    "metadata_files_changed_since_2026-09-29": [],
     "code_and_data_files": 210,
     "code_and_data_files_changed": [],
     "zip_crc": "PASS",
@@ -176,12 +172,12 @@
   },
   "upload_files": {
     "01_Main_Manuscript.pdf": {
-      "bytes": 648902,
-      "sha256": "a45a6ae070a9e184aa5b054085647eefb7808768cc9fc06e3dfde58e974135bd"
+      "bytes": 654522,
+      "sha256": "0940f03d00e7032fa23fbc64a19f4516df347a06f2bee8016d214376e8ec373b"
     },
     "02_Cover_Letter.pdf": {
-      "bytes": 120651,
-      "sha256": "058a42633a21d96103172a8275cb015f8d740801aabccfe0d4d9b39f1e00d1cf"
+      "bytes": 120684,
+      "sha256": "0c9aa88d1ca607740bb4cffa2582faa5602d699c8f6005bc1c1d60231142c0d4"
     },
     "03_Reproducibility_Materials.zip": {
       "bytes": 447704,
@@ -189,8 +185,8 @@
     },
     "04_Reproducibility_Index.pdf": {
       "bytes": 118386,
-      "sha256": "164ef2d1c5587a8dd671a7753453c133fad6a89e566b18abab352a1d51d74ca4"
+      "sha256": "064d7dd40a186a054cf7da0b2d338f3fb35091e213199287109bc6e8b23fc1ee"
     }
   },
-  "seconds": 14.8
+  "seconds": 14.7
 }

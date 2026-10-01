@@ -16,6 +16,11 @@
 \newtheorem{assumption}[theorem]{Assumption}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
+\theoremstyle{plain}
+\newtheorem*{mainA}{Theorem A}
+\newtheorem*{mainB}{Theorem B}
+\newtheorem*{mainC}{Theorem C}
+\newtheorem*{mainD}{Theorem D}
 \newcommand{\R}{\mathbb R}
 \newcommand{\C}{\mathbb C}
 \newcommand{\E}{\mathbb E}
@@ -48,7 +53,7 @@
 \hypersetup{pdftitle={Frequency Saturation and Certified Computation of Relaxation Functionals},pdfauthor={Haotian Zhong}}
 \begin{document}
 \begin{abstract}
-Impedance measurements of a relaxing medium follow a Stieltjes-type law $Z(\omega)=R+i\omega L+\int(1+i\omega\tau)^{-1}\,d\mu(\tau)$, where $\mu$ is a positive measure of relaxation times on a compact interval and the resistance $R$ and inductance $L$ are unknown nonnegative calibration parameters. We ask how much frequency information is needed to compute a linear functional $\int f\,d\mu$ of the measure, and how to compute, with certified numerical error, the complete range of values consistent with noisy data. Four results are established. Exactly $K+2$ distinct frequencies are necessary and sufficient for uniform noiseless identification of every reference measure with at most $K$ atoms among all finite positive measures when $R$ and $L$ are unknown, and $K+1$ when they are known. This minimal design already attains, up to constants, the worst-case accuracy of the entire positive-frequency response: for a target of regularity $s_j$ near a cluster of $r_j$ reference atoms the sharp exponent is $\min\{1,s_j/(2r_j)\}$, uniformly through colliding atoms and vanishing masses. Positive moment-matched pairs that stay close at every frequency give the lower bound, and polynomial reproduction that annihilates the calibration parameters gives the upper bound. On strictly feasible rational observation boxes, a finite exact-arithmetic refinement algorithm encloses both endpoints of the continuous data-consistent range with any prescribed numerical excess, and computable width brackets yield absolute--relative stopping criteria. The same modulus determines the optimal expected measurement effort for a terminal interval of width $w$ and confidence $1-\alpha$ under a Gaussian variance--effort model, allowing adaptive frequency, precision, and stopping rules; a class-tuned expanding design that invokes the certified range computation attains this order and terminates almost surely at every finite positive spectrum. Exact certificates and executed stopping paths accompany the results.
+Impedance measurements of a relaxing medium follow a Stieltjes-type law $Z(\omega)=R+i\omega L+\int(1+i\omega\tau)^{-1}\,d\mu(\tau)$, where $\mu$ is a positive measure of relaxation times on a compact interval and the resistance $R$ and inductance $L$ are unknown nonnegative calibration parameters. We ask how much frequency information is needed to compute a linear functional $\int f\,d\mu$ of the measure, and how to compute, with certified numerical error, the complete range of values consistent with noisy data. We prove four theorems. Exactly $K+2$ distinct frequencies are necessary and sufficient for uniform noiseless identification of every reference measure with at most $K$ atoms among all finite positive measures when $R$ and $L$ are unknown, and $K+1$ when they are known. This minimal design already attains, up to constants, the worst-case accuracy of the entire positive-frequency response: for a target of regularity $s_j$ near a cluster of $r_j$ reference atoms the sharp exponent is $\min\{1,s_j/(2r_j)\}$, uniformly through colliding atoms and vanishing masses. Positive moment-matched pairs that stay close at every frequency give the lower bound, and polynomial reproduction that annihilates the calibration parameters gives the upper bound. On strictly feasible rational observation boxes, a finite exact-arithmetic refinement algorithm encloses both endpoints of the continuous data-consistent range with any prescribed numerical excess, and computable width brackets yield absolute--relative stopping criteria. The same modulus determines the optimal expected measurement effort for a terminal interval of width $w$ and confidence $1-\alpha$ under a Gaussian variance--effort model, allowing adaptive frequency, precision, and stopping rules; a class-tuned expanding design that invokes the certified range computation attains this order and terminates almost surely at every finite positive spectrum. Exact certificates and executed stopping paths accompany the results.
 \end{abstract}
 \maketitle
 
@@ -67,7 +72,33 @@ This paper answers the three questions for the normalized model
 in which $t(x)=1+x/2$ maps $J=[-1,1]$ onto the relaxation-time interval $[1/2,3/2]$, $\mu$ is an arbitrary finite nonnegative Borel measure on $J$, and $R,L\ge0$. The normalization is a convenience: the proofs use the compactness of the relaxation-time interval and the positivity of its left endpoint, and the constants depend on them. A design $\Omega$ of $m$ distinct positive frequencies yields $2m$ real observations, the real and negative imaginary parts of $Z_\vartheta(\omega_i)$, each known up to a componentwise error bound $\delta$. The data determine the set of all triples consistent with the observations and, for a continuous target $f$, the range $[L_f,U_f]$ of $F_f$ over that set. Its width $W_f=U_f-L_f$ is the \emph{information width}: no method can guarantee better accuracy from these data. The computational task is to return an interval that contains $[L_f,U_f]$ and whose \emph{numerical excess}, its width minus $W_f$, is below a prescribed tolerance. Performance is measured uniformly over sparse references with at most $K$ atoms, while every enclosure and every coverage statement holds over all finite positive measures, including spectra with more atoms than the reference.
 
 \subsection{Main results}
-The central result connects a minimal identifying design, a sharp information modulus, and certified range computation. A finite design attains the accuracy order available from the entire positive-frequency response, the same modulus determines the acquisition effort needed for a requested output width, and the computational construction preserves the original observation inequalities while certifying finite optimization, target approximation, and continuous-domain errors separately.
+We prove four theorems, stated here informally with pointers to their precise versions. Throughout, a \emph{reference} is a measure with at most $K$ atoms, competitors range over all finite positive measures and all $R,L\ge0$, and $\Psi$ is the modulus defined in \eqref{eq:rates-summary} below.
+
+\begin{mainA}[Exact frequency count; Proposition~\ref{prop:frequencycount}]
+Exact data at $m$ distinct positive frequencies identify every reference with at most $K$ atoms, together with $R$ and $L$, among all finite positive measures if and only if $m\ge K+2$. When $R$ and $L$ are known, the threshold is $K+1$. Below the threshold there are references with positive interior atoms whose data are shared by another positive measure with a different value of a nonnegative polynomial functional.
+\end{mainA}
+
+\begin{mainB}[Frequency saturation; Theorems~\ref{thm:modulus}--\ref{thm:saturation}, Corollary~\ref{cor:global}]
+Fix the $K+2$ baseline frequencies. For references with $r_j$ atoms in the $j$th cluster and targets of regularity $s_j$ there, the worst-case diameter of the functional range at absolute error level $\eps$ satisfies
+\[
+ c\Psi(\eps)\le D_\infty(\eps)\le D_\Omega(\eps)\le C\Psi(\eps),
+\]
+where $D_\Omega$ uses the fixed design and $D_\infty$ uses the entire positive-frequency axis. The constants are uniform through colliding atoms and vanishing masses. For the global class of references with at most $K$ atoms and the $C^s$ unit ball, both diameters have the exact order $\eps^{\min\{1,s/(2K)\}}$. The lower order also binds every target-aware adaptive frequency-querying rule.
+\end{mainB}
+
+\begin{mainC}[Certified range computation; Theorem~\ref{thm:numerical}, Corollary~\ref{cor:relative}]
+For rational data, design, model and tolerance $\tau>0$, an effective target, and a rational feasible anchor with strict margin, Algorithm~\ref{alg:range} terminates after finitely many exact-arithmetic operations with an interval $\mathcal I\supseteq[L_f,U_f]$ such that $0\le|\mathcal I|-W_f\le\tau$. Its certificates yield computable brackets $\underline W\le W_f\le\overline W$, so that for $W_f>0$ any prescribed relative excess is reached in finitely many refinements.
+\end{mainC}
+
+\begin{mainD}[Optimal acquisition effort; Theorem~\ref{thm:cost}, Proposition~\ref{prop:complete}]
+In the Gaussian variance--effort model, for all small terminal widths $w$ and confidence levels $1-\alpha\ge3/4$,
+\[
+ \mathcal C^*(w,\alpha)\asymp\sigma^2w^{-2/\beta}\log(1/\alpha),\qquad \beta=\min_j\min\{1,s_j/(2r_j)\},
+\]
+where the lower bound holds against adaptive choices of frequency, precision and stopping. A predetermined expanding design that calls Algorithm~\ref{alg:range} at each stage attains this order and, at every finite positive spectrum, terminates almost surely with finite expected effort.
+\end{mainD}
+
+These four statements connect a minimal identifying design, a sharp information modulus, and certified range computation: a finite design attains the accuracy order available from the entire positive-frequency response, the same modulus determines the acquisition effort needed for a requested output width, and the computational construction preserves the original observation inequalities while certifying finite optimization, target approximation, and continuous-domain errors separately. The remainder of this subsection describes the mechanisms behind each theorem.
 
 \paragraph{Minimal design and sharp information order.}
 We prove that $K+2$ distinct complex frequencies are the minimum required for uniform noiseless identification of references with at most $K$ atoms when resistance and inductance are unknown. Every design at or above this threshold identifies every such reference among all finite positive measures. Below it, references with positive interior atoms and positive calibration values admit exact positive-measure alternatives with a different smooth-functional value. Knowing both calibration values reduces the threshold to $K+1$ (Proposition~\ref{prop:frequencycount}).

@@ -14,7 +14,6 @@
     "compile_errors_and_layout_warnings": [],
     "isolated_rebuild_page_text_identical": true,
     "other_log_warnings": [
-      "Underfull \\vbox (badness 10000) has occurred while \\output is active []",
       "pdfTeX warning (font expansion): font should be expanded before its first use"
     ]
   },

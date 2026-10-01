@@ -12,54 +12,54 @@
     {
       "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/replay.py",
       "returncode": 0,
-      "seconds": 1.1778519060001145
+      "seconds": 1.1376878509999955
     },
     {
       "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/check_mechanisms.py",
       "returncode": 0,
-      "seconds": 0.0748165049999443
+      "seconds": 0.07601141600000005
     },
     {
       "command": "inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/replay.py",
       "returncode": 0,
-      "seconds": 1.230049452000003
+      "seconds": 1.2354475040000068
     },
     {
       "command": "inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/check_mechanisms.py",
       "returncode": 0,
-      "seconds": 0.1962421529999574
+      "seconds": 0.15490576100000908
     },
     {
       "command": "new_checks/replay_content.py",
       "returncode": 0,
-      "seconds": 0.660469201000069
+      "seconds": 0.6077727029999949
     },
     {
       "command": "design_audit/replay.py",
       "returncode": 0,
-      "seconds": 0.7581442700000025
+      "seconds": 0.7914442959999946
     },
     {
       "command": "closure/check_closeout.py",
       "returncode": 0,
-      "seconds": 0.05759941900009835
+      "seconds": 0.05742506500000388
     },
     {
       "command": "regenerate_tables.py",
       "returncode": 0,
-      "seconds": 0.036626411000042935
+      "seconds": 0.03450085400000091
     },
     {
       "command": "new_checks/make_tables.py",
       "returncode": 0,
-      "seconds": 0.035662661000060325
+      "seconds": 0.033999769000004676
     },
     {
       "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/report_results.py",
       "returncode": 0,
-      "seconds": 0.041906887999857645
+      "seconds": 0.03537181799998734
     }
   ],
-  "seconds": 4.296401998999954,
+  "seconds": 4.199449382999987,
   "scope": "Replay of supplied exact inputs and certificates, including complete table regeneration; internal computational verification, not formal proof verification or a coverage simulation."
 }

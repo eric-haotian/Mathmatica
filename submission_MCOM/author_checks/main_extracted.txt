@@ -13,7 +13,7 @@
          are unknown nonnegative calibration parameters. We      R ask how much frequency
          information is needed to compute a linear functional f dµ of the measure, and
          how to compute, with certified numerical error, the complete range of values
-         consistent with noisy data. Four results are established. Exactly K + 2 distinct
+         consistent with noisy data. We prove four theorems. Exactly K + 2 distinct
          frequencies are necessary and sufficient for uniform noiseless identification
          of every reference measure with at most K atoms among all finite positive
          measures when R and L are unknown, and K + 1 when they are known. This
@@ -88,14 +88,52 @@ from these data. The computational task is to return an interval that contains
 tolerance. Performance is measured uniformly over sparse references with at most
 K atoms, while every enclosure and every coverage statement holds over all finite
 positive measures, including spectra with more atoms than the reference.
+1.2. Main results. We prove four theorems, stated here informally with pointers
+to their precise versions. Throughout, a reference is a measure with at most K
+atoms, competitors range over all finite positive measures and all R, L ≥ 0, and Ψ
+is the modulus defined in (1) below.
+Theorem A (Exact frequency count; Proposition 4.6). Exact data at m distinct
+positive frequencies identify every reference with at most K atoms, together with R
+and L, among all finite positive measures if and only if m ≥ K + 2. When R and
+L are known, the threshold is K + 1. Below the threshold there are references with
+positive interior atoms whose data are shared by another positive measure with a
+different value of a nonnegative polynomial functional.
+Theorem B (Frequency saturation; Theorems 4.2–4.3, Corollary 4.5). Fix the K +2
+baseline frequencies. For references with rj atoms in the jth cluster and targets of
+regularity sj there, the worst-case diameter of the functional range at absolute error
+level ε satisfies
+                          cΨ(ε) ≤ D∞ (ε) ≤ DΩ (ε) ≤ CΨ(ε),
+where DΩ uses the fixed design and D∞ uses the entire positive-frequency axis.
+The constants are uniform through colliding atoms and vanishing masses. For the
+global class of references with at most K atoms and the C s unit ball, both diameters
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                          3
 
-1.2. Main results. The central result connects a minimal identifying design, a
-sharp information modulus, and certified range computation. A finite design attains
-the accuracy order available from the entire positive-frequency response, the same
-modulus determines the acquisition effort needed for a requested output width, and
-the computational construction preserves the original observation inequalities while
-certifying finite optimization, target approximation, and continuous-domain errors
-separately.
+
+have the exact order εmin{1,s/(2K)} . The lower order also binds every target-aware
+adaptive frequency-querying rule.
+Theorem C (Certified range computation; Theorem 5.2, Corollary 5.3). For
+rational data, design, model and tolerance τ > 0, an effective target, and a rational
+feasible anchor with strict margin, Algorithm 1 terminates after finitely many exact-
+arithmetic operations with an interval I ⊇ [Lf , Uf ] such that 0 ≤ |I| − Wf ≤ τ .
+Its certificates yield computable brackets W ≤ Wf ≤ W , so that for Wf > 0 any
+prescribed relative excess is reached in finitely many refinements.
+Theorem D (Optimal acquisition effort; Theorem 6.2, Proposition 6.3). In the
+Gaussian variance–effort model, for all small terminal widths w and confidence levels
+1 − α ≥ 3/4,
+           C ∗ (w, α) ≍ σ 2 w−2/β log(1/α),     β = min min{1, sj /(2rj )},
+                                                         j
+
+where the lower bound holds against adaptive choices of frequency, precision and
+stopping. A predetermined expanding design that calls Algorithm 1 at each stage
+attains this order and, at every finite positive spectrum, terminates almost surely
+with finite expected effort.
+    These four statements connect a minimal identifying design, a sharp information
+modulus, and certified range computation: a finite design attains the accuracy order
+available from the entire positive-frequency response, the same modulus determines
+the acquisition effort needed for a requested output width, and the computational
+construction preserves the original observation inequalities while certifying finite
+optimization, target approximation, and continuous-domain errors separately. The
+remainder of this subsection describes the mechanisms behind each theorem.
 Minimal design and sharp information order. We prove that K + 2 distinct complex
 frequencies are the minimum required for uniform noiseless identification of refer-
 ences with at most K atoms when resistance and inductance are unknown. Every
@@ -104,18 +142,15 @@ positive measures. Below it, references with positive interior atoms and positiv
 calibration values admit exact positive-measure alternatives with a different smooth-
 functional value. Knowing both calibration values reduces the threshold to K + 1
 (Proposition 4.6).
-   The identifying design also attains the sharp noisy recovery order. For a global
+    The identifying design also attains the sharp noisy recovery order. For a global
 C s target ball, the worst-case functional diameter over the class is Θ(εγ ), where
 γ = min{1, s/(2K)}, both for K + 2 fixed frequencies and for the entire positive-
 frequency response. A localized form resolves different regularities near different
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                           3
-
-
 clusters. If cluster j contains at most rj reference atoms and the target has regularity
 sj there, put
                                                      X
 (1)        βj = min{1, sj /(2rj )},     Ψ(v) = v +       v βj ,  β = min βj .
-                                                                        j
+                                                                       j
                                                      j
 
 Positive moment-matched spectra remain close at every admissible frequency and
@@ -123,6 +158,9 @@ realize the lower order. Finite-design polynomial reproduction gives the matchin
 upper order. These two constructions establish frequency saturation and give lower
 bounds against target-aware adaptive frequency queries (Theorem 4.3). Proposi-
 tion 4.4 identifies the sufficient operator properties, and Corollary 4.5 treats the
+4                                  HAOTIAN ZHONG
+
+
 standard global target class. The constants are uniform through vanishing masses
 and colliding reference atoms for each fixed observation design.
 Certified computation at the information scale. For each strictly feasible rational
@@ -160,11 +198,8 @@ interface.
 1.3. Relation to existing work. Extremal problems for linear functionals of
 positive measures under finitely many moment-type constraints are classical: the
 Markov–Krein
-   R           theory of Chebyshev systems [15, 17] determines the exact range
+   R             theory of Chebyshev systems [15, 17] determines the exact range
 of f dµ when finitely many generalized moments are known exactly. Here the
-4                                  HAOTIAN ZHONG
-
-
 constraints are noisy, componentwise, and carry two unknown calibration coordinates,
 and the quantity computed is the range over all positive measures consistent with
 the data. Continuous primal–dual range inference [27], computational optimal
@@ -175,6 +210,9 @@ exponents and local extremality conditions for completely monotone functions
 under relative L2 discrepancy; their extrapolated value is a linear functional of
 a representing positive measure. Here componentwise RC observations lead to a
 sharp comparison of finite designs, the full frequency axis, and sequential acquisition.
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                        5
+
+
 The distribution of relaxation times is routinely estimated from impedance data
 by regularized inversion [5, 28]; those methods return one regularized spectrum,
 whereas the present analysis quantifies what any method can guarantee about an
@@ -208,15 +246,13 @@ law together with an attaining acquisition design and a finite, accuracy-control
 computation of the same continuous feasible range. The original-coordinate error
 accounting makes these parts one computational recovery problem.
 
+
 1.4. Organization and notation. Section 2 fixes the model, the reference and
 target classes, and the two widths. Section 3 constructs positive pairs that are close
 at every frequency and gives the exact response identity behind all lower bounds.
 Section 4 proves the local modulus, the saturation theorem, the operator conditions,
 the global corollary, and the exact identification count. Section 5 develops the
 continuous range certification and Algorithm 1. Section 6 proves the acquisition law
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                           5
-
-
 and the all-model completion. Section 7 reports the exact certificates, Tables 1–4,
 and Figure 1; Section 8 concludes.
    Throughout, J = [−1, 1], t(x) = 1 + x/2, M+ (J) is the cone
@@ -227,30 +263,33 @@ coefficients of p. ∥ · ∥∞ is the supremum norm on J or on (0, ∞), or th
 norm on R2m , as the context indicates, and ∥ · ∥1 is the ℓ1 norm. A pair (µ, θ)
 is raw feasible if it satisfies the original componentwise observation inequalities
 (4). Constants c, C are positive, may change from line to line, and depend only on
+6                                      HAOTIAN ZHONG
+
+
 the quantities listed in Section 2; ≍ and Θ(·) denote two-sided bounds with such
 constants.
 
-            2. Model, target classes, and information ranges
-    This section fixes the observation model, the reference and target classes over
+              2. Model, target classes, and information ranges
+   This section fixes the observation model, the reference and target classes over
 which performance is measured, and the two widths, information width and numerical
 excess, that the later sections bound. Let J = [−1, 1], t(x) = 1 + x/2, and
-                    1
-      kω (x) =            ,
-               1 + iωt(x)
-(3)                        Z
-     Zϑ (ω) = R + iωL +       kω (x) dµ(x), ϑ = (µ, R, L) ∈ Θ+ := M+ (J) × R2+ .
-                            J
+                  1
+      kω (x) =          ,
+             1 + iωt(x)
+(3)                      Z
+    Zϑ (ω) = R + iωL +     kω (x) dµ(x),        ϑ = (µ, R, L) ∈ Θ+ := M+ (J) × R2+ .
+                               J
 Here M+ (J) denotes finite nonnegative Borel measures. A complex observation
 gives its real and negative imaginary parts. For a finite design Ω = (ω1 , . . . , ωm ),
 write the real observation vector as AΩ µ + BΩ θ, θ = (R, L), where the two rows at
 ωi are
-                 1                        ωi t(x)
-ϕi,R (x) =                , ϕi,I (x) =               , Bi,R = (1, 0), Bi,I = (0, −ωi ).
-            1 + ωi2 t(x)2              1 + ωi2 t(x)2
-                                                R
+                  1                      ωi t(x)
+ϕi,R (x) =                 ,   ϕi,I (x) =           , Bi,R = (1, 0), Bi,I = (0, −ωi ).
+             1 + ωi2 t(x)2            1 + ωi2 t(x)2
+                                               R
 For a real continuous target f , let Ff (µ) = f dµ. Original componentwise bounds
 define
-(4)               FΩ (y, δ) = {(µ, θ) ∈ Θ+ : |AΩ µ + BΩ θ − y| ≤ δ}.
+(4)                 FΩ (y, δ) = {(µ, θ) ∈ Θ+ : |AΩ µ + BΩ θ − y| ≤ δ}.
 For a nonempty such set let Lf , Uf be the infimum and supremum of Ff and
 Wf = Uf − Lf . The quantity Wf is the data-induced information width; numerical
 excess is the additional width of a computed enclosure.
@@ -264,17 +303,14 @@ class is precisely
                                                   X
                Rr =           pjℓ δcjℓ : pjℓ ≥ 0,    pjℓ = 1, cjℓ ∈ Ij .
                                                                       
-                       j=1 ℓ=1                    j,ℓ
+                          j=1 ℓ=1                  j,ℓ
 
 The class includes zero weights and repeated nodes, with reference support contained
 in the union of the cores. Competitors in (4) remain unrestricted positive measures
 on J. For 0 < sj ≤ 2K, define
-(5)            Ts = {f ∈ C(J) : ∥f ∥∞ ≤ 1, ∥f ∥C sj (Vj ) ≤ 1 for all j}.
+(5)              Ts = {f ∈ C(J) : ∥f ∥∞ ≤ 1, ∥f ∥C sj (Vj ) ≤ 1 for all j}.
 Integer norms bound all derivatives through the indicated order. For s = k + γ,
 0 < γ < 1, they also bound the γ-Hölder seminorm of the kth derivative. Only
-6                                   HAOTIAN ZHONG
-
-
 continuity is required between the pads. The analytical class Ts includes all such
 functions. Algorithmic assertions use Tseff , whose members are supplied with
 certified rational-point evaluations and a computable modulus of continuity. The
@@ -283,6 +319,9 @@ in Theorem 4.2 when a class-tuned cost is asserted. Smooth rational construction
 (and normalized effective bumps) give the same lower orders in Tseff . The acquisition
 criterion charges observation effort; target evaluation and arithmetic are separate
 computational resources.
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                            7
+
+
    Constants may depend on K, the fixed cores and pads, target orders, and a fixed
 distinct-frequency design. They are independent of the noise scale, requested width,
 individual atom masses, within-core distances, and reference nuisance coordinates.
@@ -307,52 +346,48 @@ everywhere. Proposition 3.2 gives the exact response difference of the pair and
 locates its unique maximizing frequency, which is the quantity certified in Section 7.
 We begin with the derivative bound.
 Lemma 3.1 (Uniform smoothing). For every integer d ≥ 1,
-                                            d!        dd/2
-(6)                 sup |∂xd kω (x)| =          d
-                                                                ≤ d!.
-                    ω>0                  (2t(x)) (d + 1)(d+1)/2
-
+                                            d!         dd/2
+(6)                 sup |∂xd kω (x)| =                           ≤ d!.
+                    ω>0                  (2t(x))d (d + 1)(d+1)/2
 Proof. Differentiation gives d!(ω/2)d /(1+ω 2 t2 )(d+1)/2 . With z = ωt, the logarithmic
                                                              2
        √ of the frequency factor is d/z − (d + 1)z/(1 + z ), which changes sign only
 derivative
 at z = d. Substitute this maximum and use 2t ≥ 1.                                     □
-
     For r ≥ 1, choose c ∈ R, h > 0 with xℓ = c + (ℓ − r)h ∈ J, 0 ≤ ℓ ≤ 2r, and put
                           X 2r                             X 2r
-(7)       µ0 = 2−(2r−1)             δ xℓ ,   µ1 = 2−(2r−1)             δxℓ .
+                 −(2r−1)                            −(2r−1)
+(7)       µ0 = 2                    δ xℓ ,   µ1 = 2                    δxℓ .
                                  ℓ                                  ℓ
-                          0≤ℓ≤2r                               0≤ℓ≤2r
-                           ℓ odd                                ℓ even
-
+                           0≤ℓ≤2r                                  0≤ℓ≤2r
+                            ℓ odd                                   ℓ even
 Both measures are probabilities; they have r and r + 1 atoms, respectively, and
 identical moments through degree 2r − 1.
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                          7
-
-
 Proposition 3.2 (Exact response difference). For identical nuisance coordinates
 and tℓ = t(xℓ ),
-                          (2r)!(iωh/2)2r                                  (2r)! 2r
-(8)       ∆Z(ω) =           Q2r              ,            ∥∆Z∥∞,(0,∞) ≤         h .
-                       22r−1 ℓ=0 (1 + iωtℓ )                              22r−1
-
+                          (2r)!(iωh/2)2r                                    (2r)! 2r
+(8)       ∆Z(ω) =           Q2r              ,      ∥∆Z∥∞,(0,∞) ≤                 h .
+                       22r−1 ℓ=0 (1 + iωtℓ )                                22r−1
 Its squared modulus has a unique positive maximizer v∗ = ω∗2 , characterized by
                        2r
-                       X       t2ℓ v∗                  2r          2r
-(9)                                     = 2r,              ≤ v∗ ≤ 2 .
-                             1 + t2ℓ v∗              t2max        tmin
+                       X       t2ℓ v∗             2r               2r
+(9)                                     = 2r,            ≤ v∗ ≤         .
+                             1 + t2ℓ v∗          t2max            t2min
                        ℓ=0
                        √
 For fixed r, c, ω∗ →       2r/t(c) as h ↓ 0.
+8                                            HAOTIAN ZHONG
+
+
 Proof. The elementary identity
-                               n
-                                 (−1)ℓ n
-                                               
-                               X
-                                           ℓ            n!bn
-                                                   = Qn
-                                     a + ℓb           ℓ=0 (a + ℓb)
-                               ℓ=0
+                                      n
+                                        (−1)ℓ n
+                                                     
+                                      X
+                                                 ℓ            n!bn
+                                                         = Qn
+                                            a + ℓb          ℓ=0 (a + ℓb)
+                                      ℓ=0
 
 follows by multiplication by the common denominator. Apply it with n = 2r,
 a = 1 + iωt0 , b = iωh/2. The uniform bound follows by expressing the forward
@@ -379,7 +414,7 @@ at ωh = π. Increasing Fourier bandwidth can therefore expose this pair at orde
 one. The comparison isolates uniform smoothing (6) as the mechanism behind the
 RC absolute-error saturation result.
 
-             4. Local moduli and full-frequency saturation
+                 4. Local moduli and full-frequency saturation
    This section proves the matching upper bounds and combines them with the
 pairs of Section 3. The upper bound rests on a finite design of K + 2 frequencies
 that reproduces every polynomial of degree 2K exactly while annihilating the two
@@ -389,16 +424,14 @@ Theorem 4.3 states the saturation result, Proposition 4.4 isolates the two prope
 of the kernel that were used, Corollary 4.5 treats a global smoothness class, and
 Proposition 4.6 shows that K + 2 frequencies are also exactly the minimum for
 noiseless identification.
-8                                              HAOTIAN ZHONG
-
 
 4.1. A finite design reproduces the required moments. Fix m = K + 2
 distinct positive frequencies. Set
                m
-               Y                                  DΩ (t(x))
-    DΩ (t) =         (1 + ωi2 t2 ),    ρ(x) =                ,    dµ = ρ dν,       u = ρϕ,   G = ρf.
+               Y                                DΩ (t(x))
+    DΩ (t) =         (1 + ωi2 t2 ),   ρ(x) =               ,      dµ = ρ dν,   u = ρϕ,   G = ρf.
                i=1
-                                                 DΩ (1)t(x)2
+                                               DΩ (1)t(x)2
 
 Lemma 4.1 (Nuisance-annihilating reproduction). There is a fixed linear map
 λ : P2K → R2m such that
@@ -406,19 +439,23 @@ Lemma 4.1 (Nuisance-annihilating reproduction). There is a fixed linear map
                                                                 BΩ λ(p) = 0.
 The positive weight and its reciprocal have bounded derivatives of every fixed order
 on J.
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                                9
+
+
 Proof. After multiplication by DΩ , the 2m real observation numerators have degree
 at most 2m − 1 and are linearly independent. Evaluation at t = ±i/ωi isolates
 each real/imaginary pair. For their linear combination P (t), annihilation of the two
 nuisance columns is exactly P (0) = P ′ (0) = 0. Choose P (t) = DΩ (1)t2 p(2t − 2). Its
 degree is at most 2K + 2 ≤ 2m − 1, so it has a representation in that basis. Division
 by DΩ (1)t2 gives (10). Positivity and smoothness follow from t ∈ [1/2, 3/2].        □
+
 4.2. Local target regularity. Throughout, the baseline prediction distance be-
 tween (µ, θ) and (µ∗ , θ∗ ) is the maximum norm ∥(AΩ µ + BΩ θ) − (AΩ µ∗ + BΩ θ∗ )∥∞
 of the difference of their real observation vectors at the fixed baseline design of
 K + 2 frequencies.
 Theorem 4.2 (A uniform local functional modulus). Let µ∗ ∈ Rr and θ∗ ≥ 0. If
 (µ, θ) ∈ Θ+ has baseline prediction distance at most v > 0 from (µ∗ , θ∗ ), then
-(11)                          |Ff (µ) − Ff (µ∗ )| ≤ C0 Ψ(v),            f ∈ Ts .
+(11)                  |Ff (µ) − Ff (µ∗ )| ≤ C0 Ψ(v),           f ∈ Ts .
 The constant is uniform over reference masses and within-core separations. It applies
 to all v > 0 after enlargement of a fixed constant.
 Proof. The weighted reference ν∗ = ρ−1 µ∗ has uniformly bounded positive mass.
@@ -428,10 +465,10 @@ From (10),
 
 List the reference nodes, adding or repeating nodes in the same cores to reach the
 stipulated counts. Define
-                                rj
-                                Y                           Y
-                 Wj (x) =             (x − cjℓ )2 ,   W =        Wj ,   Vjpol = W/Wj .
-                                ℓ=1                         j
+                         rj
+                         Y                          Y
+              Wj (x) =        (x − cjℓ )2 ,   W =       Wj ,   Vjpol = W/Wj .
+                         ℓ=1                        j
 
 The coefficients are uniformly bounded, W ≥ 0, and W vanishes on the reference
 support. Hence
@@ -443,19 +480,19 @@ disjoint supports. Write G = G0 + j ζj G. Wherever G0 is nonzero, all reference
                                                 R
 nodes are at a fixed distance. Thus |G0 | ≤ CW , G0 dν∗ = 0, and its contribution
 is at most Cv.
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                            9
-
-
    For a C 2rj component g supported in the jth padded region, define h = g/Vjpol
 on that support and extend by zero near remote nodes. All remote factors are
 bounded away from zero there, so ∥h∥C 2rj ≤ C∥g∥C 2rj . Let Hj h interpolate at the
 local nodes with multiplicity two and put Pj = Vjpol Hj h. The confluent Hermite
 remainder and Newton coefficients give
-(14)     deg Pj ≤ 2K − 1,      |g − Pj | ≤ C∥g∥C 2rj W,    ∥Pj ∥coeff,1 ≤ C∥g∥C 2rj .
+(14)     deg Pj ≤ 2K − 1,        |g − Pj | ≤ C∥g∥C 2rj W,      ∥Pj ∥coeff,1 ≤ C∥g∥C 2rj .
 Indeed, a divided difference of order ℓ is bounded by ∥h(ℓ) ∥∞ /ℓ!, and a Newton
 product has coefficient norm at most 2ℓ . Only remote root distances occur in
 divisions. These classical confluent estimates [6] allow local nodes to coincide.
 Equation (12) and the integrated remainder bound the contribution by Cv∥g∥C 2rj .
+10                                  HAOTIAN ZHONG
+
+
     If sj ≥ 2rj , apply this directly. If sj < 2rj , smooth g = ζj G on a scale a inside a
 slightly larger fixed pad. One obtains
 (15)                ∥g − ga ∥∞ ≤ Casj ,       ∥ga ∥C 2rj ≤ Casj −2rj .
@@ -478,7 +515,7 @@ with µ∗ ∈ Rr and supω>0 ∥e(ω)∥□ ≤ (1 − κ)ε. Define F∞ (y, �
 D∞ (ε) and DΩ (ε) be the suprema of their functional diameters over these references,
 data, and f ∈ Ts .
 Theorem 4.3 (Frequency saturation). For all sufficiently small ε > 0,
-(16)                     cΨ(ε) ≤ D∞ (ε) ≤ DΩ (ε) ≤ CΨ(ε).
+(16)                      cΨ(ε) ≤ D∞ (ε) ≤ DΩ (ε) ≤ CΨ(ε).
 The same lower order limits any target-aware adaptive querying rule that encloses
 all positive measures consistent with its queried absolute-error boxes, irrespective of
 the number of frequencies it queries.
@@ -490,9 +527,6 @@ of the cores. In each core with sj < 2rj , use its mass times the odd pair in (7
 hj = bj ε1/(2rj ) . Replace these components by the corresponding even measures to
 form a positive alternative. Choose the fixed bj > 0 small enough that (8) bounds
 the total response change by κε at every frequency. Both spectra belong to the same
-10                                 HAOTIAN ZHONG
-
-
 original all-frequency box centered at the reference. Nonnegative bumps supported
                                                                       s
 at extreme even nodes, of widths less than hj /2 and amplitudes cj hj j , have disjoint
@@ -505,25 +539,26 @@ of these lower bounds is comparable to their sum for fixed core count.
    For adaptive querying, return the reference response at every queried frequency.
 Both spectra remain consistent with the transcript. Conditional on any policy
 random seed, subsequent actions are identical under the two interpretations. An
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                         11
+
+
 interval that covers every consistent positive spectrum must include both target
 values. This proves the stated lower order without an assumption about how queries
-are selected.                                                                        □
-
+are selected.                                                                   □
    Equation (16) compares worst-case orders over the class under a fixed absolute
 error floor. Frequency selection can improve constants and individual information
 sets; Section 7 quantifies this effect. Independent repetitions with decreasing mean
 variance form the acquisition experiment in Section 6. The full-frequency lower pair
 retains identical resistance and inductance.
-
 4.4. Operator conditions and a standard unpartitioned class.
 Proposition 4.4 (Sufficient operator  conditions). Consider real channels κa , in-
 dexed by a ∈ A, with observations κa dµ + bTa θ, θ ≥ 0. Suppose every κa ∈ C 2K (J)
                                  R
 
 and
-       L0 := sup ∥κa ∥∞ < ∞,        L2r := sup ∥κ(2r)
-                                                 a ∥∞ < ∞        (1 ≤ r ≤ K).
-               a                             a
+       L0 := sup ∥κa ∥∞ < ∞,         L2r := sup ∥κ(2r)
+                                                  a ∥∞ < ∞         (1 ≤ r ≤ K).
+               a                              a
 
 Suppose a fixed finite design, with a positive C 2K weight having a C 2K reciprocal,
 has the reproduction map (10). Then the local modulus and saturation conclusions
@@ -534,24 +569,18 @@ weight regularity. For the lower bound the binomial pair in a block of size r sa
                             Z
                       sup     κa d(µ1 − µ0 ) ≤ 2−(2r−1) L2r h2r
                         a
-
 by the iterated-integral formula for a forward difference. The same normalized
 bumps produce the hsj target differences. Bounded L0 permits the mass-addition
 floor; nuisance coordinates are kept equal. The proof of Theorem 4.3 now applies
 unchanged.                                                                    □
-
    RC channels satisfy both conditions by Lemmas 3.1 and 4.1. Numerical completion
 additionally uses the rational-computability and uniqueness properties established
 below.
-Corollary 4.5 (Global smoothness class). Let Rglob
-                                               K   be all probability measures
+Corollary 4.5 (Global smoothness class). Let RglobK   be all probability measures
 on J with at most K atoms, including atoms at the endpoints, and let Bs be the
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                           11
-
-
 unit ball of C s (J) with the same integer/Hölder convention, s > 0 fixed. With
 γ = min{1, s/(2K)}, the corresponding RC diameters satisfy
-(17)                          D∞,K,s (ε) ≍ DΩ,K,s (ε) ≍ εγ .
+(17)                         D∞,K,s (ε) ≍ DΩ,K,s (ε) ≍ εγ .
 Reference atoms range over the entire interval, including its endpoints; competitors
 range over all of Θ+ .
                                                                QK
@@ -561,10 +590,12 @@ interpolation of G = ρf gives an O(v) integral error without inverse separation
 s < 2K, extend G a fixed distance past both endpoints and smooth as in (15). A
 bounded extension is explicit: for u > 0 small set
                      2K+1
-                      X                        2K+1
-                                                X
-       EG(1 + u) =          aℓ G(1 − ℓu),             aℓ (−ℓ)q = 1   (0 ≤ q ≤ 2K),
-                      ℓ=1                       ℓ=1
+                      X                      2K+1
+                                              X
+       EG(1 + u) =          aℓ G(1 − ℓu),           aℓ (−ℓ)q = 1   (0 ≤ q ≤ 2K),
+                      ℓ=1                     ℓ=1
+12                                 HAOTIAN ZHONG
+
 
 with the analogous left formula and a fixed cutoff. The Vandermonde system is
 nonsingular; existing derivatives match at the endpoints, and the Hölder norm
@@ -576,7 +607,6 @@ entire frequency axis.                                                       □
    Equation (17) gives the sharp order for a standard global smoothness class. The
 clustered result refines it by resolving target regularity separately near each reference
 cluster.
-
 4.5. A sharp count of distinct frequencies. Positive-measure uniqueness has
 Chebyshev-system antecedents [8, Proposition 8]. Here the two unknown calibration
 coordinates determine the frequency count.
@@ -600,10 +630,8 @@ convergent data, one positive real kernel bounds mass and R, and its negative-
 imaginary row bounds L; weak-star compactness supplies a limit representation.
 Independence of the 2m rational kernels makes the cone full-dimensional. If y∗ were
 on its boundary, a nonzero supporting vector z would satisfy
-                            z T ϕ ≥ 0,    T
-                                         BΩ z ≥ 0,    z T y∗ = 0.
-12                                  HAOTIAN ZHONG
-
+                          z T ϕ ≥ 0,    T
+                                       BΩ z ≥ 0,   z T y∗ = 0.
                                                                              T
 Positive masses and R∗ , L∗ > 0 give zeros at the K reference nodes and BΩ     z = 0.
                                              T
@@ -618,9 +646,11 @@ mass. A normalized ℓ (x − cℓ )2 distinguishes it from the reference.
 sufficiency for m ≥ K + 1. For m ≤ K, apply the same cone argument without B:
 K double interior zeros exceed numerator degree 2m − 1. The interior construction
 proves necessity.                                                                  □
-
-   The threshold counts distinct complex frequencies over Θ+ , with free competitor
+  The threshold counts distinct complex frequencies over Θ+ , with free competitor
 mass and atom count. Repeating the same exact measurements preserves the
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                           13
+
+
 below-threshold ambiguity. The extra frequency accounts for the two calibration-
 annihilation conditions.
 
@@ -654,8 +684,6 @@ interval [Lf , Uf ].
                               Z
 (18)                   sup      (G − q) dν ≤ E,      E ≤ τ /16.
                       FΩ (y,δ)
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                        13
-
 
 Effective continuous targets supply such approximations: Bernstein polynomials to-
 gether with an effective modulus give uniformly convergent approximations, rational
@@ -665,10 +693,13 @@ and E = 0 directly. This implements polynomial and positive-denominator rational
 verification within the semi-infinite optimization framework [24].
 Proposition 5.1 (Continuous endpoint verification).   R For ζ ∈ {−1, 1}, suppose a
 finite positive pair is raw feasible with value Pζ = ζ q dνG , and
-(19)                  γ T u(x) ≥ ζq(x)    (x ∈ J),      B T γ ≥ 0.
+(19)                   γ T u(x) ≥ ζq(x)   (x ∈ J),      B T γ ≥ 0.
 Then Uζf ∈ [Pζ − E, Dζ + E], where Dζ = Jy (γ). The endpoint enclosure width is
 (20)                             gζ = (Dζ − Pζ ) + 2E.
 Additional certified coefficient errors are included in E.
+14                                         HAOTIAN ZHONG
+
+
 Proof. Integrating (19) R against any positive feasible measure and using θ ≥ 0 bounds
 its proxy value by γ T ( u dν +Bθ) ≤ Jy (γ). The primal witness supplies the opposite
 bound. The proxy error holds on exactly the same original feasible set, so taking
@@ -677,26 +708,28 @@ Theorem 5.2 (Finite numerical range computation). Suppose the data, design,
 model, and τ > 0 are rational, the target is effective as above, and a finite rational
 raw-feasible anchor (νa , θa ) has strict margin sa > 0. There is a finite exact-
 arithmetic refinement algorithm producing
-(21)            [Lf , Uf ] ⊆ Iy (f ),    0 ≤ |Iy (f )| − (Uf − Lf ) ≤ τ.
+(21)               [Lf , Uf ] ⊆ Iy (f ),      0 ≤ |Iy (f )| − (Uf − Lf ) ≤ τ.
 The guarantee includes colliding atoms, vanishing masses, and zero nuisance coordi-
 nates. Its conclusion is finite exact-arithmetic termination.
 Proof. Freeze a proxy satisfying (18). At round ℓ = 1, 2, . . ., the grid contains the
 anchor, the endpoints, and a uniform dyadic grid of maximum length 21−ℓ . Obtain
 rational positive primal and node-dual witnesses with exact original feasibility and
-(22)                0 ≤ ∆node := Jy (γ) − Pζ ≤ η,        η = τ /32.
+(22)                   0 ≤ ∆node := Jy (γ) − Pζ ≤ η,                η = τ /32.
 An exact optimal LP pair gives ∆node = 0 and is the complete fallback using a
 finite simplex rule [1]. A verified nonoptimal pair is also sufficient; approximate
 finite subproblems have general precedents [25]. Acceptance is based on the exact
 feasibility and
               R gap checks [14].
    Let ra = u dνa + Bθa − y. Node feasibility on the anchor and B T γ ≥ 0 give
-                Z                          Z
-      Jy (γ) − ζ q dνa = δ T |γ| − γ T ra + (γ T u − ζq) dνa + γ T Bθa ≥ sa ∥γ∥1 .
+                Z                        Z
+      Jy (γ) − ζ q dνa = δ |γ| − γ ra + (γ T u − ζq) dνa + γ T Bθa ≥ sa ∥γ∥1 .
+                           T        T
+
 
 Since Jy (γ) ≤ Pζ + η, it follows that
-                         2M ∥q∥∞ + η
-          ∥γ∥1 ≤ Γη :=               ,        K0 = Γη max ∥u′′i ∥∞ + ∥q ′′ ∥∞ .
-                              sa                         i
+                            2M ∥q∥∞ + η
+          ∥γ∥1 ≤ Γη :=                  ,             K0 = Γη max ∥u′′i ∥∞ + ∥q ′′ ∥∞ .
+                                 sa                                 i
 
 For r = γ u − ζq, the chord remainder gives r ≥ −K0 h2 /8. Put a = τ /(32M ) and
           T
@@ -706,7 +739,26 @@ e = γ + aλ0 . Eventually K0 h2 /8 ≤ a/2, so the corrected residual is unifor
 least a/2.
    Every unsuccessful verification attempt is finite. At round ℓ permit at most
 ℓ dyadic subdivision levels per polynomial check. Accept only if every leaf has
-14                                       HAOTIAN ZHONG
+nonnegative Bernstein coefficients; otherwise advance the round, whether a negative
+value
+    P was found or the check is unresolved. For rational targets the numerator is
+Ff i γ ei Pi − ζDAf . Its degree is fixed and its coefficients are uniformly bounded
+by Γη . Once the residual shift dominates, its lower bound is a fixed positive number.
+On
+P a cell(j)of length d, Bernstein coefficients differ from its endpoint value by at most
+   j≥1 ∥p   ∥∞ dj /j!. Thus one finite depth works uniformly for all later node duals.
+Both the grid and permitted depth eventually reach their sufficient values.
+   Finally B T γe ≥ 0 and subadditivity give Dζ ≤ Pζ + η + aM . Therefore
+(23)    gζ ≤     η +              aM
+                                  |{z}            +           2E
+                                                             |{z}            ≤ 3τ /16 < τ /2.
+                |{z}
+               finite LP   continuum correction       target approximation
+
+Combining the two endpoints as Iy = [−D− − E, D+ + E] proves (21). Each round
+now consists only of finite operations. Constants still depend on 1/sa , coefficient
+size, and target complexity.                                                      □
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                        15
 
 
 Algorithm 1 Certified continuous-range refinement
@@ -734,26 +786,7 @@ Ensure: An enclosure Iy (f ) of [Lf , Uf ] with numerical excess at most τ .
 16: end for
 
 
-nonnegative Bernstein coefficients; otherwise advance the round, whether a negative
-value
-   P was found or the check is unresolved. For rational targets the numerator is
-Ff i γ ei Pi − ζDAf . Its degree is fixed and its coefficients are uniformly bounded
-by Γη . Once the residual shift dominates, its lower bound is a fixed positive number.
-On
-P a cell(j)of length d, Bernstein coefficients differ from its endpoint value by at most
-                 j
-  j≥1 ∥p ∥∞ d /j!. Thus one finite depth works uniformly for all later node duals.
-Both the grid and permitted depth eventually reach their sufficient values.
-   Finally B T γe ≥ 0 and subadditivity give Dζ ≤ Pζ + η + aM . Therefore
-(23)    gζ ≤     η +              aM
-                                  |{z}            +           2E
-                                                             |{z}            ≤ 3τ /16 < τ /2.
-                |{z}
-               finite LP   continuum correction       target approximation
 
-Combining the two endpoints as Iy = [−D− − E, D+ + E] proves (21). Each round
-now consists only of finite operations. Constants still depend on 1/sa , coefficient
-size, and target complexity.                                                      □
    The finite verification budget guarantees progress between grid refinements. For
 (x − 1/3)2 on [0, 1], the middle Bernstein coefficient of the cell containing 1/3 is
 negative at every dyadic depth. The positive residual shift makes certification
@@ -761,22 +794,27 @@ succeed at a finite depth, while the budget ensures that each earlier attempt re
    The construction couples finite-accuracy optimization [25] and continuous refine-
 ment [10] to an exact range certificate. Section 6 obtains its anchor through a finite
 test at each random sampling stage.
+
 Corollary 5.3 (A posteriori absolute–relative excess). For two certified endpoints
 from Proposition 5.1, with common target error E, define
-               W = max{0, P+ + P− − 2E},                    W = D+ + D− + 2E.
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                               15
 
+              W = max{0, P+ + P− − 2E},           W = D+ + D− + 2E.
 
 Then W ≤ Wf ≤ W = |Iy (f )|. Given rational τabs > 0 and ηrel ≥ 0, successively
 refine the absolute tolerance until
-(24)                             W − W ≤ τabs + ηrel W .
+
+(24)                           W − W ≤ τabs + ηrel W .
+
 Under Theorem 5.2’s assumptions this terminates, and |Iy (f )| ≤ (1 + ηrel )Wf + τabs .
 If Wf > 0 and ηrel > 0, it also terminates with τabs = 0.
+
 Proof. The primal witnesses give P+ − E ≤ Uf and P− − E ≤ −Lf ; dual bounds
 give the opposite inequalities. Moreover W − W ≤ g+ + g− . Run Theorem 5.2
 with tolerances 2−n . This gap tends to zero and W → Wf , proving both stopping
 assertions. The accepted test and W ≤ Wf give the claimed excess. For zero-width
 data, the positive absolute tolerance ensures a successful stopping test.     □
+16                                    HAOTIAN ZHONG
+
 
   The scale is supplied by certified feasible witnesses. The resulting relative
 guarantee controls the numerical enlargement of the data-induced information
@@ -797,7 +835,7 @@ terminates at every finite positive spectrum (Proposition 6.3).
 policy chooses finite ωk > 0 and effort ak > 0 measurably from the fixed target,
 past observations, and optional independent randomization, then receives
                                          σ
-(25)     Yk = (ℜZϑ (ωk ), −ℑZϑ (ωk )) + √ ξk ,    ξk | Fk−1 ∼ N (0, I2 ).
+(25)     Yk = (ℜZϑ (ωk ), −ℑZϑ (ωk )) + √ ξk ,                  ξk | Fk−1 ∼ N (0, I2 ).
                                          ak
 Fresh errors are independent. For a computational realization, w, α and the noise
 level are effectively supplied with certified bounds. Known σ > 0 is fixed; variance
@@ -805,32 +843,34 @@ level are effectively supplied with certified bounds. Known σ > 0 is fixed; var
 σ 2 /a and cost a define the precision–effort model. Define CT = k=1 ak . For fixed
 w > 0, 0 < α ≤ 1/4, admissible procedures obey, for every ϑ ∈ Θ+ and every
 specified effective target,
-(26)   Pϑ (T < ∞) = 1,          |IT (f )| ≤ w   a.s.,     Pϑ {Ff (µ) ∈ IT (f )} ≥ 1 − α.
+(26)   Pϑ (T < ∞) = 1,          |IT (f )| ≤ w     a.s.,     Pϑ {Ff (µ) ∈ IT (f )} ≥ 1 − α.
 Define the class-tuned acquisition criterion explicitly by
-                 C ∗ (w, α) =          inf              sup        Eπµ,R,L CT .
+                 C ∗ (w, α) =          inf                sup      Eπµ,R,L CT .
                                 π,I satisfying (26) µ∈Rr , R,L≥0
                                                       f ∈Tseff
 
 A procedure is tuned to the specified reference and target class and certified con-
 servative class constants. Its decisions use the supplied target and observed data.
 Coverage is required over the entire class in (26).
-16                                  HAOTIAN ZHONG
-
 
 Lemma 6.1 (Pairwise stopped-cost bound). For any two spectra with identical
 nuisance coordinates, let ∆f = |Ff (µ1 ) − Ff (µ0 )| and D01 = ∥Z1 − Z0 ∥∞,(0,∞) . If
 ∆f > w, then every admissible procedure satisfies
-                   2σ 2                                                     1−α
-(27)     E0 CT ≥     2 kl(1 − α, α),          kl(1 − α, α) = (1 − 2α) log       .
-                   D01                                                       α
+                   2σ 2                                                           1−α
+(27)     E0 CT ≥     2 kl(1 − α, α),            kl(1 − α, α) = (1 − 2α) log           .
+                   D01                                                             α
 When D01 = 0 < ∆f , finite expected effort is impossible.
+
 Proof. There is nothing to prove if E0 CT = ∞. Include the policy seed and
 chosen actions in the stopped transcript. Conditional action kernels are the same
 functions of the history under both hypotheses, so they cancel from the likelihood
 ratio. The remaining conditional Gaussian divergence is ak |∆Z(ωk )|2 /(2σ 2 ). The
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                         17
+
+
 centered log-likelihood martingale has summed expected conditional variance at
-        2
-most D01  E0 CT /σ 2 ; truncation and L2 convergence therefore give
+       2
+most D01 E0 CT /σ 2 ; truncation and L2 convergence therefore give
                                           T                    2
                                    1      X                  D01
 (28)           KL(P0T , P1T ) =        E0   ak |∆Z(ω k )|2
@@ -843,10 +883,8 @@ and Appendix A], specialized to our observation law; see also [4]. Both laws hav
 almost-surely finite transcripts. For A = {Ff (µ0 ) ∈ IT }, (26) gives P0 (A) ≥ 1 − α.
 Since an interval of width at most w cannot contain both target values, P1 (A) ≤ α.
 Binary data processing gives KL(P0T , P1T ) ≥ kl(1 − α, α). Combine with (28). □
-
 Theorem 6.2 (Matching acquisition cost). For fixed σ > 0, all sufficiently small
 w > 0, and every 0 < α ≤ 1/4,
-
 (29)           cσ 2 w−2/β log(1/α) ≤ C ∗ (w, α) ≤ Cσ 2 w−2/β log(1/α).
 The lower class permits adaptive frequency, precision, and stopping. The upper
 bound is attained by unit-effort repetitions on a predetermined expanding frequency
@@ -860,7 +898,6 @@ Apply Lemma 6.1. If β = 1, add 2wδc to a probability reference and take f = 1;
 ∆f = 2w and D01 ≤ 2w. Finally kl(1 − α, α) ≍ log(1/α) uniformly for α ≤ 1/4.
 The alternatives belong to the full coverage class, including its larger masses and
 atom counts. The upper bound is proved below.                                      □
-
 6.2. Predeclared boxes and finite numerical stages. Choose a rational baseline
 of m = K + 2 distinct positive frequencies including 1. Append a fixed enumeration
 of the dyadic rationals in (1, 2), skipping duplicates. Stage j uses the baseline and
@@ -869,9 +906,6 @@ the first j − 1 new frequencies, so mj = m + j − 1. For a dyadic b > 0 defin
                         −(j−1)            −j           2σ 2     4mj
 (30)             bj = b2       , αj = α2 , nj =             log       .
                                                         b2j      αj
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                          17
-
-
 Take a fresh independent batch of nj unit-effort readings per frequency. Round each
 mean to a rational yej,i with certified error at most bj . Use the box
 (31)               Fj = {ϑ ∈ Θ+ : ∥AΩj µ + Bj θ − yej ∥∞ ≤ 3bj }.
@@ -884,6 +918,9 @@ A Gaussian tail and a union bound over 2mj real channels give
 On Gj , the truth has margin at least bj in (31). Consequently, with probability at
 least 1 − α it is in every stage box. This single event protects any data-selected stage
 and every target range computed over its box. This is simultaneous unconditional
+18                                 HAOTIAN ZHONG
+
+
 coverage across stages and target queries. The construction applies classical error
 spending [13] to the prescribed-width task.
    Each stage must be finite even if Gj fails. Let yR be the first real coordinate and
@@ -920,9 +957,6 @@ The guard preserves the predeclared statistical radius and the original model.
 the verified outer width is at most w. Otherwise proceed to the next stage. The
 baseline mass-reproduction vector remains valid when observations are appended.
 If a different positive weight is used computationally, replace G by ρf and verify
-18                                  HAOTIAN ZHONG
-
-
 that the physical target f has not changed. The quadratic grid supplies the
 finite completeness fallback; smaller proposal grids can accelerate anchor discovery.
 Acquisition effort is counted separately from the arithmetic work of certification.
@@ -935,6 +969,9 @@ terminates. The simultaneous event above supplies coverage of any returned inter
 and the width check is deterministic.
    For fixed truth, the exact widths of (31) tend to zero uniformly over centers
 within 2bj of the true response. To prove this, the first real row bounds candidate
+               FREQUENCY SATURATION AND CERTIFIED COMPUTATION                          19
+
+
 mass and R uniformly for sufficiently late j. The first negative imaginary row bounds
 L, because the integral kernel is at most 1/2 per unit mass and its nuisance term is
 −L. Candidate measures and nuisance values therefore lie in a common weak-star
@@ -957,34 +994,41 @@ the probability of continuing is at most αj ≤ 1/8. Stage cost grows at most a
 constant times 4j j 2 , so its expected tail is summable. The finite initial part proves
 finite expected acquisition count. The completion index J∗ depends on the fixed
 spectrum, target, and requested width.                                                  □
+
    The dense completion sequence resolves the residual functional ambiguity of
 general positive measures at finite designs while preserving the local acquisition
 order.
+
 6.4. The local upper cost. Choose b > 0 dyadic, using only the fixed class and a
 conservative constant in (11), so that
 (34)                 5b ≤ 1,      2C0 Ψ(5b) ≤ w/2,        b ≍ w1/β .
 At a reference in the class, on any Gj a candidate’s baseline response differs from the
 reference by at most 5bj ≤ 5b. The modulus and numerical budget force stopping at
 that stage. If JT is the terminal stage and q = α/2 ≤ 1/8, independence of batches
-yields                                     Y
+yields
+                                           Y
                               P(JT ≥ j) ≤     αi ≤ q j−1 .
                                             i<j
-                 FREQUENCY SATURATION AND CERTIFIED COMPUTATION                              19
-
 
 Write A = 2σ 2 /b2 and H = log(4m/α). Since mj ≤ mj and log j + j log 2 ≤ 2j,
-                              mj nj ≤ mj + mA(H + 2)j 2 4j−1 .
+                          mj nj ≤ mj + mA(H + 2)j 2 4j−1 .
 Consequently
                                     m                      1 + 4q
-(35)                      ECT ≤           + mA(H + 2)
-                                 (1 − q)2                (1 − 4q)3
-                                 64m 24mσ 2                     
-                              ≤       +           log(4m/α) + 2 .
-                                  49        b2
+(35)                   ECT ≤             2
+                                           + mA(H + 2)
+                                 (1 − q)                 (1 − 4q)3
+                                                2
+                                 64m 24mσ                        
+                              ≤       +       2
+                                                  log(4m/α) + 2 .
+                                  49        b
 This proves the upper half of Theorem 6.2. Certified ceiling evaluations change only
 fixed constants. The initial scale is selected from the certified class modulus and
 the requested width, giving a matching bound for expected acquisition effort. Every
 positive initial scale preserves global validity and pointwise completion. Prespecifying
+20                                       HAOTIAN ZHONG
+
+
 w allows the initial batch to be tuned directly to the requested accuracy and yields
 the stated logarithmic dependence on 1/α.
    For the global class in Corollary 4.5, the same construction yields
@@ -1026,54 +1070,13 @@ the target f = −h4 /[2(h2 + x2 )], h = 1/8, has ∥f ∥C 2 ≤ 1. Exact bound
 Both nuisance coordinates equal (1/10, 1/100). These rational targets have uniform
 C 2 control; their complex poles approach the real axis with h. Figure 1 shows
 |∆Z(ω)| for the centered pairs with h = 1/8: the difference grows like ω 2r at low
-20                                           HAOTIAN ZHONG
-
-
-                 100
-
-
-                10−2
-
-
-                10−4
-                                                                                 r=1
-                10−6
-      |ΔZ(ω)|
-
-
-
-
-                                                                                 r=2
-                10−8
-                                                                                 r=3
-
-                10−10                                                            r=4
-
-
-                10−12
-
-
-                10−14
-                     10−2   10−1               100             101     102     103
-                                                           ω
-
-                                   r=1               r=2         r=3     r=4
-
-
-
-           Figure 1. Modulus of the exact response difference (8) for the
-           centered pairs with h = 1/8 and r = 1, . . . , 4. Markers show the
-           certified maximizers ω∗ of (9); dotted lines show the uniform bounds
-           (2r)! 21−2r h2r . The frequency axis is logarithmic over [10−2 , 103 ].
-
-
 frequency, decays like ω −1 at high frequency, and stays below the uniform bound of
 (8) throughout, so no frequency exposes the pair beyond the h2r scale.
    To compare frequency choices at equal total effort on the same pair, define
                                 X
 (37)                AΩ = m−1       |∆Z(ωi )|2 ,               2
                                                    eΩ = AΩ /D01 .
-                                         i
+                                     i
 
 Balanced allocation of effort C gives Gaussian information CAΩ /(2σ 2 ); an oracle
                                                                     2
@@ -1083,6 +1086,61 @@ calculation. This is the pair-informed benchmark for two-hypothesis discriminati
 Table 1 lists certified enclosures of eΩ for six pairs and two designs. For r = 3,
 h = 1/8, the baseline Ω0 = (1, . . . , 6) obtains over 35 times the information per unit
 effort of the high-frequency design 16Ω0 , while the pair-informed optimum gains
+                        FREQUENCY SATURATION AND CERTIFIED COMPUTATION                              21
+
+
+                 100
+
+
+                10−2
+
+
+                10−4
+                                                                                              r=1
+                10−6
+      |ΔZ(ω)|
+
+
+
+
+                                                                                              r=2
+                10−8
+                                                                                              r=3
+
+                10−10                                                                         r=4
+
+
+                10−12
+
+
+                10−14
+                     10−2           10−1             100             101         102        103
+                                                                 ω
+
+                                           r=1             r=2         r=3          r=4
+
+
+
+           Figure 1. Modulus of the exact response difference (8) for the
+           centered pairs with h = 1/8 and r = 1, . . . , 4. Markers show the
+           certified maximizers ω∗ of (9); dotted lines show the uniform bounds
+           (2r)! 21−2r h2r . The frequency axis is logarithmic over [10−2 , 103 ].
+
+            Table 1. Same-pair Gaussian information efficiency eΩ of (37)
+            at equal total effort, for the baseline design Ω0 = (1, . . . , 6) and
+            its scaled version 16Ω0 . Intervals are outward rounded. The pair-
+            informed oracle at ω∗ has e = 1; it knows both hypotheses and is
+            not a spectrum-recovery algorithm.
+
+                         r    h            Ω0 = (1, . . . , 6)               16Ω0
+                         2    1/8    [0.577089, 0.577090]            [0.011924, 0.011925]
+                         2   1/32    [0.574006, 0.574007]            [0.011701, 0.011702]
+                         3    1/8    [0.616696, 0.616697]            [0.017530, 0.017531]
+                         3   1/32    [0.611102, 0.611103]            [0.016847, 0.016848]
+                         4    1/8    [0.640815, 0.640816]            [0.023512, 0.023513]
+                         4   1/32    [0.633893, 0.633894]            [0.021956, 0.021957]
+
+
 less than a factor 1.622 over the baseline. Equation (8) also gives eΩ → eΩ,0 > 0
 for every fixed positive design as h → 0; the explicit limit and all exact ratios
 are archived. Equal exponents thus coexist with different information constants:
@@ -1093,94 +1151,81 @@ tive pairs check Proposition 4.6: K = 1, . . . , 4 with unknown calibration at m
 for three designs, and with known calibration at m = K for one design. All original
 channels agree exactly with zero error radius. Each pair has a normalized nonneg-
 ative polynomial target with zero reference value and positive alternative value;
+22                                 HAOTIAN ZHONG
+
+          Table 2. Certified lower bounds on the expected acquisition effort
+          E0 CT from Lemma 6.1 for the pair in (36), w = σ = 10−3 . Integer
+          displays are rounded downward. The interval must cover all positive
+          spectra, including the four-atom alternative.
+
+                  Coverage 1 − α    Certified lower bound for E0 CT
+                        90%                             > 32,246,594
+                        95%                             > 48,614,350
+                        99%                             > 82,611,848
+
+          Table 3. Two seeded stopping paths at requested width w =
+          0.05. Width and excess-budget displays are rounded upward. The
+          common acquisition counts at stages 1, 2, 3 are 868, 5823, 32409
+          cumulatively.
+
+          Reference      Stage   Outer width    Numerical excess     Decision
+          Two atoms        1     0.083913616          0.000619401 continue
+                           2     0.050468900          0.000510960 continue
+                           3     0.029519810          0.000517245 stop
+          Three atoms      1     0.093536235          0.000623884 continue
+                           2     0.055185479          0.000507675 continue
+                           3     0.034075027          0.000520947 stop
+
+
 one further distinct frequency separates it. These exact witnesses instantiate the
 necessity result with independently checked original-coordinate identities.
-              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                          21
-
-
-        Table 1. Same-pair Gaussian information efficiency eΩ of (37)
-        at equal total effort, for the baseline design Ω0 = (1, . . . , 6) and
-        its scaled version 16Ω0 . Intervals are outward rounded. The pair-
-        informed oracle at ω∗ has e = 1; it knows both hypotheses and is
-        not a spectrum-recovery algorithm.
-
-                r      h         Ω0 = (1, . . . , 6)          16Ω0
-                2     1/8    [0.577089, 0.577090]      [0.011924, 0.011925]
-                2    1/32    [0.574006, 0.574007]      [0.011701, 0.011702]
-                3     1/8    [0.616696, 0.616697]      [0.017530, 0.017531]
-                3    1/32    [0.611102, 0.611103]      [0.016847, 0.016848]
-                4     1/8    [0.640815, 0.640816]      [0.023512, 0.023513]
-                4    1/32    [0.633893, 0.633894]      [0.021956, 0.021957]
-
-        Table 2. Certified lower bounds on the expected acquisition effort
-        E0 CT from Lemma 6.1 for the pair in (36), w = σ = 10−3 . Integer
-        displays are rounded downward. The interval must cover all positive
-        spectra, including the four-atom alternative.
-
-                    Coverage 1 − α      Certified lower bound for E0 CT
-                           90%                              > 32,246,594
-                           95%                              > 48,614,350
-                           99%                              > 82,611,848
-
-
    For K = 1, frequencies (1, 2) and (µ∗ , R∗ , L∗ ) = (δ0 , 1/10, 1/100) give y =
 (3/5, 49/100, 3/10, 19/50). A different pair is
-         139009          38477            e = 1 − 767 , L     e= 1 + 1 .
-    µ
-    e=           δ−1/8 +         δ1/8 ,  R
-         288000          73984                  10 650250           100 2550
+          139009         38477            e = 1 − 767 ,          e= 1 + 1 .
+     µ
+     e=          δ−1/8 +       δ1/8 ,     R                      L
+          288000         73984                10 650250            100 2550
 Both nuisance values are positive. For f = x2 /2, the reference value is zero and
 the alternative value is 41730113/5326848000 > 0.00783392. The original four
 coordinates are identical; the added frequency 3 separates them. The alternative
 has the unrestricted positive mass permitted by Θ+ . Verification consists of exact
 zero-noise algebraic identities.
+
 7.3. Cost bounds and executed stopping paths. For (36) with w = σ = 10−3 ,
 Lemma 6.1 gives the expected-effort lower bounds of Table 2 at coverage 90%,
 95%, and 99%. Eighteen certificates check six pairs and three levels using rational
 logarithm enclosures. These values are certified analytical lower bounds on expected
 acquisition effort for any admissible procedure, adaptive or not.
-   The distinct stopping tests use f = ρ−1  0 (2 − x)
-                                                      −1
-                                                         , ρ0 = D(1,2,3,4) (t)/(1700t2 ),
+   The distinct stopping tests use f = ρ−1 0 (2 − x)
+                                                     −1
+                                                        , ρ0 = D(1,2,3,4) (t)/(1700t2 ),
        −3
 σ = 10 , α = w = 1/20, b = 1/4096, and numerical allowance w/4. References are
 equal masses at ±1/8 and the three-atom µ0 above. Fresh seeded Gaussian means
 are rounded to dyadic centers. Stages start at (1, 2, 3, 4) and add 3/2, 5/4; repeats
 per frequency are 217, 991, 4431. Predeclared radii are 3bj and risk allocations
 1/40, 1/80, 1/160.
-   All twelve endpoints are certified, and each weight change preserves the physical
-target exactly. The two seeded trajectories test the stopping and completion
-22                                  HAOTIAN ZHONG
-
-        Table 3. Two seeded stopping paths at requested width w =
-        0.05. Width and excess-budget displays are rounded upward. The
-        common acquisition counts at stages 1, 2, 3 are 868, 5823, 32409
-        cumulatively.
-
-         Reference       Stage   Outer width     Numerical excess   Decision
-         Two atoms        1        0.083913616       0.000619401 continue
-                          2        0.050468900       0.000510960 continue
-                          3        0.029519810       0.000517245 stop
-         Three atoms      1        0.093536235       0.000623884 continue
-                          2        0.055185479       0.000507675 continue
-                          3        0.034075027       0.000520947 stop
+              FREQUENCY SATURATION AND CERTIFIED COMPUTATION                       23
 
         Table 4. Sufficient guard-grid node counts on the six archived stage
         inputs: the quadratic guard (33) versus the first-order condition.
         Linear counts are calculated, not executed; all six quadratic grids
         produced exactly verified strict anchors.
 
-                           Two-atom data          Three-atom data
-                 Stage    Linear Quadratic        Linear Quadratic
-                     1    96,851           222 96,902            222
-                     2   193,617           313 193,716           313
-                     3   387,169           441 387,362           442
+                           Two-atom data         Three-atom data
+                Stage     Linear Quadratic       Linear Quadratic
+                   1      96,851          222 96,902             222
+                   2     193,617          313 193,716            313
+                   3     387,169          441 387,362            442
 
 
+   All twelve endpoints are certified, and each weight change preserves the physical
+target exactly. The two seeded trajectories test the stopping and completion
 interfaces at the chosen initial scale. The three-atom path exercises completion
 beyond the nominal two-atom performance class. Statistical coverage follows from
 the common-event proof in Section 6; these paths use the target and width stated
 above. Exact outputs and seeds are archived.
+
 7.4. Feasibility, relative excess, and verification scope. The six stage inputs
 produce strict anchors on quadratic guard grids of 222, 313, and 441 or 442 nodes,
 with margins above 0.49999999999bj . Table 4 compares these counts with the
@@ -1199,9 +1244,6 @@ arithmetic primitives, and commands accompany the data.
    The analysis determines the frequency information and the measurement effort
 required to compute calibrated relaxation functionals, and it supplies a finite method
 that computes them with certified numerical error. Exactly K +2 distinct frequencies
-               FREQUENCY SATURATION AND CERTIFIED COMPUTATION                               23
-
-
 give uniform noiseless identification of references with at most K atoms among
 arbitrary positive competitors when resistance and inductance are unknown; known
 calibration reduces the count to K + 1. At this threshold a fixed design attains
@@ -1213,6 +1255,9 @@ optimal expected acquisition effort for a prescribed terminal width and confiden
 accessible. Positive projection gives a strict-feasibility guard, verified primal–dual
 pairs separate finite optimization from continuum correction, and a finite refinement
 schedule returns both endpoints at any prescribed numerical excess. Certified
+24                                      HAOTIAN ZHONG
+
+
 width brackets additionally provide absolute–relative accuracy control from the data
 themselves, and the same calculation drives the sequential design.
    Three limitations indicate directions for further work. First, the noise level σ
@@ -1229,7 +1274,7 @@ certified range calculation to measured impedance data requires a rational error
 for the measurements; the predeclared boxes of Section 6 provide one for repeated
 Gaussian readings, but for instrument data this is a modeling step in its own right.
 
-                          Data and software availability
+                           Data and software availability
    The accompanying reproducibility archive contains the synthetic inputs, exact
 certificates, source code, table-generation scripts, and verification commands for the
 results in Section 7. The archived inputs are separated from the generating spectra,
@@ -1237,22 +1282,19 @@ and the checker routines reconstruct original-coordinate feasibility and continu
 dual bounds with exact arithmetic. Machine-readable receipts record the verified
 quantities and the corresponding file hashes.
 
-                                      Declarations
+                                         Declarations
   The author declares no conflicts of interest. Generative AI tools were used in
 developing and checking the mathematical arguments, in literature search, program-
 ming, and synthetic-data generation, and in drafting and revising the manuscript.
 The author verified all results and assumes full responsibility for the content.
 
-                                       References
+                                          References
  [1] R. G. Bland, New finite pivoting rules for the simplex method, Math. Oper. Res., 2 (1977),
      pp. 103–107. doi:10.1287/moor.2.2.103.
  [2] H. J. Brown and Y. Grabovsky, On feasibility of extrapolation of completely monotone
      functions, SIAM J. Math. Anal., 56 (2024), pp. 7713–7747. doi:10.1137/24M1652325.
  [3] T. T. Cai and M. G. Low, An adaptation theory for nonparametric confidence intervals, Ann.
      Statist., 32 (2004), pp. 1805–1840. doi:10.1214/009053604000000049.
-24                                      HAOTIAN ZHONG
-
-
  [4] R. M. Castro, Adaptive sensing performance lower bounds for sparse signal detection and
      support estimation, Bernoulli, 20 (2014), pp. 2217–2246. doi:10.3150/13-BEJ555.
  [5] F. Ciucci and C. Chen, Analysis of electrochemical impedance spectroscopy data using the
@@ -1267,6 +1309,9 @@ The author verified all results and assumes full responsibility for the content.
  [9] M. Ettehad and S. Foucart, Instances of computational optimal recovery: Dealing with
      observation errors, SIAM/ASA J. Uncertain. Quantif., 9 (2021), pp. 1438–1456. doi:10.1137/
      20M1328476.
+                FREQUENCY SATURATION AND CERTIFIED COMPUTATION                                  25
+
+
 [10] A. Flinth, F. de Gournay, and P. Weiss, Grid is Good: Adaptive refinement algorithms
      for off-the-grid total variation minimization, Open J. Math. Optim., 6 (2025), article 3.
      doi:10.5802/ojmo.39.
@@ -1310,9 +1355,6 @@ The author verified all results and assumes full responsibility for the content.
      org/abs/2501.06112.
 [27] P. B. Stark, Inference in infinite-dimensional inverse problems: Discretization and duality, J.
      Geophys. Res. Solid Earth, 97 (1992), pp. 14055–14082. doi:10.1029/92JB00739.
-               FREQUENCY SATURATION AND CERTIFIED COMPUTATION                               25
-
-
 [28] T. H. Wan, M. Saccoccio, C. Chen, and F. Ciucci, Influence of the discretization methods
      on the distribution of relaxation times deconvolution: Implementing radial basis functions
      with DRTtools, Electrochim. Acta, 184 (2015), pp. 483–499. doi:10.1016/j.electacta.2015.
