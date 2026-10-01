@@ -1,0 +1,47 @@
+                                Reproducibility materials
+                        Frequency Saturation and Certified Computation
+                                   of Relaxation Functionals
+                                            Haotian Zhong
+
+Archive: 03_Reproducibility_Materials.zip. The archive contains the exact inputs, frozen
+certificates, checker source, recorded seeds, and table-generation scripts supporting Section 7 of
+the manuscript. All central proofs are contained in the manuscript. A file manifest identifies the
+complete code and data snapshot by SHA-256 hashes.
+Quick start. Extract the archive, open the resulting Supplementary_Materials directory, and
+execute
+
+python3 run_all.py
+
+Python 3.10 or later suffices for frozen verification; the replay uses only the standard library. A fresh
+run verifies the manifest and case inventory, runs the checkers in disposable working directories, and
+regenerates the numerical tables. The report is written to replay_output/SUMMARY.json. Optional
+candidate regeneration and its additional dependencies are described separately in REGENERATION.txt.
+Evidence map.
+
+Sections 3–4; Section 7.1; Table 1; Figure 1. Twenty-two certificates for full-frequency pos-
+     itive pairs, four polynomial reproduction maps, and twelve equal-effort design certificates.
+     The frequency supremum is certified by an exact response identity and a rational enclosure
+     of its unique maximizer. Figure 1 is drawn from the closed-form identity by the script
+     make_figure_response_difference.py in the figures directory of the manuscript source,
+     after a cross-check against the archived enclosures.
+Proposition 4.6; Section 7.2. Sixteen zero-noise identification certificates, with positive spectra,
+    identical original observations, and nonzero target differences.
+Sections 5 and 6; Section 7.3 (Tables 2 and 3). Eighteen stopped-cost certificates and two
+     executed stopping trajectories. The trajectories include six stage inputs and twelve continuous
+     endpoint certificates.
+Section 7.4 (Table 4). Six strict-feasibility anchors on quadratic guard grids, the relative-width
+     checks, and table regeneration.
+
+Replay accounting. The frozen suites comprise 80 certificate tasks and 154 named algebraic,
+mechanism, and invalid-input checks, including 53 intentional rejections. The twelve continuous
+endpoints occur inside the two trajectory tasks. These counts describe computational checks of
+the archived evidence. The two seeded trajectories exercise the stopping algorithm; the coverage
+argument is proved in Section 6.
+Provenance and navigation. SECTION_MAP.txt gives exact paths, INDEX.txt lists the shipped
+files, and MANIFEST_SHA256.json records their hashes. Original suite names and receipts retain
+their provenance. TRANSFER_NOTE.txt explains the title change and the metadata updates for the
+present submission. Copyright and third-party dependency information appear in RIGHTS_AND_
+DEPENDENCIES.txt.
+
+                                                   1
+

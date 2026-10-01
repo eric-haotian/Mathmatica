@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "known_K1_uniform",
+      "status": "PASS",
+      "raw_rows": 2,
+      "gap": "513/65536"
+    },
+    {
+      "case": "known_K2_uniform",
+      "status": "PASS",
+      "raw_rows": 4,
+      "gap": "127065/2046689344"
+    },
+    {
+      "case": "known_K3_uniform",
+      "status": "PASS",
+      "raw_rows": 6,
+      "gap": "567808641/181916197777408"
+    },
+    {
+      "case": "known_K4_uniform",
+      "status": "PASS",
+      "raw_rows": 8,
+      "gap": "3956931816075/8991016084026342176"
+    },
+    {
+      "case": "unknown_K1_dyadic",
+      "status": "PASS",
+      "raw_rows": 4,
+      "gap": "41730113/5326848000"
+    },
+    {
+      "case": "unknown_K1_halfshift",
+      "status": "PASS",
+      "raw_rows": 4,
+      "gap": "1085742857/138498048000"
+    },
+    {
+      "case": "unknown_K1_uniform",
+      "status": "PASS",
+      "raw_rows": 4,
+      "gap": "41730113/5326848000"
+    },
+    {
+      "case": "unknown_K2_dyadic",
+      "status": "PASS",
+      "raw_rows": 6,
+      "gap": "429530910125/6925325834014784"
+    },
+    {
+      "case": "unknown_K2_halfshift",
+      "status": "PASS",
+      "raw_rows": 6,
+      "gap": "299955737305625/4887884045012300864"
+    },
+    {
+      "case": "unknown_K2_uniform",
+      "status": "PASS",
+      "raw_rows": 6,
+      "gap": "4038490804625/65156724058631744"
+    },
+    {
+      "case": "unknown_K3_dyadic",
+      "status": "PASS",
+      "raw_rows": 8,
+      "gap": "71698933977769004571/22916986527541120821248000"
+    },
+    {
+      "case": "unknown_K3_halfshift",
+      "status": "PASS",
+      "raw_rows": 8,
+      "gap": "1232491736303171758047123/415771316729107079083309158400"
+    },
+    {
+      "case": "unknown_K3_uniform",
+      "status": "PASS",
+      "raw_rows": 8,
+      "gap": "349410269184451613397/112499920953328382536192000"
+    },
+    {
+      "case": "unknown_K4_dyadic",
+      "status": "PASS",
+      "raw_rows": 10,
+      "gap": "22871504346896355555925/51210875680226818610160035776"
+    },
+    {
+      "case": "unknown_K4_halfshift",
+      "status": "PASS",
+      "raw_rows": 10,
+      "gap": "30303521609171517217950404225/76758524685784054896857911814412512"
+    },
+    {
+      "case": "unknown_K4_uniform",
+      "status": "PASS",
+      "raw_rows": 10,
+      "gap": "2830050399881781736800725/6474377837643995300439396077792"
+    }
+  ],
+  "count": 16,
+  "scope": "Independent symbolic rebuild of raw equality, target, and extended-design polynomial identity. Not independent human proof review."
+}

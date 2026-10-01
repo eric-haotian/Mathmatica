@@ -1,0 +1,207 @@
+--- SINUM_SUBMIT_FINAL/source/main.tex
++++ MCOM_TRANSFER/source/main.tex
+@@ -1,38 +1,20 @@
+-% Submission assembly from author-approved v1.4; mathematical body unchanged.
+-% All text, tables and references are contained in this file.
+-% pdflatex main.tex (twice); main_siam.tex uses the SIAM Standard Macros.
+-\ifdefined\UseSiam
+-  \documentclass[final,hidelinks]{siamart251216}
+-  \usepackage{amssymb,booktabs,array,microtype,graphicx}
+-  \newsiamremark{remark}{Remark}
+-  \newsiamthm{assumption}{Assumption}
+-  \headers{Certified recovery of relaxation functionals}{Haotian Zhong}
+-\else
+-  \documentclass[10pt,leqno,letterpaper]{article}
+-  \usepackage[textwidth=5.125in,textheight=8.25in,centering]{geometry}
+-  \usepackage{amsmath,amssymb,amsthm,booktabs,array,microtype,graphicx}
+-  \usepackage[hidelinks]{hyperref}
+-  \usepackage{cleveref}
+-  \usepackage{fancyhdr}
+-  \usepackage{titlesec}
+-  \titleformat{\section}{\large\bfseries}{\thesection}{0.7em}{}
+-  \titlespacing*{\section}{0pt}{2.0ex plus .4ex minus .2ex}{0.8ex plus .2ex}
+-  \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.7em}{}
+-  \titlespacing*{\subsection}{0pt}{1.5ex plus .3ex minus .2ex}{0.5ex plus .2ex}
+-  \pagestyle{fancy}\fancyhf{}
+-  \fancyhead[C]{\small Certified recovery of relaxation functionals}
+-  \fancyfoot[C]{\thepage}
+-  \setlength{\headheight}{13pt}
+-  \newtheorem{theorem}{Theorem}[section]
+-  \newtheorem{lemma}[theorem]{Lemma}
+-  \newtheorem{proposition}[theorem]{Proposition}
+-  \newtheorem{corollary}[theorem]{Corollary}
+-  \theoremstyle{definition}\newtheorem{assumption}[theorem]{Assumption}
+-  \theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+-  \newenvironment{keywords}{\par\noindent\textbf{Keywords.} }{\par}
+-  \newenvironment{MSCcodes}{\par\noindent\textbf{MSC 2020.} }{\par}
+-\fi
+-% This manuscript has one native LaTeX table and no external figure dependencies.
++% Mathematics of Computation transfer version, 29 September 2026.
++% Self-contained AMS-LaTeX manuscript. Compile with pdflatex twice.
++\documentclass[10pt]{amsart}
++\usepackage[T1]{fontenc}
++\usepackage{amssymb,booktabs,array,microtype,graphicx}
++\usepackage{algorithm}
++\usepackage{algpseudocode}
++\usepackage[hidelinks]{hyperref}
++\usepackage{cleveref}
++\newtheorem{theorem}{Theorem}[section]
++\newtheorem{lemma}[theorem]{Lemma}
++\newtheorem{proposition}[theorem]{Proposition}
++\newtheorem{corollary}[theorem]{Corollary}
++\theoremstyle{definition}
++\newtheorem{assumption}[theorem]{Assumption}
++\theoremstyle{remark}
++\newtheorem{remark}[theorem]{Remark}
+ \newcommand{\R}{\mathbb R}
+ \newcommand{\C}{\mathbb C}
+ \newcommand{\E}{\mathbb E}
+@@ -53,56 +35,60 @@
+ \newcommand{\kl}{\operatorname{kl}}
+ \newcommand{\TV}{\operatorname{TV}}
+ \newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:\nolinkurl{#1}}}
+-\title{Frequency Saturation and Certified Recovery of Relaxation Functionals}
+-\author{Haotian Zhong\thanks{Department of Mathematics, School of Sciences, Shanghai University, Shanghai 200444, P. R. China (\href{mailto:zhonghaotian1219@gmail.com}{\texttt{zhonghaotian1219@gmail.com}}). ORCID: \href{https://orcid.org/0009-0009-5567-1315}{0009-0009-5567-1315}.}}
+-\ifdefined\UseSiam\else\date{}\fi
+-\hypersetup{pdftitle={Frequency Saturation and Certified Recovery of Relaxation Functionals},pdfauthor={Haotian Zhong}}
++
++\title[Frequency saturation and certified computation]{Frequency Saturation and Certified Computation of Relaxation Functionals}
++\author{Haotian Zhong}
++\address{Department of Mathematics, School of Sciences, Shanghai University, Shanghai 200444, P. R. China}
++\email{zhonghaotian1219@gmail.com}
++\thanks{ORCID: \href{https://orcid.org/0009-0009-5567-1315}{0009-0009-5567-1315}.}
++\subjclass[2020]{Primary 65J22, 65Y20; Secondary 65G20, 62L12, 62G15}
++\keywords{Positive measures, inverse problems, information complexity, frequency sampling, verified computation, sequential stopping}
++\date{}
++\hypersetup{pdftitle={Frequency Saturation and Certified Computation of Relaxation Functionals},pdfauthor={Haotian Zhong}}
+ \begin{document}
++\begin{abstract}
++We establish sharp information bounds and a finite certified method for computing linear functionals of positive relaxation measures from frequency data. For the resistance--capacitance kernel on a compact interval of positive relaxation times, with unknown nonnegative resistance and inductance, exactly $K+2$ distinct frequencies are required for uniform noiseless identification of references with at most $K$ atoms among arbitrary finite positive competitors. This minimal design also attains the same worst-class functional accuracy order as the entire positive-frequency response. The sharp exponent is determined by target regularity and cluster multiplicity, uniformly through colliding atoms and vanishing masses. Positive moment-matched alternatives supply all-frequency lower bounds, while nuisance-annihilating polynomial reproduction supplies matching upper bounds. On strictly feasible rational observation boxes, we compute both endpoints of the original data-consistent range by verified finite optimization and continuous polynomial inequalities. A finite-budget refinement algorithm terminates at any prescribed numerical excess, and computable width brackets give absolute--relative stopping criteria. The same functional modulus determines the optimal expected acquisition effort for prescribed terminal width and confidence in a Gaussian variance--effort experiment, including adaptive frequency, precision, and stopping choices. A class-tuned expanding design attains this order and completes pointwise over the full positive-measure model. Exact certificates and stopping-path computations connect the information bounds to executable range calculations.
++\end{abstract}
+ \maketitle
+-\begin{abstract}
+-We determine the exact frequency threshold and sharp recovery rates for linear functionals of positive relaxation measures. For resistance--capacitance responses on a compact interval of strictly positive relaxation times, $K+2$ distinct frequencies are necessary and sufficient for uniform noiseless identification of references with at most $K$ atoms among all finite positive measures, with unknown nonnegative resistance and inductance. The threshold is $K+1$ when both calibration values are known. Under an absolute observation error floor, the same finite design attains the full positive-frequency response's worst-class functional accuracy order. The rate is determined by target regularity and local cluster multiplicity, uniformly through vanishing masses and colliding atoms. Positive moment-matched alternatives establish the full-frequency lower bound, and calibrated polynomial reproduction supplies the matching upper bound. Under a Gaussian variance--effort law, this modulus yields matching fixed-width, fixed-confidence acquisition costs against adaptive frequency, precision, and stopping policies. A class-tuned expanding design attains the optimal order and terminates almost surely at every finite positive spectrum. On strictly feasible observation boxes, a finite exact-arithmetic algorithm certifies the continuous functional range, with absolute and relative control of numerical excess. Exact ambiguity pairs, full-frequency certificates, and executed stopping paths connect minimal design, information limits, and attainable recovery.
+-\end{abstract}
+-\begin{keywords}
+-positive measures, inverse problems, information complexity, frequency sampling, verified computation, sequential stopping
+-\end{keywords}
+-\begin{MSCcodes}
+-65J22, 65G20, 65Y20, 62L12, 62G15
+-\end{MSCcodes}
+ 
+ \section{Introduction}\label{sec:intro}
+-We determine the minimal identifying design, the sharp recovery rate, and the optimal acquisition order for linear functionals of positive relaxation measures. The observation model retains unknown nonnegative resistance and inductance. Certification covers every finite positive competitor; performance is evaluated uniformly at sparse references through vanishing masses and colliding atoms. This links frequency selection and numerical inversion through the complete functional range permitted by the data.
+-
+-\paragraph{Exact design threshold and frequency saturation.}
+-For references with at most $K$ atoms on a compact interval of positive relaxation times, we prove that $K+2$ distinct complex frequencies are the minimum required for uniform noiseless identification with unknown resistance and inductance. Every design at or above this threshold identifies every such reference among all finite positive measures; below it, positive interior references admit exact ambiguities in a smooth functional. Knowing both calibration values reduces the threshold to $K+1$ (Proposition~\ref{prop:frequencycount}).
+-
+-The same finite design also attains the sharp noisy recovery order. For the global $C^s$ target ball, the worst-class functional diameter is $\Theta(\eps^\gamma)$, where $\gamma=\min\{1,s/(2K)\}$, both for $K+2$ fixed frequencies and for the entire positive-frequency response. A localized form resolves different target regularities near different clusters. If cluster $j$ contains at most $r_j$ reference atoms and has target regularity $s_j$, the modulus is
++Computing a functional of an unknown positive measure requires both sufficient information and a reliable numerical use of that information. Frequency samples constrain a continuous relaxation spectrum, while the quantity of interest may be an integral response rather than its individual atoms. We study this computation directly: given original noisy observations and a target functional, determine the complete admissible range and return an enclosure with a prescribed additional numerical width. The observation model retains unknown nonnegative resistance and inductance on a compact interval of strictly positive relaxation times.
++
++The central result connects a minimal identifying design, a sharp information modulus, and certified range computation. A finite design attains the accuracy order available from the entire positive-frequency response, and the same modulus determines the acquisition effort needed for a requested output width. The computational construction preserves the original observation inequalities and certifies finite optimization, target approximation, and continuous-domain errors separately. Performance is evaluated uniformly at sparse references; every enclosure covers all finite positive competitors, including spectra with more atoms than the reference.
++
++\paragraph{Minimal design and sharp information order.}
++We prove that $K+2$ distinct complex frequencies are the minimum required for uniform noiseless identification of references with at most $K$ atoms when resistance and inductance are unknown. Every design at or above this threshold identifies every such reference among all finite positive measures. Below it, references with positive interior atoms and positive calibration values admit exact positive-measure alternatives with a different smooth-functional value. Knowing both calibration values reduces the threshold to $K+1$ (Proposition~\ref{prop:frequencycount}).
++
++The identifying design also attains the sharp noisy recovery order. For a global $C^s$ target ball, the worst-class functional diameter is $\Theta(\eps^\gamma)$, where $\gamma=\min\{1,s/(2K)\}$, both for $K+2$ fixed frequencies and for the entire positive-frequency response. A localized form resolves different regularities near different clusters. If cluster $j$ contains at most $r_j$ reference atoms and the target has regularity $s_j$ there, put
+ \begin{equation}\label{eq:rates-summary}
+  \beta_j=\min\{1,s_j/(2r_j)\},\qquad
+  \Psi(v)=v+\sum_jv^{\beta_j},\qquad \beta=\min_j\beta_j.
+ \end{equation}
+-The lower bound is realized by positive spectra whose responses remain close at every admissible frequency. The upper bound follows from finite-design polynomial reproduction. Together they identify the optimal worst-class order and extend the lower bound to target-aware adaptive frequency queries (Theorem~\ref{thm:saturation}). Proposition~\ref{prop:operator} isolates the two operator properties behind the result, and Corollary~\ref{cor:global} gives the global target class.
+-
+-\paragraph{Sharp acquisition complexity.}
+-We next consider an explicit Gaussian precision model: a complex observation of effort $a$ has independent real-channel variances $\sigma^2/a$ and costs $a$. For terminal interval width $w$ and coverage $1-\alpha$ over all finite positive spectra, we establish
++Positive moment-matched spectra remain close at every admissible frequency and realize the lower order. Finite-design polynomial reproduction gives the matching upper order. These two constructions establish frequency saturation and give lower bounds against target-aware adaptive frequency queries (Theorem~\ref{thm:saturation}). Proposition~\ref{prop:operator} identifies the sufficient operator properties, and Corollary~\ref{cor:global} treats the standard global target class. The constants are uniform through vanishing masses and colliding reference atoms for each fixed observation design.
++
++\paragraph{Certified computation at the information scale.}
++For each strictly feasible rational observation box, a finite exact-arithmetic refinement computes an outer enclosure of the entire continuous functional range with at most $\tau$ additional width (Theorem~\ref{thm:numerical}). A mass-direction correction converts node-dual witnesses into continuous certificates, and finite budgets ensure progress through unsuccessful nonnegativity checks. Positive, mean-preserving projection provides a quadratic strict-feasibility guard. The resulting certificates also give a lower bracket for the true information width and hence an absolute--relative stopping rule (Corollary~\ref{cor:relative}). Algorithm~\ref{alg:range} states the refinement procedure explicitly. Thus the accuracy of the reported range is certified against the original infinite-dimensional problem.
++
++\paragraph{Attainable acquisition complexity.}
++In a Gaussian precision model, a complex observation of effort $a$ has independent real-channel variances $\sigma^2/a$ and costs $a$. For terminal interval width $w$ and coverage $1-\alpha$ over all finite positive spectra, we establish
+ \begin{equation}\label{eq:cost-summary}
+  \mathcal C^*(w,\alpha)\asymp\sigma^2w^{-2/\beta}\log(1/\alpha).
+ \end{equation}
+-The lower bound covers adaptive selection of frequency, precision, and stopping time. A predetermined expanding design, tuned to the specified reference and target class, attains this order. Its range-based stopping rule also completes almost surely at every fixed finite positive spectrum (Theorem~\ref{thm:cost} and Proposition~\ref{prop:complete}). Thus the same functional modulus determines both attainable accuracy and the acquisition effort required to achieve it.
+-
+-\paragraph{Certified computation of the information range.}
+-For each strictly feasible original observation box, we construct a finite exact-arithmetic algorithm that encloses the continuous target range with at most $\tau$ additional width. Positive projection supplies a feasible anchor, verified finite optimization supplies primal and node-dual witnesses, and budgeted continuous checks certify the final enclosure. A posteriori width brackets provide absolute--relative error control directly from these certificates (Theorem~\ref{thm:numerical} and Corollary~\ref{cor:relative}). This connects the information bounds to a numerical procedure with an explicit input, output, and stopping guarantee.
++The lower bound permits adaptive choices of frequency, precision, and stopping. A predetermined expanding design tuned to the specified reference and target class attains this order by invoking the certified range calculation. The same procedure completes almost surely, with pointwise finite expected acquisition count, at every fixed finite positive spectrum (Theorem~\ref{thm:cost} and Proposition~\ref{prop:complete}). The matched resource is measurement effort. Numerical certification supplies a separate, finite computation of the terminal range.
++
++These results distinguish three design decisions: how many distinct frequencies identify the reference, how much measurement effort resolves the target, and how tightly the resulting range is computed. The numerical evidence follows the same division. Exact noiseless alternatives check the identification threshold; all-frequency certificates and equal-effort comparisons examine information limits and design constants; verified stopping paths exercise the range algorithm and its acquisition interface.
+ 
+ \subsection{Relation to existing work}
+-Continuous primal--dual range inference~\cite{stark}, computational optimal recovery~\cite{ettehad}, deterministic-to-statistical moduli~\cite{donoho}, and honest intervals on local performance classes~\cite{cailow} provide the foundations for recovering a functional from incomplete data. Brown and Grabovsky~\cite{browngrabovsky} establish sharp extrapolation exponents and local extremality conditions for completely monotone functions under relative $L^2$ discrepancy. Their extrapolated value is a linear functional of a representing positive measure. Here the original componentwise RC constraints lead to a sharp comparison of finite designs, the full frequency axis, and sequential experiments.
+-
+-Positive-measure uniqueness in Chebyshev systems is established by Eftekhari et al.~\cite[Proposition~8]{eftekhari}. Proposition~\ref{prop:frequencycount} resolves the exact frequency count when two conic calibration coordinates accompany the RC measurements. Wu and Yang~\cite[Proposition~5]{wuyang} and Nguyen et al.~\cite[Theorem~5 and Appendix~A.6]{nguyen} develop cluster-sensitive moment and mixture geometry. Building on these interpolation principles, we obtain spatially varying target-regularity moduli and match them to positive alternatives that are uniformly close across the entire measurement family. The Fourier comparison in Remark~\ref{rem:fourier} identifies the role of the RC kernel's uniform smoothing, alongside positive Fourier super-resolution results~\cite{liuammari}.
+-
+-Adaptive-information comparisons~\cite{knu} and noisy-information bounds through entropy numbers~\cite{knpu} establish the importance of the information class and its normalization. Our information consists of RC evaluations, with a prescribed error floor or precision cost. The full-frequency response pair supplies the lower bound for this restricted family. Stieltjes reconstruction~\cite{grabovsky} and circuit-parameter frequency design~\cite{sovljanski} provide complementary reconstruction and design perspectives; Section~\ref{sec:experiments} quantifies the constant-factor gains available within the matching asymptotic order.
+-
+-We combine stopped change of measure~\cite{castro,kaufmann,garivier} and time-uniform coverage~\cite{howard} with polynomial semi-infinite optimization~\cite{papp}, continuous exchange refinement~\cite{grid}, and verified finite optimization~\cite{jansson,schmid}. The resulting contribution is a sharp, attained information and acquisition law for calibrated relaxation functionals, together with a finite numerical realization of the corresponding continuous ranges.
++Continuous primal--dual range inference~\cite{stark}, computational optimal recovery~\cite{ettehad}, deterministic-to-statistical moduli~\cite{donoho}, and honest intervals on local performance classes~\cite{cailow} provide the foundations for recovering a functional from incomplete data. Brown and Grabovsky~\cite{browngrabovsky} establish sharp extrapolation exponents and local extremality conditions for completely monotone functions under relative $L^2$ discrepancy. Their extrapolated value is a linear functional of a representing positive measure. Here componentwise RC observations lead to a sharp comparison of finite designs, the full frequency axis, and sequential acquisition.
++
++Positive-measure uniqueness in Chebyshev systems is established by Eftekhari et al.~\cite[Proposition~8]{eftekhari}. Proposition~\ref{prop:frequencycount} determines the exact frequency count for RC observations with two conic calibration coordinates. Wu and Yang~\cite[Proposition~5]{wuyang} and Nguyen et al.~\cite[Theorem~5 and Appendix~A.6]{nguyen} develop cluster-sensitive moment and mixture geometry. We use these interpolation principles to obtain spatially varying target-regularity moduli and pair them with positive alternatives that are uniformly close across the entire measurement family. Remark~\ref{rem:fourier} distinguishes the uniform smoothing of the RC kernel from the bandwidth dependence of positive Fourier super-resolution~\cite{liuammari}.
++
++Comparing restricted and richer information classes is a central problem in computational approximation. Wasilkowski and Wo\'zniakowski~\cite{wasilwoz} compare randomized function-value information with worst-case linear information for multivariate approximation in reproducing kernel Hilbert spaces and construct algorithms attaining the corresponding convergence rates. General adaptive-information comparisons~\cite{knu} and noisy-information bounds through entropy numbers~\cite{knpu} further identify the role of information classes and normalization. In the present inverse problem, admissible information consists of RC evaluations; an explicit all-frequency response pair and a finite reproducing design yield the matching orders. Stieltjes reconstruction~\cite{grabovsky} and circuit-parameter frequency design~\cite{sovljanski} provide complementary perspectives, and Section~\ref{sec:experiments} quantifies constant-factor differences between designs on the same positive pair.
++
++Stopped change of measure~\cite{castro,kaufmann,garivier} and time-uniform coverage~\cite{howard} supply the sequential information tools. Polynomial semi-infinite optimization~\cite{papp}, continuous exchange refinement~\cite{grid}, and verified finite optimization~\cite{jansson,schmid} supply computational foundations. The contribution here is the sharp calibrated information law together with an attaining acquisition design and a finite, accuracy-controlled computation of the same continuous feasible range. The original-coordinate error accounting makes these parts one computational recovery problem.
+ 
+ \subsection{Organization}
+-Sections~\ref{sec:model}--\ref{sec:diameter} establish the model, full-frequency lower bound, matching information law, and exact identification threshold. Section~\ref{sec:cert} develops certified range computation. Section~\ref{sec:sequential} proves the acquisition law and global completion. Section~\ref{sec:experiments} reports exact certificates and executed stopping paths.
++Sections~\ref{sec:model}--\ref{sec:diameter} establish the model, full-frequency alternatives, matching moduli, and exact identification threshold. Section~\ref{sec:cert} develops continuous range certification and its finite refinement algorithm. Section~\ref{sec:sequential} proves the acquisition law and all-model completion. Section~\ref{sec:experiments} reports exact certificates and stopping-path computations.
+ 
+ \section{Model, target classes, and information ranges}\label{sec:model}
+ Let $J=[-1,1]$, $t(x)=1+x/2$, and
+@@ -413,6 +399,31 @@
+ The finite verification budget guarantees progress between grid refinements. For $(x-1/3)^2$ on $[0,1]$, the middle Bernstein coefficient of the cell containing $1/3$ is negative at every dyadic depth. The positive residual shift makes certification succeed at a finite depth, while the budget ensures that each earlier attempt returns.
+ 
+ The construction couples finite-accuracy optimization~\cite{schmid} and continuous refinement~\cite{grid} to an exact range certificate. Section~\ref{sec:sequential} obtains its anchor through a finite test at each random sampling stage.
++
++
++\begin{algorithm}[tb]
++\caption{Certified continuous-range refinement}\label{alg:range}
++\begin{algorithmic}[1]
++\Require Rational original data and model, $\tau>0$, an effective target, and a finite rational anchor of strict margin $s_a>0$.
++\Ensure An enclosure $\mathcal I_y(f)$ of $[L_f,U_f]$ with numerical excess at most $\tau$.
++\State Compute $M=J_y(\lambda_0)>0$ and freeze a proxy satisfying \eqref{eq:proxy}.
++\State Set $\eta=\tau/32$ and $a=\tau/(32M)$.
++\For{$\ell=1,2,\ldots$}
++  \State Form the grid from the anchor, interval endpoints, and level-$\ell$ dyadic nodes.
++  \For{$\zeta\in\{-1,1\}$}
++    \State Obtain and exactly verify a raw-feasible primal and node-dual pair with gap at most $\eta$; use the finite exact LP fallback when needed.
++    \State Set $\widetilde\gamma_\zeta=\gamma_\zeta+a\lambda_0$ and perform the continuous numerator check with at most $\ell$ subdivision levels.
++  \EndFor
++  \If{both continuous checks succeed}
++    \State Set $D_\zeta=J_y(\widetilde\gamma_\zeta)$ and verify $g_++g_-\le\tau$ using \eqref{eq:gaps}.
++    \If{the total-gap check succeeds}
++      \State \Return $[-D_- -E,\ D_+ +E]$ and the two endpoint certificates.
++    \EndIf
++  \EndIf
++  \State Advance the refinement after any negative or unresolved continuous check.
++\EndFor
++\end{algorithmic}
++\end{algorithm}
+ 
+ \begin{corollary}[A posteriori absolute--relative excess]\label{cor:relative}
+ For two certified endpoints from Proposition~\ref{prop:verify}, with common target error $E$, define
+@@ -645,9 +656,9 @@
+ The archive contains 64 range, spectrum, and design tasks, 106 mechanism checks, 16 noiseless-pair checks, and 10 additional altered-input rejections. Independent processes verify raw inputs and certificates; a separate symbolic rebuild checks the noiseless identities. Resource-limited runs return \texttt{UNRESOLVED}. Full tables, seeds, arithmetic primitives, and commands accompany the data.
+ 
+ \section{Conclusions}
+-We determine the minimal frequency design, sharp information order, and attainable acquisition cost for calibrated relaxation functionals. Exactly $K+2$ distinct frequencies provide uniform noiseless identification of references with at most $K$ atoms among arbitrary positive competitors when resistance and inductance are unknown; the threshold is $K+1$ with known calibration. At the calibrated threshold, a fixed finite design attains the same worst-class functional accuracy order as the entire positive-frequency response. Local target regularity and cluster multiplicity determine this order uniformly through vanishing masses and colliding atoms.
+-
+-The same modulus yields matching fixed-width, fixed-confidence acquisition costs against adaptive choices of frequency, precision, and stopping. A class-tuned expanding design attains the optimal order and completes almost surely at every fixed finite positive spectrum. Positive projection, verified primal--dual gaps, and finite-budget continuous checks turn the information bounds into certified functional ranges. The a posteriori width criterion controls numerical enlargement directly from feasible witnesses and dual certificates. Together, these results establish a complete path from the minimal identifying design to a rigorously computed recovery interval at the requested accuracy.
++The analysis determines the frequency information and measurement effort required to compute calibrated relaxation functionals. Exactly $K+2$ distinct frequencies give uniform noiseless identification of references with at most $K$ atoms among arbitrary positive competitors when resistance and inductance are unknown; known calibration reduces the count to $K+1$. At the calibrated threshold, a fixed design attains the entire positive-frequency response's worst-class functional accuracy order. Local target regularity and cluster multiplicity determine this order uniformly through colliding atoms and vanishing masses.
++
++The continuous range calculation makes the information law computationally accessible. Positive projection gives a strict-feasibility guard, verified primal--dual pairs separate finite optimization from continuum correction, and a finite refinement schedule returns both endpoints at any prescribed numerical excess. Certified width brackets additionally provide absolute--relative accuracy control from the data themselves. The same range calculation drives a sequential design with matching expected acquisition cost under adaptive frequency, precision, and stopping alternatives. Together, the results provide a constructive account of minimal identification, sharp recovery, and verified computation for positive relaxation measures.
+ 
+ \section*{Data and software availability}
+ The accompanying reproducibility archive contains the synthetic inputs, exact certificates, source code, table-generation scripts, and verification commands for the results in Section~\ref{sec:experiments}. The archived inputs are separated from the generating spectra, and the checker routines reconstruct original-coordinate feasibility and continuous dual bounds with exact arithmetic. Machine-readable receipts record the verified quantities and the corresponding file hashes.
+@@ -679,6 +690,7 @@
+ \bibitem{schmid} J. Schmid and M. Poursanidis, \emph{Approximate solutions of convex semi-infinite optimization problems in finitely many iterations}, preprint, arXiv:2105.08417v2, 2022. \url{https://arxiv.org/abs/2105.08417}.
+ \bibitem{sovljanski} V. Sovljanski, M. Paolone, S. Tant, and D.~P. Sainflou, \emph{Optimizing experiments for accurate battery circuit parameters estimation: Reduction and adjustment of frequency set used in electrochemical impedance spectroscopy}, preprint, arXiv:2501.06112, 2025. \url{https://arxiv.org/abs/2501.06112}.
+ \bibitem{stark} P.~B. Stark, \emph{Inference in infinite-dimensional inverse problems: Discretization and duality}, J. Geophys. Res. Solid Earth, 97 (1992), pp.~14055--14082. \doi{10.1029/92JB00739}.
++\bibitem{wasilwoz} G.~W. Wasilkowski and H. Wo\'zniakowski, \emph{The power of standard information for multivariate approximation in the randomized setting}, Math. Comp. 76 (2007), no.~258, 965--988. \doi{10.1090/S0025-5718-06-01944-2}.
+ \bibitem{wuyang} Y. Wu and P. Yang, \emph{Optimal estimation of Gaussian mixtures via denoised method of moments}, Ann. Statist., 48 (2020), pp.~1981--2007. \doi{10.1214/19-AOS1873}.
+ \end{thebibliography}
+ 

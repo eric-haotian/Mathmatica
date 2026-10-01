@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "date": "2026-10-01",
+  "target_journal": "Mathematics of Computation",
+  "title": "Frequency Saturation and Certified Computation of Relaxation Functionals",
+  "basis": {
+    "previous_version": "MCOM transfer package of 2026-09-29",
+    "previous_main_tex_sha256": "f439916c3020ab8f24ed42d7e264690d874f7134228a670ba40aee50a72e9492",
+    "author": "Haotian Zhong"
+  },
+  "changes": [
+    "abstract and introduction rewritten: application setting, problem statement, main results, classical and applied related work, organization and notation",
+    "lead-in paragraphs for Sections 2-6; definition of the baseline prediction distance stated before Theorem 4.2",
+    "Section 7: Tables 1, 2, 4 and Figure 1 added from archived certified quantities; stopping-path table is now Table 3",
+    "conclusions extended with limitations; AI-use declaration reworded with the same scope",
+    "five references added (Karlin-Studden, Krein-Nudel'man, Orazem-Tribollet, Ciucci-Chen, Wan et al.); Wasilkowski-Wozniakowski entry format harmonized",
+    "all theorem, lemma, proposition, corollary, remark and proof environments, all inherited displays, Algorithm 1 and the stopping table are byte-identical to the previous version"
+  ],
+  "source_integrity": {
+    "baseline": "main_2026-09-29.tex",
+    "baseline_sha256": "f439916c3020ab8f24ed42d7e264690d874f7134228a670ba40aee50a72e9492",
+    "theorem": {
+      "baseline": 4,
+      "new": 4,
+      "byte_identical": true
+    },
+    "lemma": {
+      "baseline": 3,
+      "new": 3,
+      "byte_identical": true
+    },
+    "proposition": {
+      "baseline": 5,
+      "new": 5,
+      "byte_identical": true
+    },
+    "corollary": {
+      "baseline": 2,
+      "new": 2,
+      "byte_identical": true
+    },
+    "remark": {
+      "baseline": 2,
+      "new": 2,
+      "byte_identical": true
+    },
+    "proof": {
+      "baseline": 14,
+      "new": 14,
+      "byte_identical": true
+    },
+    "algorithm": {
+      "baseline": 1,
+      "new": 1,
+      "byte_identical": true
+    },
+    "display_math": {
+      "baseline_blocks": 60,
+      "new_blocks": 62,
+      "all_inherited_blocks_byte_identical_in_order": true
+    },
+    "table": {
+      "baseline": 1,
+      "new": 4,
+      "baseline_table_present_verbatim": true
+    },
+    "figure": {
+      "baseline": 0,
+      "new": 1
+    },
+    "cross_reference_labels": {
+      "baseline": 63,
+      "new": 68,
+      "added": [
+        "fig:pairs",
+        "sec:conclusions",
+        "tab:cost",
+        "tab:efficiency",
+        "tab:guard"
+      ],
+      "removed": [],
+      "unresolved": []
+    },
+    "bibliography": {
+      "baseline_count": 25,
+      "new_count": 30,
+      "added": [
+        "ciucci",
+        "karlinstudden",
+        "kreinnudelman",
+        "orazem",
+        "wan"
+      ],
+      "removed": [],
+      "edited_existing_entries": [
+        "pages",
+        "wasilwoz"
+      ],
+      "uncited": [],
+      "missing": []
+    },
+    "abstract_words_whitespace": 274,
+    "source_sha256": "02a4866f7c608bdb7db8815783fb0b955def2b069e7da333048919dd66860b24"
+  },
+  "pdf_preflight": {
+    "main": {
+      "pages": 25,
+      "page_size_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "all_text_black": true,
+      "text_outside_page": [],
+      "all_font_programs_embedded": true,
+      "font_count": 36,
+      "compile_errors_and_layout_warnings": [],
+      "isolated_rebuild_page_text_identical": true,
+      "other_log_warnings": [
+        "Underfull \\vbox (badness 10000) has occurred while \\output is active []",
+        "pdfTeX warning (font expansion): font should be expanded before its first use"
+      ]
+    },
+    "cover_letter": {
+      "pages": 1,
+      "page_size_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "all_text_black": true,
+      "text_outside_page": [],
+      "all_font_programs_embedded": true,
+      "font_count": 8,
+      "compile_errors_and_layout_warnings": [],
+      "isolated_rebuild_page_text_identical": true,
+      "other_log_warnings": []
+    },
+    "reproducibility_index": {
+      "pages": 1,
+      "page_size_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "all_text_black": true,
+      "text_outside_page": [],
+      "all_font_programs_embedded": true,
+      "font_count": 5,
+      "compile_errors_and_layout_warnings": [],
+      "isolated_rebuild_page_text_identical": true,
+      "other_log_warnings": []
+    }
+  },
+  "supplement": {
+    "new_archive_sha256": "00a75015f369173f4b89834838cd261cad8b43848e076e71703f9a61cc250942",
+    "zip_members": 235,
+    "manifest_entries": 234,
+    "metadata_files_changed_since_2026-09-29": [
+      "SECTION_MAP.txt",
+      "TRANSFER_NOTE.txt"
+    ],
+    "code_and_data_files": 210,
+    "code_and_data_files_changed": [],
+    "zip_crc": "PASS",
+    "fresh_extraction_replay": {
+      "status": "PASS",
+      "independent_certificate_tasks": 80,
+      "checks_including_rejections": 154,
+      "rejection_checks": 53,
+      "manifest_files_checked": 234
+    }
+  },
+  "upload_files": {
+    "01_Main_Manuscript.pdf": {
+      "bytes": 648902,
+      "sha256": "a45a6ae070a9e184aa5b054085647eefb7808768cc9fc06e3dfde58e974135bd"
+    },
+    "02_Cover_Letter.pdf": {
+      "bytes": 120651,
+      "sha256": "058a42633a21d96103172a8275cb015f8d740801aabccfe0d4d9b39f1e00d1cf"
+    },
+    "03_Reproducibility_Materials.zip": {
+      "bytes": 447704,
+      "sha256": "00a75015f369173f4b89834838cd261cad8b43848e076e71703f9a61cc250942"
+    },
+    "04_Reproducibility_Index.pdf": {
+      "bytes": 118386,
+      "sha256": "164ef2d1c5587a8dd671a7753453c133fad6a89e566b18abab352a1d51d74ca4"
+    }
+  },
+  "seconds": 14.8
+}

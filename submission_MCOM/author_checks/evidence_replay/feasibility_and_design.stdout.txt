@@ -1,0 +1,1 @@
+{"fresh_process_tasks": 18, "guard_tasks": 6, "design_tasks": 12, "seconds": 0.6102325070000916, "scope": "Exact finite certificate checks, not theorem proof or Monte Carlo coverage."}

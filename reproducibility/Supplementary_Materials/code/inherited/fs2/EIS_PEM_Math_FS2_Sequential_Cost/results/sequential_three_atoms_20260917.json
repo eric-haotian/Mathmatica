@@ -1,0 +1,533 @@
+{
+  "alpha": "1/20",
+  "b0": "1/4096",
+  "case": "three_atoms",
+  "class_constant_tuning": "b0 chosen for mechanism demonstration, not from a worst-class sharp constant",
+  "cost_counts": "one complex unit-precision observation; two real channels",
+  "elapsed_seconds": 0.6939361029999418,
+  "format": "FS2_sequential_demo_v1",
+  "requested_width": "1/20",
+  "seed": 20260917,
+  "sigma": "1/1000",
+  "simulation": "independent Gaussian sample means from numpy PCG64; no physical experiment",
+  "stages": [
+    {
+      "b": "1/4096",
+      "certified_length": "6206516615918778019322604067832883472883018070380583438662598084880063305009088892000283990811310257498377090582996867037348992559/66354142403987007066640030180422130843737045552728881324153635384227805343005799059831291294800561968474457751110617138457876889600",
+      "endpoints": [
+        {
+          "certificate": "three_atoms_20260917_stage1_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "154879/453260800",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "154879/453260800",
+            "gap_over_tau": "154879/5665760",
+            "lower": "157780059168241760016981264828246428643819850527652294880517473/266335992664479366659816771547485819476937134648270254143926272",
+            "max_dual_bits": 203,
+            "max_primal_bits": 209,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "139759307997758743434636420786764339649366150493205645992325803482499/235780595906046971319769292431700508837445521875747449237264330444800"
+          },
+          "timing": {
+            "endpoint_seconds": 0.04130365699995764,
+            "formation_seconds": 9.883899997475964e-05
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        },
+        {
+          "certificate": "three_atoms_20260917_stage1_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 2,
+            "continuous_correction": "127903/453260800",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "127903/453260800",
+            "gap_over_tau": "127903/5665760",
+            "lower": "-1727326675219418997818679028934721396102634940609631570378954160895/3458128938587864245546118118799970495691711431627423972046504984576",
+            "max_dual_bits": 209,
+            "max_primal_bits": 215,
+            "moment_scalars": null,
+            "nodes": 12,
+            "positive": {
+              "leaves": 7,
+              "max_depth": 6
+            },
+            "upper": "-1528295245323558255636512942289894717086497535784052052513524222663191781/3061395096108371519975839717620643880573479837633967756853469700220518400"
+          },
+          "timing": {
+            "endpoint_seconds": 0.021816453000042202,
+            "formation_seconds": 8.971499994459009e-05
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/16"
+            },
+            {
+              "accepted": true,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "input": "three_atoms_20260917_stage1.json",
+      "input_hash": "e24fefc5616495a8d319efa7dc67b32893880052fcf31e94d9eba488235c3bda",
+      "interval": [
+        "1528295245323558255636512942289894717086497535784052052513524222663191781/3061395096108371519975839717620643880573479837633967756853469700220518400",
+        "139759307997758743434636420786764339649366150493205645992325803482499/235780595906046971319769292431700508837445521875747449237264330444800"
+      ],
+      "new_complex_observations": 868,
+      "numerical_excess_budget": "141391/226630400",
+      "repetitions_per_frequency": 217,
+      "reported_mean_binary64": [
+        "0x1.33f46b896f5e9p-1",
+        "0x1.f44e86d80abc2p-2",
+        "0x1.355be499a1209p-2",
+        "0x1.8590069b61bcap-2",
+        "0x1.9c8aacc5219bep-3",
+        "0x1.1596a3a5c926ep-2",
+        "0x1.470b6d0f21f9cp-3",
+        "0x1.922578977dfadp-3"
+      ],
+      "risk_spend": "1/40",
+      "rounded_mean_step": "1/65536",
+      "stage": 1,
+      "status": "CERTIFIED_CONTINUE"
+    },
+    {
+      "b": "1/8192",
+      "certified_length": "1718052233559811822316119462381269105024169242331551006721802486765297442556857135935731086298643695469460289999/31132324469281543806382941559587232918620198306675490152802838905596566081626635185257316030034371479942221004800",
+      "endpoints": [
+        {
+          "certificate": "three_atoms_20260917_stage2_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "839269/3013603840",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "839269/3013603840",
+            "gap_over_tau": "839269/37670048",
+            "lower": "3631885256458744442497/6489271418121624158208",
+            "max_dual_bits": 62,
+            "max_primal_bits": 51,
+            "moment_scalars": null,
+            "nodes": 15,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "1645208773983965229998986397/2938114973625837161991045120"
+          },
+          "timing": {
+            "endpoint_seconds": 0.05062963000000309,
+            "formation_seconds": 0.000174852999975883
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 9,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 11,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 13,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 15
+            }
+          ]
+        },
+        {
+          "certificate": "three_atoms_20260917_stage2_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 2,
+            "continuous_correction": "690661/3013603840",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "690661/3013603840",
+            "gap_over_tau": "690661/37670048",
+            "lower": "-22794250511818926252475043346482234869354868831709372768626103419321196850704337943827005807/45137349034222310928199805804170449231193724875582943090152328476453359281519237781264793600",
+            "max_dual_bits": 288,
+            "max_primal_bits": 279,
+            "moment_scalars": null,
+            "nodes": 15,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "-158703925355302691668934029971913829806382363037905382184877655998903507001441767228849673798227/314409412853533301652405924229618976094791182204512480434043369271406234078416272215913142681600"
+          },
+          "timing": {
+            "endpoint_seconds": 0.05151631599994744,
+            "formation_seconds": 0.00010543899998083361
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 9,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 11,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 13,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 15
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "3/2"
+      ],
+      "input": "three_atoms_20260917_stage2.json",
+      "input_hash": "40e2899d0f89927aab4c9f18d33e34657c02068586c55592dabc32877a0a145f",
+      "interval": [
+        "158703925355302691668934029971913829806382363037905382184877655998903507001441767228849673798227/314409412853533301652405924229618976094791182204512480434043369271406234078416272215913142681600",
+        "1645208773983965229998986397/2938114973625837161991045120"
+      ],
+      "new_complex_observations": 4955,
+      "numerical_excess_budget": "152993/301360384",
+      "repetitions_per_frequency": 991,
+      "reported_mean_binary64": [
+        "0x1.33eeae0b800c5p-1",
+        "0x1.f441c215454bfp-2",
+        "0x1.354ffd1f4a18bp-2",
+        "0x1.85759973c055bp-2",
+        "0x1.9c629c94ee132p-3",
+        "0x1.157922e4cc2a4p-2",
+        "0x1.471c492fb852bp-3",
+        "0x1.9212be43e9735p-3",
+        "0x1.a3b8f5839354ap-2",
+        "0x1.c8ced0e395597p-2"
+      ],
+      "risk_spend": "1/80",
+      "rounded_mean_step": "1/131072",
+      "stage": 2,
+      "status": "CERTIFIED_CONTINUE"
+    },
+    {
+      "b": "1/16384",
+      "certified_length": "6238477176682468454386722972152167492962185923305478182497876905814557672005097/183080627732997991553616214569508285259328560806469668993492610491327559586447360",
+      "endpoints": [
+        {
+          "certificate": "three_atoms_20260917_stage3_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "8948539499/36657873128960",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "8948539499/36657873128960",
+            "gap_over_tau": "8948539499/458223414112",
+            "lower": "7066885297000221569831/12978542836243248316416",
+            "max_dual_bits": 62,
+            "max_primal_bits": 68,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 8,
+              "max_depth": 7
+            },
+            "upper": "506197507104602573000401400262737/929230032597222027446427433697280"
+          },
+          "timing": {
+            "endpoint_seconds": 0.08030714899996383,
+            "formation_seconds": 0.00012623999998595536
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        },
+        {
+          "certificate": "three_atoms_20260917_stage3_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "10148246363/36657873128960",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "10148246363/36657873128960",
+            "gap_over_tau": "10148246363/458223414112",
+            "lower": "-12825514110787836647181886731197115662837945636606821139/25101249837950079375271519026479539969774347925984247808",
+            "max_dual_bits": 172,
+            "max_primal_bits": 361,
+            "moment_scalars": null,
+            "nodes": 12,
+            "positive": {
+              "leaves": 4,
+              "max_depth": 3
+            },
+            "upper": "-917776045741351590335826494547045235346898615138570123648398778053/1797184437378714392930986174267159583916432342637976298205314416640"
+          },
+          "timing": {
+            "endpoint_seconds": 0.03487219599992386,
+            "formation_seconds": 0.00020321599993167183
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/16"
+            },
+            {
+              "accepted": true,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "3/2",
+        "5/4"
+      ],
+      "input": "three_atoms_20260917_stage3.json",
+      "input_hash": "e64b1a552fbbe22f67bfd6afe79c94d1387f4be8c3bb059ea5646253fc8fc1ba",
+      "interval": [
+        "917776045741351590335826494547045235346898615138570123648398778053/1797184437378714392930986174267159583916432342637976298205314416640",
+        "506197507104602573000401400262737/929230032597222027446427433697280"
+      ],
+      "new_complex_observations": 26586,
+      "numerical_excess_budget": "9548392931/18328936564480",
+      "repetitions_per_frequency": 4431,
+      "reported_mean_binary64": [
+        "0x1.33f1e71368ff3p-1",
+        "0x1.f44195d7e4d96p-2",
+        "0x1.35567193dc4d9p-2",
+        "0x1.85795c0f954c1p-2",
+        "0x1.9c7b6bcc7273dp-3",
+        "0x1.1577a3e7db393p-2",
+        "0x1.471c64c3ca539p-3",
+        "0x1.91fc1fc353d19p-3",
+        "0x1.a3bbb93e92442p-2",
+        "0x1.c8ccf82d8cc15p-2",
+        "0x1.f81043c6f8e6bp-2",
+        "0x1.e5adc6a33be69p-2"
+      ],
+      "risk_spend": "1/160",
+      "rounded_mean_step": "1/262144",
+      "stage": 3,
+      "status": "CERTIFIED_STOP"
+    }
+  ],
+  "terminal_status": "CERTIFIED_STOP",
+  "total_complex_observations": 32409
+}

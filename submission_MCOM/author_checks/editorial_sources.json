@@ -1,0 +1,54 @@
+{
+  "date_checked": "2026-10-01",
+  "access_note": "Direct fetches of ams.org, pubs.ams.org, doi.org, api.crossref.org and api.openalex.org were blocked by the network policy of the environment used for this revision. The items below were verified through search-engine summaries of the official pages and through the publishers' own landing pages where reachable. The author should re-confirm the journal policy items on ams.org before filing.",
+  "sources": [
+    {
+      "name": "AMS: About Mathematics of Computation / journal author instructions",
+      "urls": [
+        "https://www.ams.org/publications/journals/journalsframework/aboutmcom",
+        "https://www.ams.org/mcom/mcomsubmit.html"
+      ],
+      "verified_items": [
+        "articles must be of significant computational interest and contain original and substantial mathematical analysis or development of computational methodology",
+        "areas: numerical analysis, computational discrete mathematics including number theory, algebra and combinatorics, and related fields such as stochastic numerical methods",
+        "single-anonymous peer review",
+        "preferred initial submission: upload a PDF through the Initial Manuscript Submission form (Centralized Manuscript Processing)",
+        "at most three submissions within any 12-month period",
+        "2020 Mathematics Subject Classification required in the footnotes of the first page"
+      ]
+    },
+    {
+      "name": "AMS Editorial Committees page: Mathematics of Computation associate editors",
+      "url": "https://www.ams.org/about-us/governance/committees/comm-edit.html",
+      "verified_items": [
+        "Markus Bachmayr (Johannes Gutenberg-Universitaet Mainz) listed as associate editor, term 1 Feb 2022 to 31 Jan 2030"
+      ]
+    },
+    {
+      "name": "AMS guidance on generative AI in authoring (Notices, 2024; AMS ethical guidelines)",
+      "urls": [
+        "https://www.ams.org/notices/202401/rnoti-p93.pdf"
+      ],
+      "verified_items": [
+        "authors must disclose the use of generative AI or AI-assisted tools; AI tools cannot be authors; authors remain responsible for the content"
+      ],
+      "manuscript_consequence": "The Declarations section keeps the full disclosure of the previous version (mathematical development and checking, literature search, programming, synthetic-data generation, drafting and revision) and states that the author verified all results and takes full responsibility."
+    },
+    {
+      "name": "New references added in this revision",
+      "entries": [
+        {"key": "karlinstudden", "verified": "S. Karlin and W. J. Studden, Tchebycheff Systems: With Applications in Analysis and Statistics, Pure and Applied Mathematics XV, Interscience, New York, 1966 (Google Books / publisher records)"},
+        {"key": "kreinnudelman", "verified": "M. G. Krein and A. A. Nudel'man, The Markov Moment Problem and Extremal Problems, Translations of Mathematical Monographs 50, AMS, Providence, RI, 1977 (AMS series record)"},
+        {"key": "orazem", "verified": "M. E. Orazem and B. Tribollet, Electrochemical Impedance Spectroscopy, 2nd ed., Wiley, 2017, ISBN 978-1-118-52739-9 (Wiley product page)"},
+        {"key": "ciucci", "verified": "F. Ciucci and C. Chen, Electrochim. Acta 167 (2015) 439-454, doi:10.1016/j.electacta.2015.03.123 (ScienceDirect / Semantic Scholar records)"},
+        {"key": "wan", "verified": "T. H. Wan, M. Saccoccio, C. Chen, F. Ciucci, Electrochim. Acta 184 (2015) 483-499, doi:10.1016/j.electacta.2015.09.097 (HKUST research portal / publisher record)"}
+      ],
+      "read_scope": "Bibliographic metadata and abstracts; the manuscript cites these works for context (classical Markov-Krein moment theory; impedance spectroscopy and regularized DRT inversion) and does not rely on their results in any proof."
+    }
+  ],
+  "not_assumed": [
+    "a page limit for Mathematics of Computation (none found; the revised manuscript is 25 pages in the amsart 10pt default layout)",
+    "that the submission portal unpacks a supplement ZIP automatically",
+    "acceptance or successful desk screening"
+  ]
+}

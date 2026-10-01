@@ -1,0 +1,35 @@
+OPTIONAL GENERATION AND SYMBOLIC RECONSTRUCTION
+
+Always work on a COPY of this supplement. The default run_all.py verifies the
+frozen inputs and certificates without generating new results.
+
+Full-frequency exact examples (standard library):
+    cd code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum
+    python3 generate.py
+    python3 replay.py
+    python3 report_results.py
+
+Noiseless-identification examples (standard library):
+    cd code/design_audit
+    python3 generate.py
+    python3 replay.py
+
+Optional independent symbolic reconstruction (requires SymPy):
+    cd code/design_audit
+    python3 crosscheck_sympy.py
+
+Gaussian stopping candidate generation (requires NumPy/SciPy):
+    cd code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost
+    python3 -m pip install -r requirements-generation.txt
+    python3 run_stopping_demo.py two_atoms --seed 20260916 --maxstages 7
+    python3 run_stopping_demo.py three_atoms --seed 20260917 --maxstages 7
+    python3 replay.py
+
+The pinned generation versions and the original environment are preserved as
+supplied. This assembly replays certificates; it does not rerun these expensive
+optimization candidates or estimate statistical coverage by simulation.
+Floating-point candidate trajectories can depend on the dependency versions.
+The exact certificate acceptance criteria are independent of optimizer status.
+
+Some original scripts write relative to their own directory. The directory
+structure is intentionally retained so those paths resolve after extraction.

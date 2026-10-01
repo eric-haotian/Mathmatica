@@ -1,0 +1,36 @@
+{
+  "format": "quadratic_guard_v1",
+  "input_sha256": "84710dd4a8a7dba99008c20f17a0d37c5bdf76541a0f7cdb38ac0502fa627368",
+  "input_name": "two_atoms_20260916_stage1.json",
+  "b": "1/4096",
+  "physical_mass_bound": "512655/262144",
+  "cells": 221,
+  "nodes": 222,
+  "old_lipschitz_nodes": 96851,
+  "max_cell": "2/221",
+  "atoms": [
+    [
+      "-105/221",
+      "2815492540456171/36028797018963968"
+    ],
+    [
+      "-27/221",
+      "81030222084481/140737488355328"
+    ],
+    [
+      "5/13",
+      "6407703383163547/18014398509481984"
+    ]
+  ],
+  "theta": [
+    "3533886289081859/36028797018963968",
+    "190418369171009/18014398509481984"
+  ],
+  "margin": "3275456937542891470537182725/26832543232364707383412495745024",
+  "solver_stats": {
+    "method": "tightened_feasibility_proposal_exact_primal_check",
+    "float_status": 0,
+    "optimality_claimed": false
+  },
+  "proposal_seconds": 0.018438725999999406
+}

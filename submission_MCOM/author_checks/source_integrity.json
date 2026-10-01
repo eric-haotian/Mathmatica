@@ -1,0 +1,86 @@
+{
+  "baseline": "main_2026-09-29.tex",
+  "baseline_sha256": "f439916c3020ab8f24ed42d7e264690d874f7134228a670ba40aee50a72e9492",
+  "theorem": {
+    "baseline": 4,
+    "new": 4,
+    "byte_identical": true
+  },
+  "lemma": {
+    "baseline": 3,
+    "new": 3,
+    "byte_identical": true
+  },
+  "proposition": {
+    "baseline": 5,
+    "new": 5,
+    "byte_identical": true
+  },
+  "corollary": {
+    "baseline": 2,
+    "new": 2,
+    "byte_identical": true
+  },
+  "remark": {
+    "baseline": 2,
+    "new": 2,
+    "byte_identical": true
+  },
+  "proof": {
+    "baseline": 14,
+    "new": 14,
+    "byte_identical": true
+  },
+  "algorithm": {
+    "baseline": 1,
+    "new": 1,
+    "byte_identical": true
+  },
+  "display_math": {
+    "baseline_blocks": 60,
+    "new_blocks": 62,
+    "all_inherited_blocks_byte_identical_in_order": true
+  },
+  "table": {
+    "baseline": 1,
+    "new": 4,
+    "baseline_table_present_verbatim": true
+  },
+  "figure": {
+    "baseline": 0,
+    "new": 1
+  },
+  "cross_reference_labels": {
+    "baseline": 63,
+    "new": 68,
+    "added": [
+      "fig:pairs",
+      "sec:conclusions",
+      "tab:cost",
+      "tab:efficiency",
+      "tab:guard"
+    ],
+    "removed": [],
+    "unresolved": []
+  },
+  "bibliography": {
+    "baseline_count": 25,
+    "new_count": 30,
+    "added": [
+      "ciucci",
+      "karlinstudden",
+      "kreinnudelman",
+      "orazem",
+      "wan"
+    ],
+    "removed": [],
+    "edited_existing_entries": [
+      "pages",
+      "wasilwoz"
+    ],
+    "uncited": [],
+    "missing": []
+  },
+  "abstract_words_whitespace": 274,
+  "source_sha256": "02a4866f7c608bdb7db8815783fb0b955def2b069e7da333048919dd66860b24"
+}

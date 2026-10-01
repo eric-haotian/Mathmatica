@@ -1,0 +1,43 @@
+Haotian Zhong
+Department of Mathematics, School of Sciences
+Shanghai University, Shanghai 200444, P. R. China
+zhonghaotian1219@gmail.com
+ORCID: 0009-0009-5567-1315
+October 1, 2026
+Editors of Mathematics of Computation
+American Mathematical Society
+Dear Editors,
+I submit the manuscript “Frequency Saturation and Certified Computation of Relaxation
+Functionals” for consideration in Mathematics of Computation.
+The paper concerns the computation of linear functionals of a positive distribution of
+                                                                                    R relaxation times
+from impedance measurements, the Stieltjes-type inverse problem Z(ω) = R+iωL+ (1+iωτ )−1 dµ(τ )
+with unknown nonnegative resistance and inductance. It determines how much frequency information
+such a computation requires, and it gives a finite numerical method, with a complete termination
+proof, that computes the entire data-consistent range of the functional with certified numerical error.
+The main results are the following. (1) Exactly K + 2 distinct frequencies are necessary and sufficient
+for uniform noiseless identification of references with at most K atoms among all finite positive
+measures, and K + 1 when the calibration parameters are known. (2) At this threshold a fixed
+design attains the worst-case accuracy order of the entire positive-frequency response; the sharp
+exponent is determined by local target regularity and cluster multiplicity, uniformly through colliding
+atoms and vanishing masses. Positive moment-matched spectra that stay close at every frequency
+give the lower bound, including against target-aware adaptive queries, and calibration-annihilating
+polynomial reproduction gives the upper bound. (3) An exact-arithmetic refinement algorithm
+encloses both endpoints of the continuous feasible range with any prescribed numerical excess; finite
+optimization gaps, target approximation, and continuum correction enter separate error budgets,
+and the certificates yield an a posteriori absolute–relative stopping rule. (4) The same modulus
+gives matching expected acquisition costs for prescribed terminal width and confidence under a
+Gaussian variance–effort law, against adaptive frequency, precision, and stopping; a class-tuned
+expanding design that invokes the certified computation attains this order and terminates at every
+finite positive spectrum.
+The work joins the analysis of a restricted information class to an executable, accuracy-controlled
+inverse computation, and so addresses approximation of positive measures, information complexity,
+and verified numerical methods. The numerical section reports exact full-frequency certificates,
+equal-effort design comparisons, certified cost bounds, and executed stopping paths; a reproducibility
+archive with exact inputs, verification code, and certificates accompanies the submission.
+The manuscript is original, unpublished, and not under consideration elsewhere. I declare no conflicts
+of interest. I suggest Professor Markus Bachmayr as a handling editor, given his expertise in
+approximation, adaptive methods, and inverse problems.
+Sincerely,
+Haotian Zhong
+

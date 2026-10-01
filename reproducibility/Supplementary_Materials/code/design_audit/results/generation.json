@@ -1,0 +1,22 @@
+{
+  "cases": [
+    "unknown_K1_uniform",
+    "unknown_K1_halfshift",
+    "unknown_K1_dyadic",
+    "known_K1_uniform",
+    "unknown_K2_uniform",
+    "unknown_K2_halfshift",
+    "unknown_K2_dyadic",
+    "known_K2_uniform",
+    "unknown_K3_uniform",
+    "unknown_K3_halfshift",
+    "unknown_K3_dyadic",
+    "known_K3_uniform",
+    "unknown_K4_uniform",
+    "unknown_K4_halfshift",
+    "unknown_K4_dyadic",
+    "known_K4_uniform"
+  ],
+  "count": 16,
+  "description": "16 exact noiseless pairs; not 16 optimizations"
+}

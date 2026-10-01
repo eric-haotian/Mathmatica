@@ -1,0 +1,19 @@
+{
+  "new_archive_sha256": "00a75015f369173f4b89834838cd261cad8b43848e076e71703f9a61cc250942",
+  "zip_members": 235,
+  "manifest_entries": 234,
+  "metadata_files_changed_since_2026-09-29": [
+    "SECTION_MAP.txt",
+    "TRANSFER_NOTE.txt"
+  ],
+  "code_and_data_files": 210,
+  "code_and_data_files_changed": [],
+  "zip_crc": "PASS",
+  "fresh_extraction_replay": {
+    "status": "PASS",
+    "independent_certificate_tasks": 80,
+    "checks_including_rejections": 154,
+    "rejection_checks": 53,
+    "manifest_files_checked": 234
+  }
+}

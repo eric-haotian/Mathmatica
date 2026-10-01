@@ -1,0 +1,46 @@
+{
+  "K": 1,
+  "additional_frequency": "4",
+  "alternative": [
+    [
+      "-1/8",
+      "139009/288000"
+    ],
+    [
+      "1/8",
+      "38477/73984"
+    ]
+  ],
+  "alternative_calibration": [
+    "32129/325125",
+    "53/5100"
+  ],
+  "error_radius": "0",
+  "frequencies": [
+    "1",
+    "2"
+  ],
+  "mode": "unknown",
+  "raw_data": [
+    "3/5",
+    "49/100",
+    "3/10",
+    "19/50"
+  ],
+  "reference": [
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "reference_calibration": [
+    "1/10",
+    "1/100"
+  ],
+  "schema": "calibration_threshold_v1",
+  "target_coefficients": [
+    "0",
+    "0",
+    "1/2"
+  ]
+}

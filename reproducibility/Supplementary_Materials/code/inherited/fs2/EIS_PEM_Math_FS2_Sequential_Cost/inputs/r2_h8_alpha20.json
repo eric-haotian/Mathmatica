@@ -1,0 +1,12 @@
+{
+  "alpha": "1/20",
+  "c": "0",
+  "format": "FS2_stopped_cost_input_v1",
+  "h": "1/8",
+  "noise_model": "independent Gaussian channels; variance sigma^2/effort; cost effort",
+  "r": 2,
+  "requested_width": "3/2560",
+  "sigma": "1/1000",
+  "stopping_requirement": "finite on every finite positive spectrum; terminal width bounded; uniform unconditional coverage",
+  "target_order": 2
+}

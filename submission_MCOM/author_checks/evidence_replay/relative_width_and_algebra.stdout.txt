@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "positive_checks": 34,
+  "rejection_checks": 4,
+  "relative_widths": [
+    {
+      "case": "three_atoms",
+      "stage": 1,
+      "ratio": 0.006714754712190446,
+      "accepted": true
+    },
+    {
+      "case": "three_atoms",
+      "stage": 2,
+      "ratio": 0.009284838069523287,
+      "accepted": true
+    },
+    {
+      "case": "three_atoms",
+      "stage": 3,
+      "ratio": 0.015525574576091158,
+      "accepted": true
+    },
+    {
+      "case": "two_atoms",
+      "stage": 1,
+      "ratio": 0.007436301861315477,
+      "accepted": true
+    },
+    {
+      "case": "two_atoms",
+      "stage": 2,
+      "ratio": 0.01022779450761369,
+      "accepted": true
+    },
+    {
+      "case": "two_atoms",
+      "stage": 3,
+      "ratio": 0.017834454041743775,
+      "accepted": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "additional_row_difference": [
+    "-111519744/103387727885",
+    "-10146816/20677545577"
+  ],
+  "annihilator": [
+    "0",
+    "0",
+    "1"
+  ],
+  "extended_design_annihilator_dual": [
+    "1885/256",
+    "1885/192",
+    "9425/512",
+    "-5655/128",
+    "-13195/512",
+    "9425/384"
+  ],
+  "input_sha256": "6f1b52f3120ec2b6e77de1bafd1b59f68eff76365e7122c984b49a2b7ee3dae9",
+  "normalizer": "2",
+  "target_gap": "1085742857/138498048000"
+}

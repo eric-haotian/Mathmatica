@@ -1,0 +1,151 @@
+{
+  "checks": [
+    {
+      "name": "log19 bracket width",
+      "status": "PASS"
+    },
+    {
+      "name": "log19 elementary decimal enclosure",
+      "status": "PASS"
+    },
+    {
+      "name": "log4 equals twice log2 interval overlap",
+      "status": "PASS"
+    },
+    {
+      "name": "log reciprocal negates interval",
+      "status": "PASS"
+    },
+    {
+      "name": "confidence information increases at 90 95 99 percent",
+      "status": "PASS"
+    },
+    {
+      "name": "cost geometric-square upper identity alpha=1/10",
+      "status": "PASS"
+    },
+    {
+      "name": "exact risk tail alpha=1/10",
+      "status": "PASS"
+    },
+    {
+      "name": "uniform geometric cost bound alpha=1/10",
+      "status": "PASS"
+    },
+    {
+      "name": "cost geometric-square upper identity alpha=1/20",
+      "status": "PASS"
+    },
+    {
+      "name": "exact risk tail alpha=1/20",
+      "status": "PASS"
+    },
+    {
+      "name": "uniform geometric cost bound alpha=1/20",
+      "status": "PASS"
+    },
+    {
+      "name": "cost geometric-square upper identity alpha=1/100",
+      "status": "PASS"
+    },
+    {
+      "name": "exact risk tail alpha=1/100",
+      "status": "PASS"
+    },
+    {
+      "name": "uniform geometric cost bound alpha=1/100",
+      "status": "PASS"
+    },
+    {
+      "name": "main physical gap exactly 9/5120",
+      "status": "PASS"
+    },
+    {
+      "name": "main expected cost lower exceeds 48614350",
+      "status": "PASS"
+    },
+    {
+      "name": "noise doubling costs factor four",
+      "status": "PASS"
+    },
+    {
+      "name": "fixed pair width threshold",
+      "status": "PASS"
+    },
+    {
+      "name": "width equals separation",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "negative noise",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "unsupported confidence",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "unproved noise law",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "narrowed coverage class",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "inflated experimental lower bound",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "false whole-frequency bound",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "nodes outside compact physical domain",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "first valid stage must continue",
+      "status": "PASS"
+    },
+    {
+      "name": "premature stopping",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "unpaid statistical precision",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "incorrect risk spending",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "incorrect stage radius",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "changed physical target after data",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "unreported enlargement of raw boxes",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "corrupted continuous dual",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "name": "metadata alias repair leaves numerical inputs byte identical",
+      "status": "PASS"
+    },
+    {
+      "name": "third-stage model appends dense locations",
+      "status": "PASS"
+    }
+  ],
+  "count": 36,
+  "passed": true,
+  "rejection_checks": 15
+}

@@ -1,0 +1,544 @@
+{
+  "case_count": 16,
+  "certificate_results": [
+    {
+      "K": 1,
+      "additional_row_difference": [
+        "2109/4080680",
+        "189/2040340"
+      ],
+      "alternative_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "alternative_mass": "513/512",
+      "alternative_value": "513/65536",
+      "calibration_mode": "known",
+      "case": "known_K1_uniform",
+      "extended_dual_excess": "1605/102017",
+      "frequencies": [
+        "1"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "513/65536"
+    },
+    {
+      "K": 2,
+      "additional_row_difference": [
+        "7165722624/12355112157054251",
+        "-2439954432/86485785099379757"
+      ],
+      "alternative_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "alternative_mass": "165700/165697",
+      "alternative_value": "127065/2046689344",
+      "calibration_mode": "known",
+      "case": "known_K2_uniform",
+      "extended_dual_excess": "9879270/13271169821",
+      "frequencies": [
+        "1",
+        "2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "127065/2046689344"
+    },
+    {
+      "K": 3,
+      "additional_row_difference": [
+        "8338946112/10173442796520332095",
+        "-1421473536/10173442796520332095"
+      ],
+      "alternative_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "alternative_mass": "176198977/176198896",
+      "alternative_value": "567808641/181916197777408",
+      "calibration_mode": "known",
+      "case": "known_K3_uniform",
+      "extended_dual_excess": "196324312320/2258255892679319",
+      "frequencies": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "567808641/181916197777408"
+    },
+    {
+      "K": 4,
+      "additional_row_difference": [
+        "1633283660460251404126126080/1290886080073795133533253967167088959369",
+        "-418714805649324791719526400/1290886080073795133533253967167088959369"
+      ],
+      "alternative_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "alternative_mass": "130466074288/130466071453",
+      "alternative_value": "3956931816075/8991016084026342176",
+      "calibration_mode": "known",
+      "case": "known_K4_uniform",
+      "extended_dual_excess": "3978361578248764875/217082095916888489319412",
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "3956931816075/8991016084026342176"
+    },
+    {
+      "K": 1,
+      "additional_row_difference": [
+        "-6759/9996680",
+        "-1863/2499170"
+      ],
+      "alternative_calibration": [
+        "32129/325125",
+        "53/5100"
+      ],
+      "alternative_mass": "41730113/41616000",
+      "alternative_value": "41730113/5326848000",
+      "calibration_mode": "unknown",
+      "case": "unknown_K1_dyadic",
+      "extended_dual_excess": "4641/294020",
+      "frequencies": [
+        "1",
+        "2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "41730113/5326848000"
+    },
+    {
+      "K": 1,
+      "additional_row_difference": [
+        "-111519744/103387727885",
+        "-10146816/20677545577"
+      ],
+      "alternative_calibration": [
+        "63137/650250",
+        "727/66300"
+      ],
+      "alternative_mass": "1085742857/1082016000",
+      "alternative_value": "1085742857/138498048000",
+      "calibration_mode": "unknown",
+      "case": "unknown_K1_halfshift",
+      "extended_dual_excess": "864084/54847601",
+      "frequencies": [
+        "1/2",
+        "3/2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "1085742857/138498048000"
+    },
+    {
+      "K": 1,
+      "additional_row_difference": [
+        "-13294/32584085",
+        "-9162/32584085"
+      ],
+      "alternative_calibration": [
+        "32129/325125",
+        "53/5100"
+      ],
+      "alternative_mass": "41730113/41616000",
+      "alternative_value": "41730113/5326848000",
+      "calibration_mode": "unknown",
+      "case": "unknown_K1_uniform",
+      "extended_dual_excess": "102760/6516817",
+      "frequencies": [
+        "1",
+        "2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "41730113/5326848000"
+    },
+    {
+      "K": 2,
+      "additional_row_difference": [
+        "-346909441410/409201446563138333",
+        "-479240284320/409201446563138333"
+      ],
+      "alternative_calibration": [
+        "5045909905033/50459789917530",
+        "80097080631/8009490463100"
+      ],
+      "alternative_mass": "5046071928500/5045978991753",
+      "alternative_value": "429530910125/6925325834014784",
+      "calibration_mode": "unknown",
+      "case": "unknown_K2_dyadic",
+      "extended_dual_excess": "5627718675/7506036776848",
+      "frequencies": [
+        "1",
+        "2",
+        "4"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "429530910125/6925325834014784"
+    },
+    {
+      "K": 2,
+      "additional_row_difference": [
+        "-12260930172888369070080/7032948812364067964436022841",
+        "-2100354540563060490240/7032948812364067964436022841"
+      ],
+      "alternative_calibration": [
+        "3561161030275993/35614440094811130",
+        "56539770189351/5653085729335100"
+      ],
+      "alternative_mass": "3561491663718500/3561444009481113",
+      "alternative_value": "299955737305625/4887884045012300864",
+      "calibration_mode": "unknown",
+      "case": "unknown_K2_halfshift",
+      "extended_dual_excess": "209276739191340/278947477395662413",
+      "frequencies": [
+        "1/2",
+        "3/2",
+        "5/2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "299955737305625/4887884045012300864"
+    },
+    {
+      "K": 2,
+      "additional_row_difference": [
+        "-38540577600/83878107850757209",
+        "-13510022400/83878107850757209"
+      ],
+      "alternative_calibration": [
+        "47473839279553/474749446670730",
+        "753605366271/75357055027100"
+      ],
+      "alternative_mass": "47475829458500/47474944667073",
+      "alternative_value": "4038490804625/65156724058631744",
+      "calibration_mode": "unknown",
+      "case": "unknown_K2_uniform",
+      "extended_dual_excess": "4264339500/5705605594909",
+      "frequencies": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "4038490804625/65156724058631744"
+    },
+    {
+      "K": 3,
+      "additional_row_difference": [
+        "-112042014689493/196587220448016772649600",
+        "-14725064541789/12286701278001048290600"
+      ],
+      "alternative_calibration": [
+        "69364832201666789/693648328037499250",
+        "660774790667/66077478260300"
+      ],
+      "alternative_mass": "11098378506720145851/11098373248599988000",
+      "alternative_value": "71698933977769004571/22916986527541120821248000",
+      "calibration_mode": "unknown",
+      "case": "unknown_K3_dyadic",
+      "extended_dual_excess": "33515774078787/382316067218182144",
+      "frequencies": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "71698933977769004571/22916986527541120821248000"
+    },
+    {
+      "K": 3,
+      "additional_row_difference": [
+        "-219679812845931964755326533632/68882909168343705997313684873161526825",
+        "-3846412086399116341596389376/68882909168343705997313684873161526825"
+      ],
+      "alternative_calibration": [
+        "5033803305816078635713/50338045684759314643850",
+        "239762150214512363/23976206565734372300"
+      ],
+      "alternative_mass": "402704433443920614897051/402704365478074517150800",
+      "alternative_value": "1232491736303171758047123/415771316729107079083309158400",
+      "calibration_mode": "unknown",
+      "case": "unknown_K3_halfshift",
+      "extended_dual_excess": "4007819675256945440256000/45124832592316047056906515717",
+      "frequencies": [
+        "1/2",
+        "3/2",
+        "5/2",
+        "7/2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "1232491736303171758047123/415771316729107079083309158400"
+    },
+    {
+      "K": 3,
+      "additional_row_difference": [
+        "-624479433194475067539456/989572344833324860212753397623205",
+        "-21220529966271808929792/197914468966664972042550679524641"
+      ],
+      "alternative_calibration": [
+        "1362053035454865517/13620531125215069250",
+        "2595004945703/259500473926460"
+      ],
+      "alternative_mass": "108964296854635134339/108964249001720554000",
+      "alternative_value": "349410269184451613397/112499920953328382536192000",
+      "calibration_mode": "unknown",
+      "case": "unknown_K3_uniform",
+      "extended_dual_excess": "494127995417473697280/5653831169479753066552117",
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "349410269184451613397/112499920953328382536192000"
+    },
+    {
+      "K": 4,
+      "additional_row_difference": [
+        "-18796464995783604281436375/118843509216058402191831879405457701139",
+        "-63259641483651856653228000/118843509216058402191831879405457701139"
+      ],
+      "alternative_calibration": [
+        "3343978885639797553171/33439788856476242904510",
+        "53079029931049039277/5307902993091467127700"
+      ],
+      "alternative_mass": "3343978964375709379304/3343978885647624290451",
+      "alternative_value": "22871504346896355555925/51210875680226818610160035776",
+      "calibration_mode": "unknown",
+      "case": "unknown_K4_dyadic",
+      "extended_dual_excess": "376811979607445765785276021875/20448417468905514410382779940947968",
+      "frequencies": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "22871504346896355555925/51210875680226818610160035776"
+    },
+    {
+      "K": 4,
+      "additional_row_difference": [
+        "-91871260014670079720795783181851014515916800/15123813271532618584391159217945196110880709919983789159",
+        "750041624470583018315848630765637704089600/1374892115593874416762832656176836010080064538180344469"
+      ],
+      "alternative_calibration": [
+        "10024389632792217469749780379/100243896411961126327457790990",
+        "159117296036278329228593573/15911729589200178782136157300"
+      ],
+      "alternative_mass": "10024389712341951388312382096/10024389641196112632745779099",
+      "alternative_value": "30303521609171517217950404225/76758524685784054896857911814412512",
+      "calibration_mode": "unknown",
+      "case": "unknown_K4_halfshift",
+      "extended_dual_excess": "19230981939099633835853162320612500/1007174484491647642716311900080213671767",
+      "frequencies": [
+        "1/2",
+        "3/2",
+        "5/2",
+        "7/2",
+        "9/2"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "30303521609171517217950404225/76758524685784054896857911814412512"
+    },
+    {
+      "K": 4,
+      "additional_row_difference": [
+        "-59942584508046681893437440000/63319692330474748450259896453140407430703",
+        "-2749164016978802702942208000/63319692330474748450259896453140407430703"
+      ],
+      "alternative_calibration": [
+        "845530661053014935682139/8455306611812481992776590",
+        "13421121608253044030693/1342112160605155871869300"
+      ],
+      "alternative_mass": "845530678907714569040336/845530661181248199277659",
+      "alternative_value": "2830050399881781736800725/6474377837643995300439396077792",
+      "calibration_mode": "unknown",
+      "case": "unknown_K4_uniform",
+      "extended_dual_excess": "7717187314064682368971875/418559070552557904827038801642",
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "raw_difference": "0",
+      "reference_calibration": [
+        "1/10",
+        "1/100"
+      ],
+      "reference_mass": "1",
+      "reference_value": "0",
+      "status": "PASS",
+      "target_gap": "2830050399881781736800725/6474377837643995300439396077792"
+    }
+  ],
+  "elapsed_seconds": 0.7070916459999808,
+  "mutation_count": 10,
+  "mutation_results": [
+    {
+      "name": "negative_mass",
+      "reason": "positive interior atom",
+      "status": "REJECTED"
+    },
+    {
+      "name": "negative_calibration",
+      "reason": "positive calibration",
+      "status": "REJECTED"
+    },
+    {
+      "name": "changed_raw_data",
+      "reason": "original predictions exactly equal",
+      "status": "REJECTED"
+    },
+    {
+      "name": "known_calibration_relabel",
+      "reason": "claimed below-threshold count",
+      "status": "REJECTED"
+    },
+    {
+      "name": "inflated_gap",
+      "reason": "exact target gap",
+      "status": "REJECTED"
+    },
+    {
+      "name": "scaled_wrong_annihilator",
+      "reason": "annihilator product",
+      "status": "REJECTED"
+    },
+    {
+      "name": "duplicate_frequency",
+      "reason": "positive distinct frequencies",
+      "status": "REJECTED"
+    },
+    {
+      "name": "false_additional_row",
+      "reason": "extra row separates",
+      "status": "REJECTED"
+    },
+    {
+      "name": "zero_dual",
+      "reason": "continuous reproducing identity",
+      "status": "REJECTED"
+    },
+    {
+      "name": "introduced_noise",
+      "reason": "noiseless task",
+      "status": "REJECTED"
+    }
+  ],
+  "scope": "new exact finite examples only; no optimization, simulation, all-parameter proof verification or external peer review"
+}

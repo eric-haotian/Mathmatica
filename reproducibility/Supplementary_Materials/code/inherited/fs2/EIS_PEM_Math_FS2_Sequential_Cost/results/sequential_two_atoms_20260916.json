@@ -1,0 +1,581 @@
+{
+  "alpha": "1/20",
+  "b0": "1/4096",
+  "case": "two_atoms",
+  "class_constant_tuning": "b0 chosen for mechanism demonstration, not from a worst-class sharp constant",
+  "cost_counts": "one complex unit-precision observation; two real channels",
+  "elapsed_seconds": 0.791955377000022,
+  "format": "FS2_sequential_demo_v1",
+  "requested_width": "1/20",
+  "seed": 20260916,
+  "sigma": "1/1000",
+  "simulation": "independent Gaussian sample means from numpy PCG64; no physical experiment",
+  "stages": [
+    {
+      "b": "1/4096",
+      "certified_length": "27993086681517475322974375817297177684099247593252000818298696876199501757/333594096728091525486258013742841269762027668797910436918567912238972272640",
+      "endpoints": [
+        {
+          "certificate": "two_atoms_20260916_stage1_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "151597/444858880",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "151597/444858880",
+            "gap_over_tau": "151597/5560736",
+            "lower": "14866036674858881789854945999151643642016049419601250418466953/25609230063892246794213151110335174949705493716179832129223680",
+            "max_dual_bits": 203,
+            "max_primal_bits": 209,
+            "moment_scalars": null,
+            "nodes": 17,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "516966461536456420626916325836871454864314936762449532950783902407/890038547178549480434160381579254871307034551908343593718317308928"
+          },
+          "timing": {
+            "endpoint_seconds": 0.04693407100000968,
+            "formation_seconds": 0.00012092199995095143
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 11,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 13,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 15,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 17
+            }
+          ]
+        },
+        {
+          "certificate": "two_atoms_20260916_stage1_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 2,
+            "continuous_correction": "123949/444858880",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "123949/444858880",
+            "gap_over_tau": "123949/5560736",
+            "lower": "-173920411864285/349798966099968",
+            "max_dual_bits": 37,
+            "max_primal_bits": 33,
+            "moment_scalars": null,
+            "nodes": 17,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "-151028676560616039389/303928078680448696320"
+          },
+          "timing": {
+            "endpoint_seconds": 0.04093399999999292,
+            "formation_seconds": 8.706099993105454e-05
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 11,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 13,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 15,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 17
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "input": "two_atoms_20260916_stage1.json",
+      "input_hash": "5d2802fda4a8c2a84afcb6cceb252b307a93ec6545b9a4c420aefddce8882a4a",
+      "interval": [
+        "151028676560616039389/303928078680448696320",
+        "516966461536456420626916325836871454864314936762449532950783902407/890038547178549480434160381579254871307034551908343593718317308928"
+      ],
+      "new_complex_observations": 868,
+      "numerical_excess_budget": "137773/222429440",
+      "repetitions_per_frequency": 217,
+      "reported_mean_binary64": [
+        "0x1.33b590775aaecp-1",
+        "0x1.f4ab418116013p-2",
+        "0x1.349d243e500c2p-2",
+        "0x1.8555a3553a7a9p-2",
+        "0x1.9b7e72af6d73dp-3",
+        "0x1.152e0fa5b983ap-2",
+        "0x1.466b09e15d7e0p-3",
+        "0x1.918b71d359c5cp-3"
+      ],
+      "risk_spend": "1/40",
+      "rounded_mean_step": "1/65536",
+      "stage": 1,
+      "status": "CERTIFIED_CONTINUE"
+    },
+    {
+      "b": "1/8192",
+      "certified_length": "19725442861389366143713936602595629028232645114996887704412903436474078380761746441594839219443070315838369/390843532248453273541695344871758819684732931463233357840519883030623737362731923097971627991496288233062400",
+      "endpoints": [
+        {
+          "certificate": "two_atoms_20260916_stage2_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "106697/381278720",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "106697/381278720",
+            "gap_over_tau": "106697/4765984",
+            "lower": "15291208753633175/27712909445824512",
+            "max_dual_bits": 43,
+            "max_primal_bits": 48,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "11392908955346080959947/20637387970663826718720"
+          },
+          "timing": {
+            "endpoint_seconds": 0.05989725399990675,
+            "formation_seconds": 0.00010738099990703631
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        },
+        {
+          "certificate": "two_atoms_20260916_stage2_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 2,
+            "continuous_correction": "88121/381278720",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "88121/381278720",
+            "gap_over_tau": "88121/4765984",
+            "lower": "-18684963414993619133843116001600114695816655031331177857040154739892291450453502852497340749/37234830927991781917730435847201585365545484300145267346893349274308542522378370850822553600",
+            "max_dual_bits": 292,
+            "max_primal_bits": 280,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 5,
+              "max_depth": 4
+            },
+            "upper": "-2781600688898199354572202978970436887566471231017772768875288124608072062117281438554214667944053/5545644013922312023481017923774662519588247795210735682844254760867691397655467419408958665523200"
+          },
+          "timing": {
+            "endpoint_seconds": 0.05842484599997988,
+            "formation_seconds": 0.0001154939999423732
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "3/2"
+      ],
+      "input": "two_atoms_20260916_stage2.json",
+      "input_hash": "ddc5b78ee3d47d6f8a16cacd1ce0d0f7c8797be7859229e2990481d1a60f5474",
+      "interval": [
+        "2781600688898199354572202978970436887566471231017772768875288124608072062117281438554214667944053/5545644013922312023481017923774662519588247795210735682844254760867691397655467419408958665523200",
+        "11392908955346080959947/20637387970663826718720"
+      ],
+      "new_complex_observations": 4955,
+      "numerical_excess_budget": "97409/190639360",
+      "repetitions_per_frequency": 991,
+      "reported_mean_binary64": [
+        "0x1.33b22310946fcp-1",
+        "0x1.f4c8199331d96p-2",
+        "0x1.34a36605d9b82p-2",
+        "0x1.856e3656a2c68p-2",
+        "0x1.9b8624f700069p-3",
+        "0x1.151c20137184dp-2",
+        "0x1.4673ea115cce1p-3",
+        "0x1.9157acc6981f3p-3",
+        "0x1.a2f3066274158p-2",
+        "0x1.c8f86ed37961cp-2"
+      ],
+      "risk_spend": "1/80",
+      "rounded_mean_step": "1/131072",
+      "stage": 2,
+      "status": "CERTIFIED_CONTINUE"
+    },
+    {
+      "b": "1/16384",
+      "certified_length": "2983378376438617456315689247850131754139010923115838233840890276120543368221580038282759630478463900001880529107/101063604470770365443810802734785216966044943440283451864987594780914441740637606547668519550002748820821036236800",
+      "endpoints": [
+        {
+          "certificate": "two_atoms_20260916_stage3_s1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 3,
+            "continuous_correction": "2499364163/10326832832000",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "2499364163/10326832832000",
+            "gap_over_tau": "2499364163/129085410400",
+            "lower": "32681439546724945/61285817364774912",
+            "max_dual_bits": 44,
+            "max_primal_bits": 65,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 8,
+              "max_depth": 7
+            },
+            "upper": "659470582976101643775407263/1236110138473658752991232000"
+          },
+          "timing": {
+            "endpoint_seconds": 0.07476774099995964,
+            "formation_seconds": 0.00012619000005997805
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at 1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        },
+        {
+          "certificate": "two_atoms_20260916_stage3_s-1.json",
+          "result": {
+            "E": "0",
+            "approximation_pair": "0",
+            "atoms": 2,
+            "continuous_correction": "19894962869/72287829824000",
+            "degree": null,
+            "finite_gap": "0",
+            "gap": "19894962869/72287829824000",
+            "gap_over_tau": "19894962869/903597872800",
+            "lower": "-378268523800906972439408337513935548894919131711556448668308998675456904604491387142577508439/750145625945981758475134340571178789141222238528218519817189201629200645162109360941690781696",
+            "max_dual_bits": 298,
+            "max_primal_bits": 361,
+            "moment_scalars": null,
+            "nodes": 16,
+            "positive": {
+              "leaves": 6,
+              "max_depth": 5
+            },
+            "upper": "-7625358972355222882385712591989028399765184278619988405927464062015878745634381810718385127732264056889/15130133747656553675574436648088122563760896284065903064294125166680267797608697091693732035175776256000"
+          },
+          "timing": {
+            "endpoint_seconds": 0.07892372399999203,
+            "formation_seconds": 0.00012007099996935722
+          },
+          "trace": [
+            {
+              "accepted": false,
+              "iteration": 0,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 10,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/8"
+            },
+            {
+              "accepted": false,
+              "iteration": 1,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 12,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/16"
+            },
+            {
+              "accepted": false,
+              "iteration": 2,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 14,
+              "proposed_roots": 1,
+              "reason": "negative polynomial at -1/32"
+            },
+            {
+              "accepted": true,
+              "iteration": 3,
+              "lp": {
+                "float_status": 0,
+                "method": "floating_proposal_exact_basis",
+                "tested": 1
+              },
+              "nodes": 16
+            }
+          ]
+        }
+      ],
+      "frequencies": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "3/2",
+        "5/4"
+      ],
+      "input": "two_atoms_20260916_stage3.json",
+      "input_hash": "c57bad85e5fd4df8e24de6f936a840cc9a0d75b489be3107f71178a19ed968cc",
+      "interval": [
+        "7625358972355222882385712591989028399765184278619988405927464062015878745634381810718385127732264056889/15130133747656553675574436648088122563760896284065903064294125166680267797608697091693732035175776256000",
+        "659470582976101643775407263/1236110138473658752991232000"
+      ],
+      "new_complex_observations": 26586,
+      "numerical_excess_budget": "3739051201/7228782982400",
+      "repetitions_per_frequency": 4431,
+      "reported_mean_binary64": [
+        "0x1.33b6bc2ed670fp-1",
+        "0x1.f4c4a395bca86p-2",
+        "0x1.34999b9238997p-2",
+        "0x1.856497176d736p-2",
+        "0x1.9b841888c3925p-3",
+        "0x1.15224a5373476p-2",
+        "0x1.46884945b7759p-3",
+        "0x1.91525fe96063ep-3",
+        "0x1.a2fe64b8553ecp-2",
+        "0x1.c8eba1beae9f2p-2",
+        "0x1.f7670c034372dp-2",
+        "0x1.e60758b98ada1p-2"
+      ],
+      "risk_spend": "1/160",
+      "rounded_mean_step": "1/262144",
+      "stage": 3,
+      "status": "CERTIFIED_STOP"
+    }
+  ],
+  "terminal_status": "CERTIFIED_STOP",
+  "total_complex_observations": 32409
+}

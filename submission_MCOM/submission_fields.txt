@@ -1,0 +1,28 @@
+Journal: Mathematics of Computation
+
+Title:
+Frequency Saturation and Certified Computation of Relaxation Functionals
+
+Short title:
+Frequency saturation and certified computation
+
+Author:
+Haotian Zhong
+Department of Mathematics, School of Sciences
+Shanghai University
+Shanghai 200444, P. R. China
+Email: zhonghaotian1219@gmail.com
+ORCID: 0009-0009-5567-1315
+
+MSC 2020:
+Primary: 65J22, 65Y20
+Secondary: 65G20, 62L12, 62G15
+
+Keywords:
+Positive measures; inverse problems; information complexity; frequency sampling; verified computation; sequential stopping
+
+Suggested handling editor:
+Markus Bachmayr (approximation, adaptive methods, inverse problems, and computational complexity)
+
+Abstract (274 words; plain-text rendering of the manuscript abstract):
+Impedance measurements of a relaxing medium follow a Stieltjes-type law Z(ω) = R + iωL + ∫ (1 + iωτ)^(-1) dμ(τ), where μ is a positive measure of relaxation times on a compact interval and the resistance R and inductance L are unknown nonnegative calibration parameters. We ask how much frequency information is needed to compute a linear functional ∫ f dμ of the measure, and how to compute, with certified numerical error, the complete range of values consistent with noisy data. Four results are established. Exactly K+2 distinct frequencies are necessary and sufficient for uniform noiseless identification of every reference measure with at most K atoms among all finite positive measures when R and L are unknown, and K+1 when they are known. This minimal design already attains, up to constants, the worst-case accuracy of the entire positive-frequency response: for a target of regularity s_j near a cluster of r_j reference atoms the sharp exponent is min{1, s_j/(2r_j)}, uniformly through colliding atoms and vanishing masses. Positive moment-matched pairs that stay close at every frequency give the lower bound, and polynomial reproduction that annihilates the calibration parameters gives the upper bound. On strictly feasible rational observation boxes, a finite exact-arithmetic refinement algorithm encloses both endpoints of the continuous data-consistent range with any prescribed numerical excess, and computable width brackets yield absolute–relative stopping criteria. The same modulus determines the optimal expected measurement effort for a terminal interval of width w and confidence 1−α under a Gaussian variance–effort model, allowing adaptive frequency, precision, and stopping rules; a class-tuned expanding design that invokes the certified range computation attains this order and terminates almost surely at every finite positive spectrum. Exact certificates and executed stopping paths accompany the results.

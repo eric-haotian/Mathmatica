@@ -1,0 +1,11 @@
+PASS full_spectrum
+PASS full_spectrum_mechanisms
+PASS sequential
+PASS sequential_mechanisms
+PASS feasibility_and_design
+PASS identification_threshold
+PASS relative_width_and_algebra
+PASS tables
+PASS design_tables
+PASS full_spectrum_table
+PASS: 80 certificate tasks; 154 checks including 53 required rejections. /home/user/Mathmatica/submission_MCOM/author_checks/zip_evidence_replay

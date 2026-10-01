@@ -1,0 +1,7 @@
+{
+  "attempt": "exact optimum for every guard grid",
+  "status": "batch execution stopped at 20-second tool limit after two first-stage successes",
+  "completed": ["two_atoms_20260916_stage1", "three_atoms_20260917_stage1"],
+  "repair": "Use tightened finite feasibility LP to propose a dyadic positive anchor; accept only exact original-box feasibility. Exact optimal fallback remains available.",
+  "not_claimed": "Failed batch is not counted as successful replay; no original noise radius was changed."
+}

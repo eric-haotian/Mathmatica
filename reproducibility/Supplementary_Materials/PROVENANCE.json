@@ -1,0 +1,1056 @@
+{
+  "basis": "author-provided v1.4 reproduction archive",
+  "copied_source_or_data_files": 210,
+  "files": [
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h3.json",
+      "sha256": "d13b90dd23590ec8f943cc9ed4e17303e6891a239b6299457d93358aca924302"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h4.json",
+      "sha256": "74e29ae1729bbccec2f3369ffc917e5e901bcc5551d27ce5ce54242c20046ac9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h5.json",
+      "sha256": "713619d74f03b193b2515ca1d76acfc1aa9dd9b3151b04fc9e286e2fed811285"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h6.json",
+      "sha256": "afe6a92979f4f42ab74920317a437c5ffe4cbcbe19c88ffaaa5864ea201720e9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r1_h7.json",
+      "sha256": "a649eb775a15e10ab88bbc177d5092551d4ba260f41c76381e7ba7d38f6d3308"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h3.json",
+      "sha256": "011e46cde80e470dfccff9a2e5bf65a074042c51a8100071234d5554da4b1c52"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h4.json",
+      "sha256": "d15ea194964ca05563d07a9e18276fa95bebc2b4d40c71a7414deb748720e792"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h5.json",
+      "sha256": "82933ac8f586f5096e0163c5b7b2e3bb1fe34445b759ca9be840872ce6c1c40e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h6.json",
+      "sha256": "1d1f7d22216cf671e28be1a7013a93fc9383cdc993aa4c6c58d5600022667c84"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r2_h7.json",
+      "sha256": "058c74b8d34562feb35befbc5f18d3f8ee4dc0ec427814ab218a53c3fadb0c0b"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h3.json",
+      "sha256": "bda541f2d4b098f309001a0bbdf80aba6aa3f72c935b77c195e5eac11965382e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h4.json",
+      "sha256": "bd2ded00282aeb9e8316dc6543e667b91bb85102197c67c98cf2e0e50b294abe"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h5.json",
+      "sha256": "989f6152c28eb62074f4795fda01c99f3eb35e05977ebba922c9ffe76572ff67"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h6.json",
+      "sha256": "fa865b0f7ba6c182fcf31b9d5694ef27ac506903e657239808a23c99697facfc"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_h7.json",
+      "sha256": "121c377840e4c76e7dc97282d37d96cee1a68fde7565b252476a59aeb6d9858c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_shift_minus.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_shift_minus.json",
+      "sha256": "1d36c20bd18e6a44722049ac8f41b06b85ed8e34ba3cc46c8a60b048a34078fc"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_shift_plus.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r3_shift_plus.json",
+      "sha256": "c64f4da7f4e47b1173e384f06cfa3f622c56559e08995fd334a8f34a9ec4a07e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h3.json",
+      "sha256": "9eb8bda6a799311c86870b0fb2daa02971c115ae4c533055cdafb5f0102bc677"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h4.json",
+      "sha256": "38f8fdb4ed01fde39af6d80dc8e2ad63d5ae35cd78023813637333feac7ba198"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h5.json",
+      "sha256": "73f510fd2486608fc6542f506158f37f30a562e27203e961ebabd796f51f9137"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h6.json",
+      "sha256": "9d90981373ea07ec02b9825eb878dd293fcce08eae29cd8894bacda9888d2e93"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/certificates/r4_h7.json",
+      "sha256": "939c8b18cdf82b45ec9fb48f2eb31736931bf324d9ae31e289fe331d6213319b"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/check_mechanisms.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/check_mechanisms.py",
+      "sha256": "1e8391711d4ac19186c4a2f0cc6f632ff886a314d2d0181a7c787b21247c3273"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/documents/number_table.tex",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/documents/number_table.tex",
+      "sha256": "a3187bbaf3eddf0a7ed6470a26bd260aaf081b210e7479655b00dbfbf9426449"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/exact.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/exact.py",
+      "sha256": "2583c4a9f3a6acb610b6b387d6b4c41cfa51ce1f6008dbb4443b03f8b1627776"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/generate.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/generate.py",
+      "sha256": "e8a633cbe5ddbfbd2bc34d000ae8b0c2c2109555d7c1f66b4e96de7d35541a2f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m3.json",
+      "sha256": "50d64f15663bf4e33b63d56528b243bb08c7f6302036e3032c4d97c7807ae4ba"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m4.json",
+      "sha256": "86bc13efa0b30e7ea7d6c708bc141d6d84e9a48417e99bb24531897b11673e47"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m5.json",
+      "sha256": "a3bdadc50fe3ec71733cb04ab3215d794c7a36c9cd67d8a6342f6a72169fec1e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/model_m6.json",
+      "sha256": "13b27601986e87e31a6dac80a9f1f9537f722386dbbc1348ba068d0db96d4f7f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h3.json",
+      "sha256": "21543ea506997b4be488ff2337dbce251783a738c69a5565e70e3d1ebb2dfd0d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h4.json",
+      "sha256": "4e9b59d3f35229e585321008af6527ae6728e5daa266d217426c248514efa018"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h5.json",
+      "sha256": "4d8e6c742a6fc81688a9081962f4892ba3bfc47ba12ca6488f5de746b9155e21"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h6.json",
+      "sha256": "942482ad4ddeb86b9e08b7169f676b0a3c2075eb81232cc3af868a18b9b1d06c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r1_h7.json",
+      "sha256": "a0a30ce7a0b9dcda78541bf4e32c557531c87750df7a899c519b10ced64552d1"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h3.json",
+      "sha256": "167dfecbd04210b89d216b16fbef946252ca932c371550f83e51e2af1e1c3642"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h4.json",
+      "sha256": "64dee9c1addc11558de7304f1c608383c8db0f8b47e424a79730d830d97530cb"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h5.json",
+      "sha256": "dfc54611a71f6da98c77cf640f69e2b00c036876a9c99f9fa014f099ca3677b9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h6.json",
+      "sha256": "597ce995127746c7fe29af8ec73d627771d4021e0dd63166e1fd5606974fc7aa"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r2_h7.json",
+      "sha256": "7a25b859db3bbe43009e42df23f656f890bf394e8c1315caa7e63d6003970273"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h3.json",
+      "sha256": "3908a1f9d6fd37a234875fa39262a10a2928edf2f1247a9444276fae1500efba"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h4.json",
+      "sha256": "0deae57d5622279e2c9caf5d6a06df6a8d5d4ee3aa4b37e4ccfe317e03e2fdf0"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h5.json",
+      "sha256": "e2adef4c70f57d3e8dd642295c58c9edb9c1d8ed5ae78ba3d1750ad6f610fe42"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h6.json",
+      "sha256": "8321c1a10bc81dd1f9a0117579def6aebea9bbeddda3dea9a76169f6b2882da4"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_h7.json",
+      "sha256": "daee23bab5e92984e51b58a5882f46bfbffad121e1cc05732b87e9bd2a079b01"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_shift_minus.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_shift_minus.json",
+      "sha256": "dade8a30a664de0b08a1f90c0d47ccae05a2489ddf88e20bbebde6980d9876ea"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_shift_plus.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r3_shift_plus.json",
+      "sha256": "b18ed90cca0467eb8fb120282381daea4566b0b0f4e4a89766bf5b52bbc7bc63"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h3.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h3.json",
+      "sha256": "180bd58dcbf3fcbde8b1ca0e011303405ad09c7d5bbd73f1ae2945d841b6b720"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h4.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h4.json",
+      "sha256": "d87e156df09415cc065a968e7dc5f80dc92aa6cec6d607ac9a6d94af7f9a91ae"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h5.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h5.json",
+      "sha256": "dd3a2d8e80359a9bc9da3d487afe3ba224bc9891fae331f6243f4bc616cd53c6"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h6.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h6.json",
+      "sha256": "b59bcb3141f13e30cb3ed0616add44f72b050cc8faf7b385f8a28ddbcb8b0479"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h7.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/r4_h7.json",
+      "sha256": "9246274cdbba168c0b7fd940902beeaa2c9e04b6e0a1109d7ab1902e12bb9483"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/replay.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/replay.py",
+      "sha256": "5047f9188a8be6a2efb3bb5f468d03313e2c16cf80c3b8567e562955b1f10b02"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/report_results.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/report_results.py",
+      "sha256": "8970640266f5b3b9bd78925c4e66757f488a36de534a9d0dca4efb46cf9025ba"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/mechanism_checks.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/mechanism_checks.json",
+      "sha256": "1c599687cdb2e7f877a583ab9695eb3981d714f4e785d7ce025fc711e4ab7cef"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/replay.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/replay.json",
+      "sha256": "15a2e0f724661115f34072c1aed88e3932c1ca1061068890fe75e47cddb2c1b8"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/summary.csv",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/summary.csv",
+      "sha256": "406c4601126769662ab8930edb672e7ae228bc5e385c7a88a7a9af30800185dc"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/summary.json",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/results/summary.json",
+      "sha256": "08203c6d94ee745c99907ba103c3b97658aaf3b60b12c79ee25b2638ccd6e067"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/verify.py",
+      "supplement_path": "code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/verify.py",
+      "sha256": "3719096c5f5be857888b1371f3cf1bbb32b62af00af0547c8dbe554f8fc0d53c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha10.json",
+      "sha256": "ecab93a00fc2a5371b464a38479a7022b28215586667a875beaaf365d39114f9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha100.json",
+      "sha256": "307022d9f3021620790734904fa7ef4d720e8a8e7d88ca084b402df02ff109b7"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r1_h8_alpha20.json",
+      "sha256": "43307fa8aaeefb49e1e1a505ba008e7814cf7e3169ccf63a31e1cc314652194f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha10.json",
+      "sha256": "fe70568c2105fe430442760dbe674ebc40407b30f62e75da707504cbc71e8a47"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha100.json",
+      "sha256": "c64796fbace7aa201f1004753d7d843b639714eda8026f568dc9226c8b47e1e5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r2_h8_alpha20.json",
+      "sha256": "c459756e05721c57544a898ede9fe11248cab7de863aa119fc497d02f93f16d3"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha10.json",
+      "sha256": "4f536c2f5bd0d3fcdf7fe5e62187c9ef5fcbfa9101311765f906af379d5797df"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha100.json",
+      "sha256": "aaf167521ad5965ba654f882c04e5142dce5b8a8fec4f9a14c97a42e6253a885"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h16_alpha20.json",
+      "sha256": "2d04ac70b9665a2943a64ee313d336bd11a0dc863bd629191f64bbb9a1706855"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha10.json",
+      "sha256": "db85667b3e6c956ce8a0afe11b06061c80413c810433f086fcd9204ff5a19b15"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha100.json",
+      "sha256": "6fe722690ea690d9422740fdcda58593a34311663c7d41bc95b2a46b7d0a4c2e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r3_h8_alpha20.json",
+      "sha256": "ba2ed52b130de4b413bb7f2012676055b1e1af51fa6b7f34f08261b4a690b67d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha10.json",
+      "sha256": "057c362a3b7df935115062cc6db2d096147db5fd1e37ec1bf3e7714d6d3acd3a"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha100.json",
+      "sha256": "ac0593c7f6cb0984201d78f61b301f18d27e59f9a55f1ee24feabad8f3ee034e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h16_alpha20.json",
+      "sha256": "6774af4589f138b9159f08377d37dc19f0aa6cfbc1b64334c428fa9142cc2078"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha10.json",
+      "sha256": "314c9ec8a1a7069db76a69f9e97104aaaf595eedd9f8d3a60cc076298627b454"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha100.json",
+      "sha256": "6040c8536dc51f693201446e710dcf3e29b17c2a39ff647aeed0fada0b154988"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/certificates/r4_h8_alpha20.json",
+      "sha256": "2a6f86122bcced9b54ced7a9ecc026e240ce8419af80781be5546f6b9805d2b9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/check_mechanisms.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/check_mechanisms.py",
+      "sha256": "be3ed5d6fb6eb542972de987ceb4d801176157aaf514e10f4f8a5f0c37bdd623"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/checks/environment.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/checks/environment.json",
+      "sha256": "d1701affd4681aa09f88b7f096c6ccf7285ac8d436473f6e03920533ca75653a"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/checks/pre_repair_input_hashes.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/checks/pre_repair_input_hashes.json",
+      "sha256": "7c4debf49a2021974bd33c0b8a4f801569065914d1a153a9ae7c03633d4a89bb"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/exact_cost.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/exact_cost.py",
+      "sha256": "b5ed195af9a4a27dfe370b6a2a3087637af5f12b238e33c61a60cb02196e9278"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/generate_costs.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/generate_costs.py",
+      "sha256": "364c790647777e1b3cc048c7d0f958526ee8e06012de9181e0c3134ef4f36fa5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha10.json",
+      "sha256": "a0158c7b9e678eaf08f405487b1181174bbe7fc7979ebd404e9440e1ba396ecd"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha100.json",
+      "sha256": "d3d26891ea83d7c18784cc78e6f1e3b79fc62478a38e1c76a826fe74d1cee606"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r1_h8_alpha20.json",
+      "sha256": "70a3761a59772328cfbf480b76f19c76619ae9a578e713d3467a2b32a0266694"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha10.json",
+      "sha256": "98f5c08b72fa41525b51b2cbdfa211fb280084c7fee614af6ac1dcf236d952bd"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha100.json",
+      "sha256": "e4cac580648eb94565ba1ab8d5014e387d9a922e760c7dffe54f118302d6fca1"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r2_h8_alpha20.json",
+      "sha256": "eda08d9f8ea412c8ce41b8f7e68a85a0451e6bc23c0ff0fa06c4f06b688424be"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha10.json",
+      "sha256": "dc18ced1fe7f11abe6de81eb5f9681c8f01e85f0e36634743dc2580e954a350d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha100.json",
+      "sha256": "7d5f527d5d5bd6011d5876093f54f1fcc6c12576897e76a1ef08a9891b6961d4"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h16_alpha20.json",
+      "sha256": "e37651e19dab72c3b78907582404a17b886cc23d64f16094fc1ff81b022666fb"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha10.json",
+      "sha256": "e3cbd86401c1f9e3dbb1e56bf4db4039b6d4fdcf5aa3ae84918ae33ba27fec31"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha100.json",
+      "sha256": "a99855339cfd0d2bf7cb0ecfca1096bbaa00a03f0181c7c7efe1b6b804b2249b"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r3_h8_alpha20.json",
+      "sha256": "16ca1fc87b735179157bb4fc0b21d9a79eba72d47940c8c5de31c71700275ed5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha10.json",
+      "sha256": "1e20f85e637495d9c5f71bc1d26dc0d274fff63bda3bbea71bb0088f48f532d6"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha100.json",
+      "sha256": "89e5d4b8adf9ccc444459cf91e703333b351696a9b35d0598632feacc0bdd4e1"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h16_alpha20.json",
+      "sha256": "f15804acb57fd6d692f9b183a2b3ef3345fd56f1cb73e295c05b09ff741061f8"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha10.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha10.json",
+      "sha256": "d731d61a3018c29d947c525a9500bd6a27bbfcda273b8a38165fe16a916f1729"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha100.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha100.json",
+      "sha256": "ad098622f749369f5223d28c8611d0294ec7b355fa0bf4dd4c08b9c3db60138d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha20.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/r4_h8_alpha20.json",
+      "sha256": "e5d83940f50770fa627624353f39eb6d2456f383389ef076e7b29e17956aafd6"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/provenance/three_atoms_20260917.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/provenance/three_atoms_20260917.json",
+      "sha256": "7f9152510f40ec65de4d01e1a7cde53350143228212aca0f8f77e93f538c441c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/provenance/two_atoms_20260916.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/provenance/two_atoms_20260916.json",
+      "sha256": "a258642fde69589d723385afdee06882252852e6ca873594428e6e97190f8ae3"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/replay.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/replay.py",
+      "sha256": "0f1d444c8aee1a9332b70fdf753b6a188bd121c33999c1c8195716c0ad6c81bd"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/requirements-generation.txt",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/requirements-generation.txt",
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/cost_summary.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/cost_summary.json",
+      "sha256": "0b7e611d4fe426b6341392616714e394dd22cfd33a13ee7b4e3100c52aef8f6f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/mechanism_checks.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/mechanism_checks.json",
+      "sha256": "a22efcd09e255261ce3b268a83bee75e587e6a487ade27965d71709b33a09db4"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/replay.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/replay.json",
+      "sha256": "8f5dda951f8f5cc71533c51f9092d47de75dab89120c2540e785833ddb0308ca"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/sequential_three_atoms_20260917.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/sequential_three_atoms_20260917.json",
+      "sha256": "2403506fd7fc8c8c550863d51631f34cd4f4f5fea9e671b0d5663f93446b122e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/sequential_two_atoms_20260916.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/sequential_two_atoms_20260916.json",
+      "sha256": "d9f3dd3bb16359396180a869b31a883f385c425890c48d29bc071c26b54adb3a"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/run_stopping_demo.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/run_stopping_demo.py",
+      "sha256": "09d2cf79f037accd7660376b93371eb294c1dd4cfac04543fab81c9acc754c46"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage1_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage1_s-1.json",
+      "sha256": "ea8f1e42eb49edba1df0b2bbc8a4f2fea2795c36f2057b48b492fbb88d62047c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage1_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage1_s1.json",
+      "sha256": "6f98f2ca9837af4b849789af3674f8b6ee91502b23b0d3a4b8ef03912bf91cda"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage2_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage2_s-1.json",
+      "sha256": "9d7e9fb229d73af696b70760c2905a43feba257631b26c9859e38d18c38e33ed"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage2_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage2_s1.json",
+      "sha256": "e1462f9dbfc7557887d45c9e119b7f917b0dfe89e542744b9d912af17c3459b4"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage3_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage3_s-1.json",
+      "sha256": "082d1c22e4e08ce77bd16bbf9bb6270b07102d66171a1eb8434c7998f0a384c7"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage3_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/three_atoms_20260917_stage3_s1.json",
+      "sha256": "56643cf31fa01c0d53a15faee1ea15a578ddb180163683743fbe65ae90c382c0"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage1_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage1_s-1.json",
+      "sha256": "f59d9a0b8f14acbea7329b86c8c6ccf0f172198c4e9e76e8dad5e7c5e33e0f02"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage1_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage1_s1.json",
+      "sha256": "aebf1fc75c5ec039fb4fe56e9ffdd4c19955b68a25cb1edd0589f59f47b43408"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage2_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage2_s-1.json",
+      "sha256": "c292d3beb84d3c100b6639672e9cb4480d2f792f4760b05990fc7c215c1528cd"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage2_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage2_s1.json",
+      "sha256": "a0776bc369a465a68da756a2a016c5332e79ffd5c2b67ff4607b37908480634c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage3_s-1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage3_s-1.json",
+      "sha256": "1fa78ff152854811cf9712d21371ae3cfd5c87648d9a6d121463e7a346fb02c6"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage3_s1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/certificates/two_atoms_20260916_stage3_s1.json",
+      "sha256": "b825f2376b18ee4aedee5fffc34de6c74830ef156079d14f6f874055f4838ad0"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage1.json",
+      "sha256": "7c5da002c6ba8ba5a57d2033ccc84ebb017a1f6f7beeb6cd492db9db9735638d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage2.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage2.json",
+      "sha256": "a115c93135d5c456eb9a669028a8482297bd15137e3f858c07c33f5fb41f6a33"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage3.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/three_atoms_20260917_stage3.json",
+      "sha256": "d645987212c9d155cad8d7eeb3a087e5cfc00fdeec36dc1697d2ac6d7cae8b99"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage1.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage1.json",
+      "sha256": "84710dd4a8a7dba99008c20f17a0d37c5bdf76541a0f7cdb38ac0502fa627368"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage2.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage2.json",
+      "sha256": "9845b0b86d18a627f92c14e5c0c0e69bd6ed4c5d6d3b7168dd89d74074985891"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage3.json",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/two_atoms_20260916_stage3.json",
+      "sha256": "c7f152b2ea3ef41ff4944637c97a9facf0e964fa8b79c1d4235b7c05a0b8550f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/phase/direct_rational.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/phase/direct_rational.py",
+      "sha256": "d10025de7b133df93f362865089c9a5b4374d5708c6f094793dc7bea40ebdc02"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/core.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/core.py",
+      "sha256": "05a6f8d899485783d1b1c00f402664fda16d561379048af5743a630c4871d806"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/exact_lp.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/exact_lp.py",
+      "sha256": "5043c0c9448ac38e6ecd8d5438be687d96da0de3d1e617c9bd073da43fbbec09"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/generate.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/generate.py",
+      "sha256": "ced3cfa6743a488ac4f585fa0cffd36dac2e835bdf1492883ffb1febf6056555"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/inherited/r13_core.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/software/inherited/r13_core.py",
+      "sha256": "d43d5cb0f8bb394f574546a27c373a8a2e32e4465aaae46d6759e5b065121305"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/verify_stopping.py",
+      "supplement_path": "code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/verify_stopping.py",
+      "sha256": "173b6ca5cc10e8208ea041405bf394ed400adb5aa524e634906047aac5d959a1"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_three_atoms_20260917_stage1.json",
+      "supplement_path": "code/new_checks/certificates/guard_three_atoms_20260917_stage1.json",
+      "sha256": "f9369005795f8cc42a28ab8357a542054c652194d4a902dfef1bcfab120ec820"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_three_atoms_20260917_stage2.json",
+      "supplement_path": "code/new_checks/certificates/guard_three_atoms_20260917_stage2.json",
+      "sha256": "e6f78fb29ad81b760964a39a4c00c941486034a2995e0ab4b07ace6709dd7604"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_three_atoms_20260917_stage3.json",
+      "supplement_path": "code/new_checks/certificates/guard_three_atoms_20260917_stage3.json",
+      "sha256": "4f15082ceea8aecbbf51af868d94f2bf06b597ae54cf0b2af0ef9b2e278b9386"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_two_atoms_20260916_stage1.json",
+      "supplement_path": "code/new_checks/certificates/guard_two_atoms_20260916_stage1.json",
+      "sha256": "a47933e34b97fbc41b82f15582618887b47110344a90c59e757a2f5dd34d962e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_two_atoms_20260916_stage2.json",
+      "supplement_path": "code/new_checks/certificates/guard_two_atoms_20260916_stage2.json",
+      "sha256": "d1736a3a43d0027e317301fdacdad074d188d311a5f20883582258b511d06447"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/guard_two_atoms_20260916_stage3.json",
+      "supplement_path": "code/new_checks/certificates/guard_two_atoms_20260916_stage3.json",
+      "sha256": "3a375913b2e6123d04517f36650c808a54f770a114cf7b314681f5152f8b1caf"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r1_h16.json",
+      "supplement_path": "code/new_checks/certificates/information_r1_h16.json",
+      "sha256": "6fc5100363197cff40d616aac4ef3e0755051e2b92e2cb454689d70fb89421e5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r1_h32.json",
+      "supplement_path": "code/new_checks/certificates/information_r1_h32.json",
+      "sha256": "023c09f3dd9b207d965a08f2f5d50915af869ad7a97fbc3dd345d888a583d1cb"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r1_h8.json",
+      "supplement_path": "code/new_checks/certificates/information_r1_h8.json",
+      "sha256": "10054a76843cc906447c743dc941edd84ab104963bf007a1b4b7fd524360cfda"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r2_h16.json",
+      "supplement_path": "code/new_checks/certificates/information_r2_h16.json",
+      "sha256": "2ec29075f94c073c8628d3e4acad70f10d67fec0eeb62f435258cc69a39623a5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r2_h32.json",
+      "supplement_path": "code/new_checks/certificates/information_r2_h32.json",
+      "sha256": "b6575f7829175952ca33f9e43231983fa259b855c0449aef5af2db605d4bfdd8"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r2_h8.json",
+      "supplement_path": "code/new_checks/certificates/information_r2_h8.json",
+      "sha256": "ee4aad98294a2beb7480449b83d7748edffc1b6879467a8effa245dc5e2a4f24"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r3_h16.json",
+      "supplement_path": "code/new_checks/certificates/information_r3_h16.json",
+      "sha256": "f0fad920121b8d47b7cc6cb79d1ca570f9d9f6b263739404a7622ed8b168f819"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r3_h32.json",
+      "supplement_path": "code/new_checks/certificates/information_r3_h32.json",
+      "sha256": "0e6cf1299c266c783c087dd34e8536759e9081c15df27e864d520b59fee9e913"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r3_h8.json",
+      "supplement_path": "code/new_checks/certificates/information_r3_h8.json",
+      "sha256": "305160cdfcdc17616c24174bdd3150545668232d0f9f440c92680598a51c4691"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r4_h16.json",
+      "supplement_path": "code/new_checks/certificates/information_r4_h16.json",
+      "sha256": "5ca4babfdc405f3a214ff804da137a32bc8b28147be9ca4b9762d359d1943a86"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r4_h32.json",
+      "supplement_path": "code/new_checks/certificates/information_r4_h32.json",
+      "sha256": "41ba9e572a227dda903684e443de2407c9ee1c9ba17d81e7cc0f10b6d605d317"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/certificates/information_r4_h8.json",
+      "supplement_path": "code/new_checks/certificates/information_r4_h8.json",
+      "sha256": "14c44f94379b473917c3982e64549ef8796c096add9ba9af9f5543f112cb4157"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/design_comparison.py",
+      "supplement_path": "code/new_checks/design_comparison.py",
+      "sha256": "cd069d2844e10487f27c18bb02e1f22cda574a4b36eb7eef2d1ce08d297a8c95"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/guard_proposal.py",
+      "supplement_path": "code/new_checks/guard_proposal.py",
+      "sha256": "b6f3d91f7afa99b17c5ef385537435803083412ee710a3970f0d794e2534f8c8"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/three_atoms_20260917_stage1.json",
+      "supplement_path": "code/new_checks/inputs/three_atoms_20260917_stage1.json",
+      "sha256": "7c5da002c6ba8ba5a57d2033ccc84ebb017a1f6f7beeb6cd492db9db9735638d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/three_atoms_20260917_stage2.json",
+      "supplement_path": "code/new_checks/inputs/three_atoms_20260917_stage2.json",
+      "sha256": "a115c93135d5c456eb9a669028a8482297bd15137e3f858c07c33f5fb41f6a33"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/three_atoms_20260917_stage3.json",
+      "supplement_path": "code/new_checks/inputs/three_atoms_20260917_stage3.json",
+      "sha256": "d645987212c9d155cad8d7eeb3a087e5cfc00fdeec36dc1697d2ac6d7cae8b99"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/two_atoms_20260916_stage1.json",
+      "supplement_path": "code/new_checks/inputs/two_atoms_20260916_stage1.json",
+      "sha256": "84710dd4a8a7dba99008c20f17a0d37c5bdf76541a0f7cdb38ac0502fa627368"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/two_atoms_20260916_stage2.json",
+      "supplement_path": "code/new_checks/inputs/two_atoms_20260916_stage2.json",
+      "sha256": "9845b0b86d18a627f92c14e5c0c0e69bd6ed4c5d6d3b7168dd89d74074985891"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/inputs/two_atoms_20260916_stage3.json",
+      "supplement_path": "code/new_checks/inputs/two_atoms_20260916_stage3.json",
+      "sha256": "c7f152b2ea3ef41ff4944637c97a9facf0e964fa8b79c1d4235b7c05a0b8550f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/make_tables.py",
+      "supplement_path": "code/new_checks/make_tables.py",
+      "sha256": "fc2bcd9f09f6c848ca475a1d3a113828663bd85f2d456a4c5406a987408a6154"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/replay_content.py",
+      "supplement_path": "code/new_checks/replay_content.py",
+      "sha256": "7919d74906c1f558449f1f381eff4098797c81b702e85ee92ee627df60b1bfc1"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/results/attempt_log.json",
+      "supplement_path": "code/new_checks/results/attempt_log.json",
+      "sha256": "98f2d8494f15b3949a42180b46f9d44ec6aeaf9ee7d0fab214c78956055efea5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/results/design_comparison.json",
+      "supplement_path": "code/new_checks/results/design_comparison.json",
+      "sha256": "4968f584915a5c854a5e2c9b5c054fab98ad1e3302243659f5ff03fd5a7293a0"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/results/replay.json",
+      "supplement_path": "code/new_checks/results/replay.json",
+      "sha256": "e6198ae60a1134831bd2ac4b5dd0aecd4cdc461ddceba6a3a1d4dff88422c91f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/new_checks/verify_content.py",
+      "supplement_path": "code/new_checks/verify_content.py",
+      "sha256": "c0984af2351142a1506fdfcc2e94c2520fa3e794dc335b4a68397380ce18bc5b"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/known_K1_uniform.json",
+      "supplement_path": "code/design_audit/certificates/known_K1_uniform.json",
+      "sha256": "d1be667923a45f4258ef71612ca6651a4ac86081d409793179dcf663c93240e9"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/known_K2_uniform.json",
+      "supplement_path": "code/design_audit/certificates/known_K2_uniform.json",
+      "sha256": "ca62577b81a953c60171121aeaa6ebe511edd3cd8c860097fe8ca682e8b55047"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/known_K3_uniform.json",
+      "supplement_path": "code/design_audit/certificates/known_K3_uniform.json",
+      "sha256": "e29313e9d173f3ed653d2b5be87c5e49907bfb8af70f35fe54d226e14ad5af22"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/known_K4_uniform.json",
+      "supplement_path": "code/design_audit/certificates/known_K4_uniform.json",
+      "sha256": "3897e429fab6195c111f6a4866ea07f28079bf66172d672f5aac75c31af2e121"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K1_dyadic.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K1_dyadic.json",
+      "sha256": "1ac967d64ec14240b5d37ca91ed879f9b31f910da1cde9a09416a9b8ebf96840"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K1_halfshift.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K1_halfshift.json",
+      "sha256": "3344a33dfa60ad41e3b943912420d503d3f26dbe42f994295cf95ba7f0a16cfc"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K1_uniform.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K1_uniform.json",
+      "sha256": "9a4503edf85aa84d155f162cfdec0a869c72bc4812254eeab30128d4b6f9cb4c"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K2_dyadic.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K2_dyadic.json",
+      "sha256": "71968a3038e8981d4116bd2f64488882ede3beb1e5c74d21437de3fb4b08c8b2"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K2_halfshift.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K2_halfshift.json",
+      "sha256": "2462d24b298c999f594dcec7a7a8ead2918c2fdcc837a6b335fbbe5d0cf3547e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K2_uniform.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K2_uniform.json",
+      "sha256": "0e7d47126d5e5759047116e4cb0907d668aed4080ad6c574834b0cca22ebba85"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K3_dyadic.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K3_dyadic.json",
+      "sha256": "7289348d22ca2494678aea4c2b6daeb149fabeb02f427cf5439ed4dced8f16a5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K3_halfshift.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K3_halfshift.json",
+      "sha256": "e07f212adfd6285a928e5bf3290b7e4c59a5ea5b423e4e7a4e41b40b20c61971"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K3_uniform.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K3_uniform.json",
+      "sha256": "8b4f81887095250e8793531821ef141f6d90c01efb16e5b046de298144cf0a81"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K4_dyadic.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K4_dyadic.json",
+      "sha256": "d6aee7d067ac1858e24e7b7e4afeb6ab5dd7fa741b70a5150288f1de4939e409"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K4_halfshift.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K4_halfshift.json",
+      "sha256": "d7e1a43cd1609a9c5f4b7511f39b6438ed5933720925f7f38f92ed6acc627753"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/certificates/unknown_K4_uniform.json",
+      "supplement_path": "code/design_audit/certificates/unknown_K4_uniform.json",
+      "sha256": "7b3b9caff915944f6f8aa7a7eff4b9fb981b2fb7ab01ac4a4466f01e0d1f9d99"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/crosscheck_sympy.py",
+      "supplement_path": "code/design_audit/crosscheck_sympy.py",
+      "sha256": "c0b00d7594bd51306495ef78dc90931de0d3c16d7806a6240b51ebe5d134c739"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/exact.py",
+      "supplement_path": "code/design_audit/exact.py",
+      "sha256": "2583c4a9f3a6acb610b6b387d6b4c41cfa51ce1f6008dbb4443b03f8b1627776"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/generate.py",
+      "supplement_path": "code/design_audit/generate.py",
+      "sha256": "77c3b3ac9debc9e5607eb113b17ad760c2f09107683aa35e86c0a23b0a195e3d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/known_K1_uniform.json",
+      "supplement_path": "code/design_audit/inputs/known_K1_uniform.json",
+      "sha256": "05df7dc63c8166a441514080336443f5e0f9bf9be3d8a237a59925e398d1c8af"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/known_K2_uniform.json",
+      "supplement_path": "code/design_audit/inputs/known_K2_uniform.json",
+      "sha256": "3ceca08313deca6d74e4de224224111a218da1754c72afc029d6ec7d7c477c8f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/known_K3_uniform.json",
+      "supplement_path": "code/design_audit/inputs/known_K3_uniform.json",
+      "sha256": "52f1e515b293f0aadc02f308dd10ec105971c0f25ec5b9608936e7297bc0c99f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/known_K4_uniform.json",
+      "supplement_path": "code/design_audit/inputs/known_K4_uniform.json",
+      "sha256": "9c7b9b1b107ad5c066b7abc3f15aa2de0e8658f7e4fa1c4388d4245291fcb796"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K1_dyadic.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K1_dyadic.json",
+      "sha256": "9ca6b33c55f95b78d8210d6ee1a2d3673ff00402c1c31ffd1bc0aaf3b8c7975f"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K1_halfshift.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K1_halfshift.json",
+      "sha256": "ec158888947538b7d1d5f2d372646930c0861b147dce7c478c7cca726ad5aaff"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K1_uniform.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K1_uniform.json",
+      "sha256": "bdc6568b54ab1915988bca18e56dc37f407caaa871c6622642790f19210bd43b"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K2_dyadic.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K2_dyadic.json",
+      "sha256": "36ad4b7b2228aa43b3667a6d46a694b8d18e5a96ea197347d1a99f5d51023b31"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K2_halfshift.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K2_halfshift.json",
+      "sha256": "b7a60af81ba3824df35574a9dbd1e28c88e373a3efa046e73e8c44d830b7ca62"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K2_uniform.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K2_uniform.json",
+      "sha256": "c2ca8e0e7faa6f5634813a5d3e6fc4aa7e17904893246a852128e5d83885a543"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K3_dyadic.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K3_dyadic.json",
+      "sha256": "250c7d943c7e7795ce53b3f9433eed2488be5e2df82d2482698b5ad90ae105be"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K3_halfshift.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K3_halfshift.json",
+      "sha256": "3f79980a06d0d137db735786f439653c0cb6d6a1503e0563a61c3a9182a8566d"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K3_uniform.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K3_uniform.json",
+      "sha256": "8f3fd909a49a5a333e633d4eabbca2387b4fd60ad90392e691ceb612f1e5e409"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K4_dyadic.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K4_dyadic.json",
+      "sha256": "11ea99acfca8f774fe531b5bf613a5aa3895c6ecba85db72969fa3d4ddda9d54"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K4_halfshift.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K4_halfshift.json",
+      "sha256": "9b42c905a515a35ae46dbb52c14e3654d842e928688046bc1d85add49b4fae75"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/inputs/unknown_K4_uniform.json",
+      "supplement_path": "code/design_audit/inputs/unknown_K4_uniform.json",
+      "sha256": "fc6a68c364601330b0c83d3a990aef46b4bc781296e561a413d357c5168ada40"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/replay.py",
+      "supplement_path": "code/design_audit/replay.py",
+      "sha256": "b98dea41b9ba43a89141b13467a4dcc0bdf786c6add205200525f9e2b84e1e00"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/results/generation.json",
+      "supplement_path": "code/design_audit/results/generation.json",
+      "sha256": "e7a437d357e0916633267dcd5fc06ba7fef4531cbdaa211f3011cbd5abb27bd6"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/results/replay.json",
+      "supplement_path": "code/design_audit/results/replay.json",
+      "sha256": "9add4d8b7e270147eb3dbddd0583ca82e25fa5def100996e5415edbde151eac7"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/results/summary.csv",
+      "supplement_path": "code/design_audit/results/summary.csv",
+      "sha256": "9f8443f47a8ee9c057d11ace2102908d85aedd5bbee5df827df4098da4b4630a"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/results/sympy_crosscheck.json",
+      "supplement_path": "code/design_audit/results/sympy_crosscheck.json",
+      "sha256": "33c39031cdf5de87fe74c4d1b238cf57b3a70c32278439b58f19a3385ba3a76e"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/design_audit/verify.py",
+      "supplement_path": "code/design_audit/verify.py",
+      "sha256": "24c33e07e6ea09605c1e2110635082390430373d1e77b7ab433ab62b61c8de16"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/closure/check_closeout.py",
+      "supplement_path": "code/closure/check_closeout.py",
+      "sha256": "401a81af35ce547eef4c2a37c03d4fd40ee2c44dcaaea67bd8dd64ebe6ae53ae"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/closure/results/closeout_checks.json",
+      "supplement_path": "code/closure/results/closeout_checks.json",
+      "sha256": "5cc387f42e6b5b94515afffc69ff2fe94cbe05d06b961b67f68165c1ca4e9db5"
+    },
+    {
+      "archive_member": "SINUM_Design_Audit_v1_3/regenerate_tables.py",
+      "supplement_path": "code/regenerate_tables.py",
+      "sha256": "47269d490fecde91abb1b62aef6d4a385a02b9f11ef7d87315ca85c8417074a1"
+    }
+  ]
+}

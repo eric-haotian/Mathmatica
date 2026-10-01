@@ -1,0 +1,223 @@
+{
+  "checks": [
+    {
+      "name": "two_million_adaptive_queries_KL_at_most_1_over_8",
+      "result": "PASS"
+    },
+    {
+      "name": "physical_C2_gap_9_over_5120",
+      "result": "PASS"
+    },
+    {
+      "name": "95_percent_expected_length_lower_117_over_102400",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_moment_0",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_moment_1",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_first_nonzero_moment",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_Fourier_countermodel_amplitude_two",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_resolvent_target_sign",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_target_s2_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_target_s3_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r1_target_s4_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_moment_0",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_moment_3",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_first_nonzero_moment",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_Fourier_countermodel_amplitude_two",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_resolvent_target_sign",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_target_s2_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_target_s3_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r2_target_s4_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_moment_0",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_moment_5",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_first_nonzero_moment",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_Fourier_countermodel_amplitude_two",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_resolvent_target_sign",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_target_s2_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_target_s3_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r3_target_s4_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_moment_0",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_moment_7",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_first_nonzero_moment",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_Fourier_countermodel_amplitude_two",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_resolvent_target_sign",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_target_s2_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_target_s3_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_target_s4_exact_halving",
+      "result": "PASS"
+    },
+    {
+      "name": "negative_mass",
+      "result": "REJECTED"
+    },
+    {
+      "name": "out_of_domain_atom",
+      "result": "REJECTED"
+    },
+    {
+      "name": "nuisance_negative",
+      "result": "REJECTED"
+    },
+    {
+      "name": "radius_halved",
+      "result": "REJECTED"
+    },
+    {
+      "name": "reference_weight_changed",
+      "result": "REJECTED"
+    },
+    {
+      "name": "frequency_square_reversed",
+      "result": "REJECTED"
+    },
+    {
+      "name": "frequency_bracket_elsewhere",
+      "result": "REJECTED"
+    },
+    {
+      "name": "norm_upper_zero",
+      "result": "REJECTED"
+    },
+    {
+      "name": "norm_interval_falsified",
+      "result": "REJECTED"
+    },
+    {
+      "name": "wrong_raw_y",
+      "result": "REJECTED"
+    },
+    {
+      "name": "target_norm_weakened",
+      "result": "REJECTED"
+    },
+    {
+      "name": "target_sign_reversed",
+      "result": "REJECTED"
+    },
+    {
+      "name": "gap_inflated",
+      "result": "REJECTED"
+    },
+    {
+      "name": "KL_artificially_zero",
+      "result": "REJECTED"
+    },
+    {
+      "name": "confidence_bound_inflated",
+      "result": "REJECTED"
+    },
+    {
+      "name": "unlisted_noise_model",
+      "result": "REJECTED"
+    },
+    {
+      "name": "floating_point_radius",
+      "result": "REJECTED"
+    },
+    {
+      "name": "sigma_zero",
+      "result": "REJECTED"
+    },
+    {
+      "name": "at_least_50_checks",
+      "result": "PASS"
+    }
+  ],
+  "count": 54,
+  "rejections": 18,
+  "status": "PASS"
+}

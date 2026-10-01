@@ -1,0 +1,27 @@
+Mathematics of Computation transfer -- 29 September 2026
+
+Current manuscript: Frequency Saturation and Certified Computation of Relaxation Functionals
+Previous manuscript title: Frequency Saturation and Certified Recovery of Relaxation Functionals
+
+The numerical payload in code/ is retained byte for byte from the final SINUM
+reproduction package. All original theorem numbering and Table 1 are retained.
+The transfer adds an explicit Algorithm 1 presentation of Theorem 5.2, rewrites
+editorial text, and adds one related-work citation. The code and data have not
+been regenerated. Original suite names are provenance identifiers.
+
+README.txt now uses the current article title. SECTION_MAP.txt corrects the
+identification-count location to Proposition 4.6 / Section 4.5. Existing receipts
+retain their original provenance. The current replay summary is supplied in
+verification/MCOM_transfer_replay_summary.json. It records an actual replay of
+the frozen evidence, not new experiments or external mathematical review.
+
+Reproduce with: python3 run_all.py
+
+Revision of 1 October 2026 (same journal). The manuscript text, abstract and
+introduction were revised for exposition; Tables 1, 2 and 4 and Figure 1 of the
+revised manuscript display archived quantities (equal-effort efficiencies, cost
+lower bounds, guard-grid counts, exact response differences) that were already
+certified in this archive, and the stopping-path table is now Table 3. No code,
+input, certificate or result file in code/ was changed; only SECTION_MAP.txt,
+this note and the manifest were updated.
+

@@ -1,0 +1,5 @@
+submission_MCOM/source/build/
+__pycache__/
+*.pyc
+submission_MCOM/source/figures/fig_preview*.png
+reproducibility/Supplementary_Materials/replay_output/

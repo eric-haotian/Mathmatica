@@ -1,0 +1,211 @@
+{
+  "completed": true,
+  "endpoint_certificates": 12,
+  "excluded": [
+    "synthetic provenance",
+    "candidate generators",
+    "numpy",
+    "scipy",
+    "finite optimization calls"
+  ],
+  "new_cost_certificates": 18,
+  "new_trajectories": 2,
+  "raw_stage_vectors": 6,
+  "runs": [
+    {
+      "case": "r1_h8_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r1_h8_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r1_h8_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r2_h8_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r2_h8_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r2_h8_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h16_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h16_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h16_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h8_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h8_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r3_h8_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h16_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h16_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h16_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h8_alpha10",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h8_alpha100",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "r4_h8_alpha20",
+      "kind": "new_stopped_cost",
+      "status": "PASS"
+    },
+    {
+      "case": "sequential_three_atoms_20260917",
+      "kind": "new_stopping_trace",
+      "output": {
+        "case": "three_atoms",
+        "final_interval": [
+          "917776045741351590335826494547045235346898615138570123648398778053/1797184437378714392930986174267159583916432342637976298205314416640",
+          "506197507104602573000401400262737/929230032597222027446427433697280"
+        ],
+        "spent_alpha": "7/160",
+        "stages": [
+          {
+            "cost": 868,
+            "length": "6206516615918778019322604067832883472883018070380583438662598084880063305009088892000283990811310257498377090582996867037348992559/66354142403987007066640030180422130843737045552728881324153635384227805343005799059831291294800561968474457751110617138457876889600",
+            "nodes": [
+              16,
+              12
+            ],
+            "numerical_excess": "141391/226630400",
+            "risk": "1/40",
+            "stage": 1,
+            "status": "CERTIFIED_CONTINUE"
+          },
+          {
+            "cost": 4955,
+            "length": "1718052233559811822316119462381269105024169242331551006721802486765297442556857135935731086298643695469460289999/31132324469281543806382941559587232918620198306675490152802838905596566081626635185257316030034371479942221004800",
+            "nodes": [
+              15,
+              15
+            ],
+            "numerical_excess": "152993/301360384",
+            "risk": "1/80",
+            "stage": 2,
+            "status": "CERTIFIED_CONTINUE"
+          },
+          {
+            "cost": 26586,
+            "length": "6238477176682468454386722972152167492962185923305478182497876905814557672005097/183080627732997991553616214569508285259328560806469668993492610491327559586447360",
+            "nodes": [
+              16,
+              12
+            ],
+            "numerical_excess": "9548392931/18328936564480",
+            "risk": "1/160",
+            "stage": 3,
+            "status": "CERTIFIED_STOP"
+          }
+        ],
+        "total_cost": 32409
+      },
+      "status": "PASS"
+    },
+    {
+      "case": "sequential_two_atoms_20260916",
+      "kind": "new_stopping_trace",
+      "output": {
+        "case": "two_atoms",
+        "final_interval": [
+          "7625358972355222882385712591989028399765184278619988405927464062015878745634381810718385127732264056889/15130133747656553675574436648088122563760896284065903064294125166680267797608697091693732035175776256000",
+          "659470582976101643775407263/1236110138473658752991232000"
+        ],
+        "spent_alpha": "7/160",
+        "stages": [
+          {
+            "cost": 868,
+            "length": "27993086681517475322974375817297177684099247593252000818298696876199501757/333594096728091525486258013742841269762027668797910436918567912238972272640",
+            "nodes": [
+              17,
+              17
+            ],
+            "numerical_excess": "137773/222429440",
+            "risk": "1/40",
+            "stage": 1,
+            "status": "CERTIFIED_CONTINUE"
+          },
+          {
+            "cost": 4955,
+            "length": "19725442861389366143713936602595629028232645114996887704412903436474078380761746441594839219443070315838369/390843532248453273541695344871758819684732931463233357840519883030623737362731923097971627991496288233062400",
+            "nodes": [
+              16,
+              16
+            ],
+            "numerical_excess": "97409/190639360",
+            "risk": "1/80",
+            "stage": 2,
+            "status": "CERTIFIED_CONTINUE"
+          },
+          {
+            "cost": 26586,
+            "length": "2983378376438617456315689247850131754139010923115838233840890276120543368221580038282759630478463900001880529107/101063604470770365443810802734785216966044943440283451864987594780914441740637606547668519550002748820821036236800",
+            "nodes": [
+              16,
+              16
+            ],
+            "numerical_excess": "3739051201/7228782982400",
+            "risk": "1/160",
+            "stage": 3,
+            "status": "CERTIFIED_STOP"
+          }
+        ],
+        "total_cost": 32409
+      },
+      "status": "PASS"
+    }
+  ],
+  "seconds": 13.13679482300006
+}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+\begin{document}
+\begin{center}
+{\Large\bfseries Reproducibility materials}\\[0.6em]
+{\large Frequency Saturation and Certified Computation\\of Relaxation Functionals}\\[0.4em]
+Haotian Zhong
+\end{center}
+
+\textbf{Archive:} \texttt{03\_Reproducibility\_Materials.zip}.
+The archive contains the exact inputs, frozen certificates, checker source,
+recorded seeds, and table-generation scripts supporting Section~7. All central
+proofs are contained in the manuscript. A file manifest identifies the complete
+code and data snapshot by SHA-256 hashes.
+
+\textbf{Quick start.} Extract the archive, open the resulting
+\texttt{Supplementary\_Materials} directory, and execute
+\begin{verbatim}
+python3 run_all.py
+\end{verbatim}
+Python~3.10 or later suffices for frozen verification; the replay uses only the
+standard library. A fresh run verifies the manifest and case inventory, runs the
+checkers in disposable working directories, and regenerates the numerical tables.
+The report is written to \texttt{replay\_output/SUMMARY.json}. Optional candidate
+regeneration and its additional dependencies are described separately in
+\texttt{REGENERATION.txt}.
+
+\textbf{Evidence map.}
+\begin{description}
+\item[Sections 3 and 4.] Twenty-two full-frequency positive-pair certificates and
+four polynomial reproduction maps. The frequency supremum is certified by an
+exact response identity and a rational enclosure of its unique maximizer.
+\item[Proposition 4.6 and Section 7.2.] Sixteen zero-noise identification
+certificates, with positive spectra, identical original observations, and
+nonzero target differences.
+\item[Sections 5 and 6.] Eighteen stopped-cost certificates and two executed
+stopping trajectories. The trajectories include six stage inputs and twelve
+continuous endpoint certificates.
+\item[Section 7.] Six strict-feasibility anchors, twelve equal-effort design
+comparisons, the relative-width checks, and table regeneration.
+\end{description}
+
+\textbf{Replay accounting.} The frozen suites comprise 80 certificate tasks and
+154 named algebraic, mechanism, and invalid-input checks, including 53 intentional
+rejections. The twelve continuous endpoints occur inside the two trajectory tasks.
+These counts describe computational checks of the archived evidence. The two
+seeded trajectories exercise the stopping algorithm; the coverage argument is
+proved in Section~6.
+
+\textbf{Provenance and navigation.} \texttt{SECTION\_MAP.txt} gives exact paths,
+\texttt{INDEX.txt} lists the shipped files, and
+\texttt{MANIFEST\_SHA256.json} records their hashes. Original suite names and
+receipts retain their provenance. \texttt{TRANSFER\_NOTE.txt} explains the title
+change and the metadata updates for the present submission. Copyright and third-party dependency information appear in
+\nolinkurl{RIGHTS_AND_DEPENDENCIES.txt}.
+\end{document}

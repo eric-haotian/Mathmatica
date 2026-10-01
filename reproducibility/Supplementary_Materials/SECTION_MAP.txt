@@ -1,0 +1,53 @@
+MANUSCRIPT-TO-SUPPLEMENT MAP
+
+Section 3; Proposition 3.2; Section 7.1 (Figure 1):
+  code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/inputs/ and certificates/
+  code/inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/verify.py, exact.py, replay.py
+  Four model_m*.json files verify nuisance-annihilating polynomial reproduction.
+  report_results.py generates the full-frequency tabulation.
+
+Proposition 4.6 and Section 4.5 (identification count); Section 7.2:
+  code/design_audit/inputs/ and certificates/
+  code/design_audit/verify.py, exact.py, replay.py
+  code/design_audit/generate.py generates the exact rational examples.
+  code/design_audit/crosscheck_sympy.py is a separate symbolic reconstruction.
+  The 16 cases include 15 distinct original tasks and two tests of one task
+  using different added frequencies, as recorded in the supplied evidence.
+
+Lemma 6.1, Theorem 6.2; Section 7.3 (cost lower bounds; Table 2):
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/inputs/ and certificates/
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/exact_cost.py and generate_costs.py
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/cost_summary.json
+
+Proposition 6.3; Table 3; Section 7.3 (stopping paths):
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/sequential/inputs/ and sequential/certificates/
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/results/sequential_*.json
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/verify_stopping.py
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/vendor/ contains the required exact range-verification implementation.
+  code/inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/run_stopping_demo.py generates candidate stopping paths.
+  Seeds are stored in each sequential_*.json result.
+
+Section 6.2 (quadratic feasibility guard); Section 7.4 (Table 4):
+  code/new_checks/inputs/ and certificates/guard_*.json
+  code/new_checks/verify_content.py and guard_proposal.py
+
+Section 7.1 (equal-effort comparison; Table 1):
+  code/new_checks/certificates/information_*.json
+  code/new_checks/design_comparison.py and verify_content.py
+
+Corollary 5.3; Section 7.4 (relative numerical excess):
+  code/closure/check_closeout.py
+  code/closure/results/closeout_checks.json
+  Run after the original endpoint replay; run_all.py enforces this order.
+
+Table regeneration:
+  code/regenerate_tables.py generates the six Table 3 rows and the three Table 2 rows.
+  code/new_checks/make_tables.py generates design/guard tabulations.
+  Final standalone TeX tables appear under replay_output/tables/.
+
+Algorithm 1 in the Mathematics of Computation version restates Theorem 5.2
+without adding a new numerical experiment or changing the frozen solvers.
+Figure 1 (Section 7.1) is drawn from the closed-form response identity by the
+script figures/make_figure_response_difference.py in the manuscript source
+after cross-checking its maximizers against results/summary.csv of the
+full-spectrum suite; it adds no computation to this archive.

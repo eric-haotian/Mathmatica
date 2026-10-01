@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "manifest_files_checked": 232,
+  "independent_certificate_tasks": 80,
+  "checks_including_rejections": 154,
+  "rejection_checks": 53,
+  "continuous_endpoint_certificates_inside_two_trace_tasks": 12,
+  "new_experiments": 0,
+  "new_optimization_runs": 0,
+  "commands": [
+    {
+      "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/replay.py",
+      "returncode": 0,
+      "seconds": 16.341736932000003
+    },
+    {
+      "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/check_mechanisms.py",
+      "returncode": 0,
+      "seconds": 0.7003957780000007
+    },
+    {
+      "command": "inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/replay.py",
+      "returncode": 0,
+      "seconds": 12.991629347000014
+    },
+    {
+      "command": "inherited/fs2/EIS_PEM_Math_FS2_Sequential_Cost/check_mechanisms.py",
+      "returncode": 0,
+      "seconds": 0.6807489899999837
+    },
+    {
+      "command": "new_checks/replay_content.py",
+      "returncode": 0,
+      "seconds": 11.45213436900002
+    },
+    {
+      "command": "design_audit/replay.py",
+      "returncode": 0,
+      "seconds": 9.99972234499998
+    },
+    {
+      "command": "closure/check_closeout.py",
+      "returncode": 0,
+      "seconds": 0.6173013019999871
+    },
+    {
+      "command": "regenerate_tables.py",
+      "returncode": 0,
+      "seconds": 0.5954616139999871
+    },
+    {
+      "command": "new_checks/make_tables.py",
+      "returncode": 0,
+      "seconds": 0.6358506039999838
+    },
+    {
+      "command": "inherited/fs1/EIS_PEM_Math_FS1_Full_Spectrum/report_results.py",
+      "returncode": 0,
+      "seconds": 0.671245845000044
+    }
+  ],
+  "seconds": 54.703959295999965,
+  "scope": "Replay of supplied exact inputs and certificates, including complete table regeneration; internal computational verification, not formal proof verification or a coverage simulation."
+}

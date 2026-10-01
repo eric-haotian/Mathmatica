@@ -1,0 +1,17 @@
+RIGHTS AND DEPENDENCIES
+
+The author-supplied research files contained no explicit open-source license.
+This submission assembly preserves that rights status and grants no additional
+software or data license. Copyright and any pre-existing rights remain with
+the respective rightsholders. Publication or relicensing is an author decision.
+
+The supplied vendor/ directory contains earlier project implementation files
+required by the archived stopping verifier and candidate generator. These are
+retained research dependencies, not installations of NumPy, SciPy, or SymPy.
+No interpreter, third-party package binaries, font files, SIAM class files,
+credentials, or virtual machine images are distributed in this supplement.
+
+The default exact verification uses the Python standard library only. Optional
+generation uses separately installed NumPy and SciPy; optional independent
+symbolic reconstruction uses separately installed SymPy. Those packages retain
+their own licenses and are not bundled here.
